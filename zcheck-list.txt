@@ -1,0 +1,159 @@
+A FAZER:
+
+- Responder e-mail para formatura (como Amanda)
+- Preencher documento compartilhado no Classroom
+- Montar o Readme
+
+
+ESTRUTUA DE CODIGOS
+-Server - ok
+-Banco de dados - conectado ok 
+-Models - ok
+
+-Controller 
+
+
+
+
+
+REFERENCIAS
+
+
+BUSCA MEDICAMENTOS
+
+Aqui tem remedio
+http://aquitemremedio.prefeitura.sp.gov.br/#/
+
+
+
+
+CRIAR ESTRUTURA MVC
+
+$ mkdir src // criar pasta
+$ mkdir assets // pasta para imagens
+$ touch server.js // criar arquivo server
+$ touch .gitignore // criar ignore
+$ touch .env // criar dot envi
+$ touch .env.example // criar env example
+$ cd src // entrar na pasta
+$ mkdir controller database models routes // criar as 4 pastas
+$ touch app.js // criar arquivo
+$ cd .. /// sair do SRC
+
+=================================================
+
+INSTALANDO DEPENDÊNCIAS
+
+$ npm init -y 
+$ npm i express // bibliotecas
+$ npm i cors
+$ npm i -D nodemon
+
+- Banco de Dados
+
+$ npm i mongoose  // utilização banco de dados
+$ npm i dotenv-safe  // para ocultar dados sensiveis
+
+- Autenticação
+
+$ npm i jsonwebtoken
+$ npm i bcrypt 
+
+==================================================
+
+DEPOIS INSTALAÇÃO
+
+- Alterar no Package.json exemplo:
+"start": "nodemon server.js"
+
+- Inserir no arquivo gitignore
+node_modules/
+.env
+
+=================================================
+
+CONFIGURANDO SERVIDOR
+
+- Arquivo server.js, inserir:
+
+const app = require('./src/app');
+const PORT = 8888 ;
+
+app.listen(PORT, () => console.log("Servidor rodando na porta " + PORT));
+
+
+- Arquivo app.js inserir:
+
+const express = require('express')
+const cors = require('cors')
+
+const app = express()
+
+app.use(cors())
+app.use(express.json())
+
+
+module.exports = app
+
+================================================
+
+DEPOIS CONFIGURAR SERVER, DAR START
+$npm start
+
+================================================
+
+CONFIGURANDO BANCO DE DADOS
+
+Criar arquivo mongoConifg.js na pasta: src/database
+
+- Arquivo mongoConfig, inserir:
+
+
+const mongoose = require('mongoose')
+
+const MONGODB_URI = process.env.MONGODB_URI
+
+const connect = async () => {
+    try {
+        await mongoose.connect(MONGODB_URI,{
+            useNewUrlParser: true,
+            useUnifiedTopology: true
+        })
+        console.log("Banco conectado :)")
+    } catch (error) {
+        console.log("Erro: ", error.message)
+    }
+}
+
+module.exports = {
+    connect
+}
+
+
+- Arquivo app.js inserir:
+
+const express = require('express')
+const cors = require('cors')
+ 
+require('dotenv-safe').config()  <==================
+const db = require('./database/mongoConfig') <==========
+
+const app = express()
+
+app.use(cors())
+app.use(express.json())
+
+
+db.connect()    <================
+
+module.exports = app
+
+
+- Arquivo .env inserir:
+
+MONGODB_URI = aqui vai a string de conexão do MongoDB sem aspas com login e senha
+
+
+- Arquivo .env.example apenas inserir:
+
+MONGODB_URI

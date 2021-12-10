@@ -18,6 +18,21 @@ const medicineSchema = new mongoose.Schema ({
         required: true
     },
 
+    batch: {
+        type: String,
+        required: true
+    },
+
+    manufacture: {
+        type: String,
+        required: true
+    },
+
+    expiration: {
+        type: String,
+        required: true
+    },   
+
     controlled_use: {
         type: Boolean,
         required: true

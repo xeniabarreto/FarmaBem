@@ -8,18 +8,31 @@ A FAZER:
 ESTRUTUA DE CODIGOS
 -Server - ok
 -Banco de dados - conectado ok 
--Models - ok
+-Models - ok -aplicar estrutura do like no controller para somatizar os remedios de entrada
 
 -Controller 
 
+-Adm e Autenticação ver o codigo de revisão da Jessica
 
 
+FAZER GIF PRO README
+Postman Rodando
+Propaganda do remedio
+
+FAZER LOGO DA FARMACIA
+
+
+
+MELHORIAS FUTURAS
+Permitir localizar por gps o mais proximo - como a api do aqui tem remedio
+
+ESTATISTICAS
+Trazer numeros sobre o descarte de remedios de forma incorreta no ambiente
+Numeros de economia
 
 
 REFERENCIAS
 
-
-BUSCA MEDICAMENTOS
 
 Aqui tem remedio
 http://aquitemremedio.prefeitura.sp.gov.br/#/

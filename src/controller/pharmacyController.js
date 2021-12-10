@@ -4,6 +4,7 @@ const mongoose = require ('mongoose');
 
 const jwt = require ('jsonwebtoken');
 const bcrypt = require ('bcrypt');
+const SECRET = process.env.SECRET;
 
 
 const getAll = async (req, res) => {
@@ -112,7 +113,7 @@ const findPharmacyById = async (req, res) => {
 const updatePhamarcyById = async (req, res) => {
   try {
     const findPharmacy = await PharmacySchema.findById(req.params.id)
-    
+
     if(findPharmacy){
       findPharmacy.name = req.body.name || findPharmacy.name
       findPharmacy.address = req.body.address || findPharmacy.address
@@ -124,15 +125,15 @@ const updatePhamarcyById = async (req, res) => {
       findPharmacy.days_open = req.body.days_open || findPharmacy.days_open
       findPharmacy.hours_of_operation = req.body.hours_of_operation || findPharmacy.hours_of_operation
     
+    } 
+      
       const savedPharmacy = await findPharmacy.save();
       res.status(200).json({
         message: `Farmácia ${findPharmacy.name} atualizada com sucesso!`,
         savedPharmacy
-      })
-    }
-    res.status(400).json({
-      mensagem: "Desculpe, não encontramos essa Farmácia."
-    })
+      })     
+
+    
   } catch (error) {
     res.status(500).json({
       message: message.error

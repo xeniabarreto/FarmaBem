@@ -3,6 +3,11 @@ const mongoose = require('mongoose');
 const pharmacySchema = new mongoose.Schema ({
     id: mongoose.Schema.Types.ObjectId,
 
+    cnpj: {
+      type: String,
+      required: true
+    },
+
     name: {
       type: String,
       required: true
@@ -13,7 +18,7 @@ const pharmacySchema = new mongoose.Schema ({
       required: true
     },
 
-    district:{
+    district: {
       type: String,
       required: true
     },
@@ -23,7 +28,12 @@ const pharmacySchema = new mongoose.Schema ({
       required: true
     },
 
-    cep:{
+    state: {
+      type: String,
+      required: true
+    },
+
+    cep: {
       type: String,
       required: true
     },
@@ -46,6 +56,11 @@ const pharmacySchema = new mongoose.Schema ({
     hours_of_operation: {
       type: String,
       required: true,
+    },
+
+    terms_of_use: {
+      type: Boolean,
+      required: true
     }
 
 },{ timestamps: true } 

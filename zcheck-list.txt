@@ -10,7 +10,8 @@ ESTRUTUA DE CODIGOS
 -Banco de dados - conectado ok 
 -Models - ok -aplicar estrutura do like no controller para somatizar os remedios de entrada
 
--Controller 
+-Controller - encontrar solução para erro de busca por ID - delete e search / falta function checkToken
+
 
 -Adm e Autenticação ver o codigo de revisão da Jessica
 

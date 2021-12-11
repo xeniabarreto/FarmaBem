@@ -2,26 +2,23 @@
 
 <h1 align="center">
   <img src="./assets/logo_animado.gif" width="600">
-<p align="center"><br>Farma Bem<p>
+<p align="center"><p>
 </h1>
 
-
-> Iniciativa de doações de medicamentos em São Paulo (SP).
-
-> Status: **Concluído** ✅
-
-<p align="center">
-  <a>
-    <a href="https://pretitudes-project-reprograma.herokuapp.com/"><img alt="Deploy on Heroku" src="https://img.shields.io/badge/deploy-heroku.com-blueviolet">
-    <a href="https://www.mongodb.com/cloud/atlas"><img alt="Database MongoDB" src="https://img.shields.io/badge/database-mongodb.com-green">
-    <a href="https://nodejs.org/pt-br/"><img alt="Node version" src="https://img.shields.io/badge/node-v12.18.3-blue">
-    <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/priscilaestevao/pretitudes-project-reprograma">
-    <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/xeniabarreto/FarmaBem">
-    <img alt="GitHub License" src="https://img.shields.io/github/license/priscilaestevao/pretitudes-project-reprograma?logo=mit">
-  </a>
-</p>
 <br>
 
+> Iniciativa para doações de medicamentos em São Paulo - SP
+
+> Status: **em construção** ✅
+
+
+
+<p align="justify">
+  <a>
+    <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/xeniabarreto/FarmaBem">
+    <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/xeniabarreto/FarmaBem">
+  </a>
+</p>
 <br>
 
 
@@ -32,7 +29,7 @@
 - [Link Apresentação](#link)
 - [Funcionalidades](#funcionalidades)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Pacotes Utilizados](#pacotes-utilizados)
+- [Bibliotecas Aplicadas](#bibliotecas-aplicadas)
 - [Arquiretura MVC](#arquitetura-mvc)
 - [Rotas](#rotas)
 - [Dados](#dados)
@@ -49,15 +46,8 @@
 <br>
 
 
+## **Origem**  
 
-
-
-
-
-## Origem 
-
-
-💻
 <br>
 
 
@@ -66,11 +56,11 @@
 
 <br><br>
 
-## Objetivo
+## **Objetivo**
 
 <br>
 
-<p align="justify">O projeto é uma API REST que permite o cadastro das farmácias interessadas em fazer parte desta iniciativa, assim como permitirá aos beneficiários, realizar consulta de disponibilidade de medicamentos e unidade correspondente.
+<p align="justify">O projeto é uma API RESTFull que permite o cadastro das farmácias interessadas em fazer parte desta iniciativa, assim como permitirá aos beneficiários, realizar consulta de disponibilidade de medicamentos e unidade correspondente.
 
 <p align="justify">A interface é um CRUD completo, integrado com o banco de dados, onde é possível listar, cadastrar, atualizar e deletar cadastros de farmácias, medicamentos e administradores. 
 
@@ -78,60 +68,80 @@ API foi desenvolvida como Projeto Final para a conclusão do curso de Backend [{
   
 <br>
 
-## Link 
+## **Link**
 
 - [Apresentação](https://www.canva.com/design/DAEjjh5kMho/o-lpglTMDauF-CRLx2e6Dw/view?utm_content=DAEjjh5kMho&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu) - (LINK DO CANVA AQUI)
 
 <br>
 
-## Funcionalidades
+## **Funcionalidades**
 
-- Cadastro dos autores e seus livros para maior visibilidade;
-- Disponibilidade dos livros gratuitamente para acesso dos usuários;
-- Avaliação dos livros através de like ou dislike e comentários dos usuários;
-- Simplificar a vida dos escritores independentes e dos usuários;
+- Cadastro das farmácias participantes;
+- Disponibilidade dos medicamentos;
+- Ajudar aos que necessecitam de apoio para aquisição de remédios para pessoas de baixa renda;
+- Reduzir o impacto ambiental com descarte incorreto de medicamentos;
 
 <br>
 
-## Aprendizados 
-
-
-O projeto final consiste em uma API fundamentada no CRUD, que são:  CREATE (CRIAR), READ(LER-CONSULTA), UPDATE(ATUALIZAR) e DELETE(DESTRUIÇÃO). 
-
+## **Aprendizados**
+<br>
+<p> A construção deste projeto consiste em uma API RESTFull fundamentada no CRUD com a integração do banco de dados NoSQL. 
 <br>
 <br>
 
-## Tecnologias Utilizadas
+- Definição CRUD: 
+    
+
+      CREATE (CRIAR)
+      READ (LER, CONSULTAR)
+      UPDATE (ATUALIZAR) 
+      DELETE (DESTRUIÇÃO, REMOÇÃO)
+
+<br>
+
+
+
+
+<br>
+
+## **Tecnologias Utilizadas**
 
 <br>
 
 Para a construção do projeto, as seguintes tecnologias foram utilizadas:
 
-- [JavaScript](https://www.javascript.com/)
-- [Git/Github](https://github.com/)
-- [Node.js](https://nodejs.org/en/)
-- [MongoDb](https://www.mongodb.com/)
-- [MongoCompass](https://www.mongodb.com/pt-br/products/compass)
-- [MongoDBatlas](https://www.mongodb.com/cloud/atlas)
-- [Postman](https://www.postman.com/)
-- [Vscode](https://code.visualstudio.com/)
-- [Heroku](https://dashboard.heroku.com/apps)  
+<br>
+<p  align="justify">
+<a  href="https://www.javascript.com/"><img  alt="Java Script"  src="https://img.shields.io/badge/JavaScript-pink">
+<a  href="https://git-scm.com/"><img  alt="Git version"  src="https://img.shields.io/badge/Git/GitHub-pink">
+<a  href="https://nodejs.org/pt-br/"><img  alt="Node version"  src="https://img.shields.io/badge/NodeJS-pink">
+<a  href="https://www.mongodb.com/cloud/atlas"><img  alt="Node version"  src="https://img.shields.io/badge/MongoDB%20Atlas-pink">
+<a  href="https://www.postman.com/"><img  alt="Postman"  src="https://img.shields.io/badge/Postman-pink">
+<a  href="https://code.visualstudio.com/"><img  alt="VsCode"  src="https://img.shields.io/badge/VSCode-pink">
+<a  href="https://dashboard.heroku.com/apps"><img  alt="Heroku"  src="https://img.shields.io/badge/Heroku-pink">
+<a  href=""><img  alt="Mit"  src="https://img.shields.io/badge/Licence MIT-pink"></a>
+
 <br>
 
-## Pacotes Utilizados 
 
-- [Express](https://expressjs.com/pt-br/)
-- [Nodemon](https://nodemon.io/)
-- [Dotenv](https://www.npmjs.com/package/dotenv)
-- [Mongoose](https://mongoosejs.com/)
-- [Cors](https://www.npmjs.com/package/cors)
-- [Nodemon](https://www.npmjs.com/package/nodemon)
-- [Swagger-ui-express](https://www.npmjs.com/package/swagger-ui-express)
-
-<br>
+## **Bibliotecas Aplicadas**
 <br>
 
-## Arquitetura MVC 
+<p  align="justify">
+<a  href="https://expressjs.com/pt-br/"><img  alt="Express version"  src="https://img.shields.io/badge/express-4.17.1-pink">
+<a  href="https://www.npmjs.com/package/nodemon"><img  alt="Nodemon version"  src="https://img.shields.io/badge/nodemon-2.0.6-pink">
+<a  href="https://www.npmjs.com/package/dotenv-safe"><img  alt="Dotenv-safe version"  src="https://img.shields.io/badge/dotenv-8.2.0-pink">
+<a  href="https://mongoosejs.com/"><img  alt="Mongoose version"  src="https://img.shields.io/badge/mongoose-5.10.17-pink">
+<a  href="https://www.npmjs.com/package/cors"><img  alt="npm version"  src="https://img.shields.io/badge/cors-2.8.5-pink">
+<a  href="https://www.npmjs.com/"><img  alt="npm version"  src="https://img.shields.io/badge/npm-6.14.6-pink">
+<a  href="https://www.npmjs.com/package/bcryptjs"><img  alt="Bcrypt version"  src="https://img.shields.io/badge/bcrypt-5.0.0-pink">
+<a  href="https://www.npmjs.com/package/jsonwebtoken"><img  alt="Jsonwebtoken version"  src="https://img.shields.io/badge/jsonwebtoken-8.5.1-pink"></a>
+</p>
+
+
+<br>
+
+## **Arquitetura MVC** 
 
 ```
  📁 FARMABEM
@@ -160,7 +170,6 @@ Para a construção do projeto, as seguintes tecnologias foram utilizadas:
    |         |- 📑 pharmacyRoutes.js
    |
    |    |- 📑 app.js
-   |    |- 📑 swagger.json <=============VERIFICAR ISSO DAQUI
    |
    |
    |- 📑 .env
@@ -176,7 +185,7 @@ Para a construção do projeto, as seguintes tecnologias foram utilizadas:
 ```
 <br>
 
-# Rotas
+# **Portas**
 <br>
 
 ### 🔃 Portas
@@ -189,15 +198,7 @@ Para a construção do projeto, as seguintes tecnologias foram utilizadas:
 
 <br>
 
-### 🔃 Retorna a documentação no swagger 
-    
-Swagger - Heroku: https://estante-de-historias.herokuapp.com/api-docs/
-
-| Método HTTP  | Endpoint                            | Descrição                            |
-| ------------ | ----------------------------------- | ------------------------------------ |
-| GET          | `http://localhost:8888/api-docs`    |  documentação  swagger               |        
-
-<br>
+# **Rotas**
 
 ### 🔃 Retorna teste com apresentação 
 
@@ -207,12 +208,11 @@ Swagger - Heroku: https://estante-de-historias.herokuapp.com/api-docs/
 
 <br>
 
-### 🔃 Manipulação das Rotas de Autores:
+### 🔃 Manipulação das Rotas das Farmácias:
 
 | Método HTTP  | Endpoint                | Descrição                            |
 | ------------ | ----------------------- | ------------------------------------ |
-| GET          | `/autores`              | Retorna todos os autores             |
-| GET          | `/nome`                 | Retorna autor específico por nome    |
+| GET          | `/all`                  | Retorna todos os autores             |
 | GET          | `/autores/:id`          | Retorna autor específico por id      |
 | POST         | `/autores/cadastrar`    | Cria/cadastra um novo autor          |
 | PUT          | `/autores/:id`          | Altera informações de um autor       |
@@ -220,35 +220,30 @@ Swagger - Heroku: https://estante-de-historias.herokuapp.com/api-docs/
 
 <br>
 
-### 🔃 Manipulação das Rotas de Comentarios:
+### 🔃 Manipulação das Rotas dos Medicamentos:
 
 | Método HTTP  | Endpoint              | Descrição                                  |
 | ------------ | --------------------- | ------------------------------------------ |
-| GET          | `/comentario`         | Retorna todos os comentários               |
-| GET          | `/comentario/:id`     | Retorna um comentário específico por id    |
-| POST         | `/comentario/criar`   | Cria um novo comentário                    |
-| PUT          | `/comentario/:id`     | Altera informações de um comentário        |
-| DELET        | `/comentario/:id`     | Remove um comentário  específico           |
+| GET          | `/medicine/all        | Retorna todos os medicamentos              |
+| GET          | `/medicine/:id`       | Retorna um medicamento específico por id   |
+| POST         | `/medicine/create`    | Cria um novo medicamento                   |
+| PUT          | `/medicine/:id`       | Altera informações de um comentário        |
+| DELET        | `/medicine/:id`       | Remove um medicamento específico           |
 
 <br>
 
-### 🔃 Manipulação das Rotas de Livros:
+### 🔃 Manipulação das Rotas de Administradores:
 
 | Método HTTP  | Endpoint               | Descrição                                         |
 | ------------ | ---------------------- | ------------------------------------------------- |
-| GET          | `/livros`              | Retorna todos os livros cadastrados               |
-| GET          | `/livros/genero`       | Retorna um livro específico gênero                |
-| GET          | `/livros/:id`          | Retorna um livro específico por id                |
-| POST         | `/livros/cadastrar`    | Cria/cadastra um novo livro                       |
-| PUT          | `/livros/:id`          | Altera informações de um livro                    |
-| PATCH        | `/livros/:id`          | atualiza informações por parte                    |
-| DELET        | `/livros/:id`          | Remove um livro específico                        |
-| POST         | `/livros/:id/like`     |  Dar um like em um livro                          |
-| POST         | `/livros/:id/dislike`  |  Dar um dislike em um livro                       |
+| GET          | `/adm/all`             | Retorna todos os livros cadastrados               |
+| POST         | `/adm/creat`           | Cria/cadastra um novo livro                       |
+| PUT          | `/adm/:id`             | Altera informações de um livro                    |
+| DELET        | `/adm/:id`             | Remove um livro específico                        |
 
 <br>
 
-## Dados
+## **Dados**
 <br>
 
 ### ✅ Dados para Collection Autores
@@ -271,7 +266,7 @@ Swagger - Heroku: https://estante-de-historias.herokuapp.com/api-docs/
         "_id": "60df0799f34e3c6ebca1dce0",
         "criadoEm": "2021-07-02T12:24:59.726Z",
         "nome": "Victor Bonini",
-        "biografia": "Victor Bonini nasceu em São Paulo, capital, e se mudou para Vinhedo, interior do estado, durante a infância. Voltou à metrópole aos dezoito anos para cursar Jornalismo na Faculdade Cásper Líbero.O primeiro passo do escritor foi ler muito, o segundo, começar a desenvolver suas próprias histórias.",
+        "biografia": "Victor Bonini nasceu em São Paulo, capital, e se mudou Líbero.O primeiro passo do escritor foi ler muito, o segundo, começar a desenvolver suas próprias histórias.",
         "email": "victorbonini@gmail.com",
         "__v": 0
     }
@@ -303,12 +298,12 @@ Swagger - Heroku: https://estante-de-historias.herokuapp.com/api-docs/
     "criadoEm": "2021-07-02T12:43:39.099Z",
     "_id": "60df0a0382bb996448b380c0",
     "titulo": "O casamento",
-    "sinopse": "PARA OS NOIVOS É O DIA MAIS IMPORTANTE DE SUAS VIDAS Meses atrás, os amigos diriam que o namoro de Plínio e Diana tinha prazo de validade. Eles se conheceram de um jeito bizarro, pensam completamente diferente e nenhuma das famílias aprova o relacionamento. Mas eles resistiram a tudo. E agora vão se casar. PARA O DETETIVE É A MELHOR CHANCE DE PEGAR UM CRIMINOSO O mais ntegro dos convidados esconde um segredo devastador. Mas alguém sabe e está disposto a espremê-lo com chantagens.Enquanto a plateia espera ansiosa em frente ao altar, algo brutal acontece na antessala. Só quando veem as paredes lavadas com sangue é que os convidados se rendem ao desespero. Começa uma confusão para interromper a marcha nupcial e chamar a polícia. Ninguém sabe o que fazer. E Bardelli, que lidava com um caso de extorsão, descobre que se meteu em algo muito pior. Agora, ele é o único capaz de encontrar respostas. O problema é que as mortes não param de acontecer...",
+    "sinopse": "PARA OS NOIVOS É O DIA MAIS IMPORTANTE DE SUAS VIDAS Meses pior. Agora, ele é o único capaz de encontrar respostas. O problema é que as mortes não param de acontecer...",
     "autor": {
         "criadoEm": "2021-07-02T12:24:59.726Z",
         "_id": "60df0799f34e3c6ebca1dce0",
         "nome": "Victor Bonini",
-        "biografia": "Victor Bonini nasceu em São Paulo, capital, e se mudou para Vinhedo, interior do estado, durante a infância. Voltou à metrópole aos dezoito anos para cursar Jornalismo na Faculdade Cásper Líbero.O primeiro passo do escritor foi ler muito, o segundo, começar a desenvolver suas próprias histórias.",
+        "biografia": "Victor Bonini nasceu em São Paulo, capital, e se mudou  desenvolver suas próprias histórias.",
         "email": "victorbonini@gmail.com",
          "__v": 0
     },
@@ -345,7 +340,7 @@ Swagger - Heroku: https://estante-de-historias.herokuapp.com/api-docs/
 ```
 <br>
 
-## Melhorias Futuras
+## **Melhorias Futuras**
 
 <br>
 
@@ -353,7 +348,7 @@ Swagger - Heroku: https://estante-de-historias.herokuapp.com/api-docs/
 *  Implantação de código HTML e CSS para criação de uma interface capaz de possibilitar a interação do usuário com aplicação;
 
 
-Toda ideia para melhoria deste projeto serão muito bem-vinda!!!
+Obs.: Toda sugestão de melhoria deste projeto será muito bem-vinda!!!
 
 <br>
 
@@ -390,19 +385,6 @@ Toda ideia para melhoria deste projeto serão muito bem-vinda!!!
 
 FALTA MAIS GENTE </p>
 
-
-<br>
-
-<br>
-
-## 📝 Licença
-
-Este projeto esta sob a licença [MIT](./LICENSE).
-
-<br>
-
-
-
 <br>
 
 
@@ -414,13 +396,18 @@ Este projeto esta sob a licença [MIT](./LICENSE).
 
 <img style="border-radius: 20%;" src="https://unavatar.now.sh/github/xeniabarreto" width="200px;" alt=""/> </td><br> 
 
-
-##  **Xênia Barreto**
-
 <br>
 
- ### [GitHub](https://github.com/xeniabarreto)<br>
- ### [LinkedIn](https://www.linkedin.com/mwlite/in/elisabete-alves-675637135) 
+Criado por **Xênia Barreto**.
+<br>
+<br>
+
+[![Linkedin Badge](https://img.shields.io/badge/-Xênia%20Barreto-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/xeniabarreto/)
+
+
+[![GitHub Badge](https://img.shields.io/badge/-Xênia%20Barreto-black?style=flat-square&logo=Github&logoColor=white)](https://github.com/xeniabarreto/)
+
+[![Instagram Badge](https://img.shields.io/badge/-Xênia%20Barreto-purple?style=flat-square&logo=Instagram&logoColor=white)](https://www.instagram.com/xeniabarreto/)
 
 
 

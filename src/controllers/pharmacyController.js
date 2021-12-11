@@ -228,7 +228,7 @@ const findPharmacyById = async (req, res) => {
   }
 };
 
-/*
+
 const updatePhamarcyById = async (req, res) => {
   try {
     const findPharmacy = await PharmacySchema.findById(req.params.id)
@@ -306,7 +306,7 @@ const updatePhamarcyById = async (req, res) => {
     
   } catch (error) {
     res.status(500).json({
-      message: message.error
+      message: error
     })
   }
 };
@@ -327,7 +327,6 @@ const deletePharmacyById = async (req, res) => {
   }
 };
 
-*/
 
 
 
@@ -338,7 +337,7 @@ module.exports = {
   findPharmacyByName,
   searchMuliple,
   findPharmacyById,
-  //updatePhamarcyById,
+  updatePhamarcyById,
   //deletePharmacyById,
 }
 

@@ -42,8 +42,10 @@ Projeto Final Reprograma  - em construção
 
 
 
-## 💻 Origem 
+## Origem 
 
+
+💻
 <br>
 
 
@@ -79,15 +81,17 @@ API foi desenvolvida como Projeto Final para a conclusão do curso de Backend [{
 
 <br>
 
-## 📚 Aprendizados
+## Aprendizados 
+📚
+
 
 O projeto final consiste em uma API fundamentada no CRUD, que são:  CREATE (CRIAR), READ(LER-CONSULTA), UPDATE(ATUALIZAR) e DELETE(DESTRUIÇÃO). 
 
 <br>
 <br>
 
-## 🛠️ Tecnologias Utilizadas
-
+## Tecnologias Utilizadas
+🛠️
 <br>
 
 Para a construção do projeto, as seguintes tecnologias foram utilizadas:

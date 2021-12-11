@@ -13,37 +13,64 @@ Projeto Final Reprograma  - em construção
 </p>
 <br>
 
-## 💻 Sobre o projeto 
+
+## **Sumário =====TERMINAR**
+
+- [Origem](#origem)
+- [Objetivo](#objetivo)
+- [Link Apresentação](#link)
+- [Funcionalidades](#funcionalidades)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Pacotes Utilizados](#pacotes-utilizados)
+- [Arquiretura MVC](#arquitetura-mvc)
+- [Rotas](#rotas)
+- [Aprendizados](#aprendizados)
+- [Melhorias Futuras](#melhorias-futuras)
+- [Referências](#referências)
+- [Agradecimentos](#agradecimentos)
+- [Licença](#licença)
+- [Autora](#autora)
+
 
 <br>
 
-<p align="justify">Eu sou apaixonada por leitura e assim como eu existem milhares de pessoas pelo mundo, mas tem pessoas que além de amor pela leitura também amam escrever suas histórias, mas não é segredo para ninguém que, infelizmente, o Brasil não é um país que valoriza as artes em geral, incluindo a literatura. Ser escritor iniciante e independente no Brasil não é fácil, dentre as centenas de obras recebidas pelo departamento editorial, são priorizados aqueles de escritores conhecidos ou blogueiros populares. Geralmente, só 12% das 800 mil propostas são entregues às editoras, ou seja, apenas 15 mil se tornam livros.
+<br>
 
-<p align="justify">A falta de interesse de muitas editoras por escritores iniciantes e independentes fazem com que esses escritores enfrentem um leão por dia para que suas obras possam ter visibilidade, além disso existe o custo que o autor deve arcar com a impressão do livro e o custo do envio e muitos não tem condições para tal.
 
-<p align="justify">Sabendo disso, estou propondo uma alternativa para esse cenário e ela se chama __Estante de Histórias__ uma API para autores independentes cadastrarem e mostrarem suas obras gratuitamente e disponibilizá-las para que os usuários possam ter acesso a elas. Estante de Histórias é um projeto voltado para pessoas que amam literatura, tanto os que amam ler quanto aqueles escritores independentes que amam fazer e acontecer. Será uma API utilizada para sanar o problema de visibilidade das obras desses autores independente que não possuem tanto investimento para divulgação, e também é uma API que facilita ao usuário que gosta de consumir esse tipo de entretenimento.
+
+
+
+
+
+## 💻 Origem 
+
+<br>
+
+
+<p align="justify">(SEMPRE ABRIR ISSO DAQUI PARA UM PARAGRAFO NOVO).
+
 
 <br><br>
 
-## 🚀 Descrição da API Estante de Histórias
+## 🚀 Objetivo
 
 <br>
 
-<p align="justify">O projeto é uma API REST que permite que autores independentes possam cadastrar seus livros e disponibilizá-los ao usuário. Assim todos ganham; o usuário ganha com acesso a produções independentes, tem proximidade com os autores e ainda tem acesso a produções e festivais exclusivos. O autor ganha uma nova janela de exibição para sua obra com uma API especializada, alcance de público para sua obra e a possibilidade de ganho financeiro vendendo sua obra de forma independente ou fechando um contrato com uma editora já que sua obra terá alta visibilidade.
+<p align="justify">O projeto é uma API REST que permite o cadastro das farmácias interessadas em fazer parte desta iniciativa, assim como permitirá aos beneficiários, realizar consulta de disponibilidade de medicamentos e unidade correspondente.
 
-<p align="justify">A interface é um CRUD completo integrado com o banco de dados, onde é possível listar os livros e autores cadastrados, cadastrar novos livros e autores, atualizar os dados, avaliação do livro, o usuário tem a oportunidade de fazer comentários e também deletar livros e autores.
+<p align="justify">A interface é um CRUD completo, integrado com o banco de dados, onde é possível listar, cadastrar, atualizar e deletar cadastros de farmácias, medicamentos e administradores. 
 
-API desenvolvida como Projeto Final para a conclusão do curso de Backend [{Reprograma}](https://reprograma.com.br/)
+API foi desenvolvida como Projeto Final para a conclusão do curso de Backend [{Reprograma}](https://reprograma.com.br/).
   
 <br>
 
 ## 🔗 Link 
 
-- [Apresentação](https://www.canva.com/design/DAEjjh5kMho/o-lpglTMDauF-CRLx2e6Dw/view?utm_content=DAEjjh5kMho&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu)
+- [Apresentação](https://www.canva.com/design/DAEjjh5kMho/o-lpglTMDauF-CRLx2e6Dw/view?utm_content=DAEjjh5kMho&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu) - (LINK DO CANVA AQUI)
 
 <br>
 
-## ⚙️ Funcionalidades/Objetivos
+## ⚙️ Funcionalidades
 
 - Cadastro dos autores e seus livros para maior visibilidade;
 - Disponibilidade dos livros gratuitamente para acesso dos usuários;
@@ -57,8 +84,9 @@ API desenvolvida como Projeto Final para a conclusão do curso de Backend [{Repr
 O projeto final consiste em uma API fundamentada no CRUD, que são:  CREATE (CRIAR), READ(LER-CONSULTA), UPDATE(ATUALIZAR) e DELETE(DESTRUIÇÃO). 
 
 <br>
+<br>
 
-## 🛠️ Tecnologias utilizadas nesse projeto
+## 🛠️ Tecnologias Utilizadas
 
 <br>
 
@@ -72,53 +100,58 @@ Para a construção do projeto, as seguintes tecnologias foram utilizadas:
 - [MongoDBatlas](https://www.mongodb.com/cloud/atlas)
 - [Postman](https://www.postman.com/)
 - [Vscode](https://code.visualstudio.com/)
-- [heroku](https://dashboard.heroku.com/apps)  
+- [Heroku](https://dashboard.heroku.com/apps)  
+<br>
 
-### Pacotes Utilizados 
+## 🛠️ Pacotes Utilizados 
 
 - [Express](https://expressjs.com/pt-br/)
 - [Nodemon](https://nodemon.io/)
-- [dotenv](https://www.npmjs.com/package/dotenv)
+- [Dotenv](https://www.npmjs.com/package/dotenv)
 - [Mongoose](https://mongoosejs.com/)
-- [cors](https://www.npmjs.com/package/cors)
-- [modemon](https://www.npmjs.com/package/nodemon)
-- [swagger-ui-express](https://www.npmjs.com/package/swagger-ui-express)
+- [Cors](https://www.npmjs.com/package/cors)
+- [Nodemon](https://www.npmjs.com/package/nodemon)
+- [Swagger-ui-express](https://www.npmjs.com/package/swagger-ui-express)
 
+<br>
 <br>
 
 ## 📁 Arquitetura MVC 
 
 ```
- 📁 reprograma-estante-de-historias
+ 📁 FARMABEM
+   |
+   |-  📁 assets
+   |    |- 📑 logo_animado.gif
    |
    |-  📁 src
    |    |
    |    |- 📁 controllers
-   |         |- 📑 autoresControllers.js
-   |         |- 📑 comentariosControllers.js
-   |         |- 📑 livrosControllers.js 
+   |         |- 📑 admController.js
+   |         |- 📑 medicineController.js
+   |         |- 📑 pharmacyController.js 
    |
-   |    |- 📁 data
-   |         |- 📑 database.js
+   |    |- 📁 database
+   |         |- 📑 mongoConfig.js
    |
    |    |- 📁 models
-   |         |- 📑 autor.js
-   |         |- 📑 comentario.js
-   |         |- 📑 livro.js
+   |         |- 📑 admSchema.js
+   |         |- 📑 medicineSchema.js
+   |         |- 📑 pharmacySchema.js
    |
    |    |- 📁 routes
-   |         |- 📑 autores.routes.js 
-   |         |- 📑 comentarios.routes.js
-   |         |- 📑 livros.routes.js
+   |         |- 📑 amdRoutes.js 
+   |         |- 📑 medicineRoutes.js
+   |         |- 📑 pharmacyRoutes.js
    |
    |    |- 📑 app.js
-   |    |- 📑 swagger.json
+   |    |- 📑 swagger.json <=============VERIFICAR ISSO DAQUI
    |
    |
    |- 📑 .env
    |- 📑 .env.example
    |- 📑 .gitignore
-   |- 📑 LICENSE
+   |- 📑 LICENSE <==============VERIFICAR ISSO DAQUI
    |- 📑 package-lock.json
    |- 📑 package.json
    |- 📑 Procfile
@@ -128,17 +161,20 @@ Para a construção do projeto, as seguintes tecnologias foram utilizadas:
 ```
 <br>
 
-## 🔃 Rotas
+# 🔃 Rotas
+<br>
 
-* local: http://localhost:7070
+### 🔃 Portas
 
-* Heroku: https://estante-de-historias.herokuapp.com/
+* local: http://localhost:8888
 
-    * Utilize o [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) para para chamar e testar os endpoints da API localmente ou via Heroku
+* Heroku: http://farma-bem.herokuapp.com/
+
+    * Utilize o [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) para para chamar e testar os endpoints da API localmente ou via Heroku.
 
 <br>
 
-## 🔃 Retorna a documentação no swagger 
+### 🔃 Retorna a documentação no swagger 
     
 Swagger - Heroku: https://estante-de-historias.herokuapp.com/api-docs/
 
@@ -148,7 +184,7 @@ Swagger - Heroku: https://estante-de-historias.herokuapp.com/api-docs/
 
 <br>
 
-## 🔃 Retorna teste com apresentação 
+### 🔃 Retorna teste com apresentação 
 
 | Método HTTP  | Endpoint                     | Descrição                            |
 | ------------ | ---------------------------- | ------------------------------------ |
@@ -156,7 +192,7 @@ Swagger - Heroku: https://estante-de-historias.herokuapp.com/api-docs/
 
 <br>
 
-## 🔃 Manipulação das Rotas de Autores:
+### 🔃 Manipulação das Rotas de Autores:
 
 | Método HTTP  | Endpoint                | Descrição                            |
 | ------------ | ----------------------- | ------------------------------------ |
@@ -169,7 +205,7 @@ Swagger - Heroku: https://estante-de-historias.herokuapp.com/api-docs/
 
 <br>
 
-## 🔃 Manipulação das Rotas de Comentarios:
+### 🔃 Manipulação das Rotas de Comentarios:
 
 | Método HTTP  | Endpoint              | Descrição                                  |
 | ------------ | --------------------- | ------------------------------------------ |
@@ -181,7 +217,7 @@ Swagger - Heroku: https://estante-de-historias.herokuapp.com/api-docs/
 
 <br>
 
-## 🔃 Manipulação das Rotas de Livros:
+### 🔃 Manipulação das Rotas de Livros:
 
 | Método HTTP  | Endpoint               | Descrição                                         |
 | ------------ | ---------------------- | ------------------------------------------------- |
@@ -291,35 +327,89 @@ Swagger - Heroku: https://estante-de-historias.herokuapp.com/api-docs/
 ```
 <br>
 
-## 🚧 Projeto em Construção (futuras melhorias)
+## 🚧 Melhorias Futuras
 
 <br>
 
-*  Autenticação das Rotas
-*  Sistema de login
-*  Uma rota para que os autores possam enviar seus manuscritos para as editoras cadastradas
-*  Ranking 
-*  Implantação de código HTML e CSS para criação de uma interface capaz de possibilitar a interação do usuário com aplicação 
+*  Integrar com o Maps para calcular a distancia da farmácia mais proxima do beneficiário; 
+*  Implantação de código HTML e CSS para criação de uma interface capaz de possibilitar a interação do usuário com aplicação;
 
 
-Caso queira contribuir com meu projeto, será totalmente bem-vindo!!!
+Toda ideia para melhoria deste projeto serão muito bem-vinda!!!
 
 <br>
+
+
+##  **Referências**
+
+<h3>
+
+
+
+ > <a href="https://www.saude.mg.gov.br/cer/story/9819-descarte-irregular-de-medicamentos-causa-impactos-a-saude-e-ao-meio-ambiente">Dados descarte de medicamentos no meio ambiente</p></a>
+
+ > <a href="http://aquitemremedio.prefeitura.sp.gov.br/#/"><p align="">Aqui tem remédio</p></a>
+
+ 
+
+</h3>
+
+
+<br>
+
+<br>
+
+##  **Agradecimentos**
+
+<br>
+<p>
+ AGRADECER AQUI </p>
+
+
+<p> linkar o insta de quem nao tem linkedin <a href="https://www.instagram.com/may_desiderio/">POR NOME AQUI</a>, desse jeito.</p>
+
+<p> Ao <a href="https://www.linkedin.com/company/reprogramabr/">{Reprograma}</a> colocar <a href="https://www.linkedin.com/in/amanda-santos-b50200165/">Amanda Leal</a> e <a href="https://www.linkedin.com/in/leticiardesiderio/">Letícia Desiderio</a> .
+
+FALTA MAIS GENTE </p>
+
+
+<br>
+
+<br>
+
+## 📝 Licença
+
+Este projeto esta sob a licença [MIT](./LICENSE).
+
+<br>
+
+
+
+<br>
+
+
 
 ## 👨‍💻 Autora
 
 <br>
 
-<td align="center"><a href="https://github.com/elisabetealves">
-<img style="border-radius: 20%;" src="https://unavatar.now.sh/github/elisabetealves" width="200px;" alt=""/> </td><br> 
+
+<img style="border-radius: 20%;" src="https://unavatar.now.sh/github/xeniabarreto" width="200px;" alt=""/> </td><br> 
 
 
-## [Elisabete Alves](https://github.com/elisabetealves)
-## [LinkedIn](https://www.linkedin.com/mwlite/in/elisabete-alves-675637135) 
+##  **Xênia Barreto**
 
 <br>
- 
 
-## 📝 Licença
+ ### [GitHub](https://github.com/xeniabarreto)<br>
+ ### [LinkedIn](https://www.linkedin.com/mwlite/in/elisabete-alves-675637135) 
 
-Este projeto esta sob a licença [MIT](./LICENSE).
+
+
+<h1>
+
+<br>
+
+#### [Início](#sumário) 
+
+<br>

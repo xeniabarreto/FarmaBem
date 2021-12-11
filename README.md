@@ -88,7 +88,7 @@ API foi desenvolvida como Projeto Final para a conclusão do curso de Backend [{
 
 ## **Tecnologias Utilizadas**
 
-Para a construção do projeto, as seguintes tecnologias foram utilizadas:
+Para a construção deste projeto, as seguintes tecnologias foram utilizadas:
 
 <p  align="justify">
 <a  href="https://www.javascript.com/"><img  alt="Java Script"  src="https://img.shields.io/badge/JavaScript-pink">
@@ -101,10 +101,10 @@ Para a construção do projeto, as seguintes tecnologias foram utilizadas:
 <a  href=""><img  alt="Mit"  src="https://img.shields.io/badge/Licence MIT-pink"></a>
 
 <br>
-
+<br>
 
 ## **Bibliotecas Aplicadas**
-<br>
+Para a construção deste projeto, as seguintes bibliotecas foram aplicadas:
 
 <p  align="justify">
 <a  href="https://expressjs.com/pt-br/"><img  alt="Express version"  src="https://img.shields.io/badge/express-4.17.1-pink">

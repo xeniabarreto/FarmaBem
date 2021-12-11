@@ -88,11 +88,8 @@ API foi desenvolvida como Projeto Final para a conclusão do curso de Backend [{
 
 ## **Tecnologias Utilizadas**
 
-<br>
-
 Para a construção do projeto, as seguintes tecnologias foram utilizadas:
 
-<br>
 <p  align="justify">
 <a  href="https://www.javascript.com/"><img  alt="Java Script"  src="https://img.shields.io/badge/JavaScript-pink">
 <a  href="https://git-scm.com/"><img  alt="Git version"  src="https://img.shields.io/badge/Git/GitHub-pink">

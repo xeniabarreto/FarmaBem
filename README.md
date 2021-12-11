@@ -1,20 +1,31 @@
-# FARMA BEM
-Projeto Final Reprograma  - em construção 
-
-
 
 
 <h1 align="center">
-    <br>
-    <p align="center">Projeto Final {Reprograma}<p>
+  <img src="./assets/logo_animado.gif" width="600">
+<p align="center"><br>Farma Bem<p>
 </h1>
+
+
+> Iniciativa de doações de medicamentos em São Paulo (SP).
+
+> Status: **Concluído** ✅
+
 <p align="center">
-<img src="./assets/logo_animado.gif" width="80%" height="50%"/>
+  <a>
+    <a href="https://pretitudes-project-reprograma.herokuapp.com/"><img alt="Deploy on Heroku" src="https://img.shields.io/badge/deploy-heroku.com-blueviolet">
+    <a href="https://www.mongodb.com/cloud/atlas"><img alt="Database MongoDB" src="https://img.shields.io/badge/database-mongodb.com-green">
+    <a href="https://nodejs.org/pt-br/"><img alt="Node version" src="https://img.shields.io/badge/node-v12.18.3-blue">
+    <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/priscilaestevao/pretitudes-project-reprograma">
+    <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/xeniabarreto/FarmaBem">
+    <img alt="GitHub License" src="https://img.shields.io/github/license/priscilaestevao/pretitudes-project-reprograma?logo=mit">
+  </a>
 </p>
 <br>
 
+<br>
 
-## **Sumário =====TERMINAR**
+
+## **Sumário**
 
 - [Origem](##origem)
 - [Objetivo](#objetivo)
@@ -24,6 +35,7 @@ Projeto Final Reprograma  - em construção
 - [Pacotes Utilizados](#pacotes-utilizados)
 - [Arquiretura MVC](#arquitetura-mvc)
 - [Rotas](#rotas)
+- [Dados](#dados)
 - [Aprendizados](#aprendizados)
 - [Melhorias Futuras](#melhorias-futuras)
 - [Referências](#referências)
@@ -54,7 +66,7 @@ Projeto Final Reprograma  - em construção
 
 <br><br>
 
-## 🚀 Objetivo
+## Objetivo
 
 <br>
 
@@ -66,13 +78,13 @@ API foi desenvolvida como Projeto Final para a conclusão do curso de Backend [{
   
 <br>
 
-## 🔗 Link 
+## Link 
 
 - [Apresentação](https://www.canva.com/design/DAEjjh5kMho/o-lpglTMDauF-CRLx2e6Dw/view?utm_content=DAEjjh5kMho&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu) - (LINK DO CANVA AQUI)
 
 <br>
 
-## ⚙️ Funcionalidades
+## Funcionalidades
 
 - Cadastro dos autores e seus livros para maior visibilidade;
 - Disponibilidade dos livros gratuitamente para acesso dos usuários;
@@ -82,7 +94,6 @@ API foi desenvolvida como Projeto Final para a conclusão do curso de Backend [{
 <br>
 
 ## Aprendizados 
-📚
 
 
 O projeto final consiste em uma API fundamentada no CRUD, que são:  CREATE (CRIAR), READ(LER-CONSULTA), UPDATE(ATUALIZAR) e DELETE(DESTRUIÇÃO). 
@@ -91,7 +102,7 @@ O projeto final consiste em uma API fundamentada no CRUD, que são:  CREATE (CRI
 <br>
 
 ## Tecnologias Utilizadas
-🛠️
+
 <br>
 
 Para a construção do projeto, as seguintes tecnologias foram utilizadas:
@@ -107,7 +118,7 @@ Para a construção do projeto, as seguintes tecnologias foram utilizadas:
 - [Heroku](https://dashboard.heroku.com/apps)  
 <br>
 
-## 🛠️ Pacotes Utilizados 
+## Pacotes Utilizados 
 
 - [Express](https://expressjs.com/pt-br/)
 - [Nodemon](https://nodemon.io/)
@@ -120,7 +131,7 @@ Para a construção do projeto, as seguintes tecnologias foram utilizadas:
 <br>
 <br>
 
-## 📁 Arquitetura MVC 
+## Arquitetura MVC 
 
 ```
  📁 FARMABEM
@@ -165,14 +176,14 @@ Para a construção do projeto, as seguintes tecnologias foram utilizadas:
 ```
 <br>
 
-# 🔃 Rotas
+# Rotas
 <br>
 
 ### 🔃 Portas
 
-* local: http://localhost:8888
+* Local: http://localhost:8888 - (rodando localmente)
 
-* Heroku: http://farma-bem.herokuapp.com/
+* Heroku: http://farma-bem.herokuapp.com/ - (consumir API)
 
     * Utilize o [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) para para chamar e testar os endpoints da API localmente ou via Heroku.
 
@@ -184,7 +195,7 @@ Swagger - Heroku: https://estante-de-historias.herokuapp.com/api-docs/
 
 | Método HTTP  | Endpoint                            | Descrição                            |
 | ------------ | ----------------------------------- | ------------------------------------ |
-| GET          | `http://localhost:7070/api-docs`    |  documentação  swagger               |        
+| GET          | `http://localhost:8888/api-docs`    |  documentação  swagger               |        
 
 <br>
 
@@ -192,7 +203,7 @@ Swagger - Heroku: https://estante-de-historias.herokuapp.com/api-docs/
 
 | Método HTTP  | Endpoint                     | Descrição                            |
 | ------------ | ---------------------------- | ------------------------------------ |
-| GET          | `http://localhost:7070/`     |  Mensagem de apresentação (Index)    |             |
+| GET          | `http://localhost:8888/`     |  Mensagem de apresentação (Index)    |             |
 
 <br>
 
@@ -237,7 +248,10 @@ Swagger - Heroku: https://estante-de-historias.herokuapp.com/api-docs/
 
 <br>
 
-## ✅ Dados para Collection Autores
+## Dados
+<br>
+
+### ✅ Dados para Collection Autores
 
 - id: autogerado e obrigatório
 - nome: texto e obrigatório
@@ -247,7 +261,7 @@ Swagger - Heroku: https://estante-de-historias.herokuapp.com/api-docs/
 
 <br>
 
-## ✅ API deve retornar seguinte JSON:
+### ✅ API deve retornar seguinte JSON:
 
 ```jsx
 
@@ -266,7 +280,7 @@ Swagger - Heroku: https://estante-de-historias.herokuapp.com/api-docs/
 ```
  <br>
 
- ## ✅ Dados para Collection Livros
+ ### ✅ Dados para Collection Livros
 
 - id: autogerado e obrigatório
 - like: opcional
@@ -281,7 +295,7 @@ Swagger - Heroku: https://estante-de-historias.herokuapp.com/api-docs/
 
 <br>
 
-## ✅ API deve retornar seguinte JSON:
+### ✅ API deve retornar seguinte JSON:
 
 ```jsx
 {
@@ -309,7 +323,7 @@ Swagger - Heroku: https://estante-de-historias.herokuapp.com/api-docs/
 
 <br>
 
-## ✅ Dados para Collection comentário
+### ✅ Dados para Collection comentário
 
 - id: autogerado e obrigatório
 - comentario: texto e obrigatório
@@ -317,7 +331,7 @@ Swagger - Heroku: https://estante-de-historias.herokuapp.com/api-docs/
 
 <br>
 
-## ✅ API deve retornar seguinte JSON:
+### ✅ API deve retornar seguinte JSON:
    
 ```jsx
 
@@ -331,7 +345,7 @@ Swagger - Heroku: https://estante-de-historias.herokuapp.com/api-docs/
 ```
 <br>
 
-## 🚧 Melhorias Futuras
+## Melhorias Futuras
 
 <br>
 

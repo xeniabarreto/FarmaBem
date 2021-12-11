@@ -31,13 +31,13 @@
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Bibliotecas Aplicadas](#bibliotecas-aplicadas)
 - [Arquiretura MVC](#arquitetura-mvc)
+- [Portas](#portas)
 - [Rotas](#rotas)
 - [Dados](#dados)
 - [Aprendizados](#aprendizados)
 - [Melhorias Futuras](#melhorias-futuras)
 - [Referências](#referências)
 - [Agradecimentos](#agradecimentos)
-- [Licença](#licença)
 - [Autora](#autora)
 
 
@@ -82,24 +82,6 @@ API foi desenvolvida como Projeto Final para a conclusão do curso de Backend [{
 - Reduzir o impacto ambiental com descarte incorreto de medicamentos;
 
 <br>
-
-## **Aprendizados**
-<br>
-<p> A construção deste projeto consiste em uma API RESTFull fundamentada no CRUD com a integração do banco de dados NoSQL. 
-<br>
-<br>
-
-- Definição CRUD: 
-    
-
-      CREATE (CRIAR)
-      READ (LER, CONSULTAR)
-      UPDATE (ATUALIZAR) 
-      DELETE (DESTRUIÇÃO, REMOÇÃO)
-
-<br>
-
-
 
 
 <br>
@@ -212,11 +194,11 @@ Para a construção do projeto, as seguintes tecnologias foram utilizadas:
 
 | Método HTTP  | Endpoint                | Descrição                            |
 | ------------ | ----------------------- | ------------------------------------ |
-| GET          | `/all`                  | Retorna todos os autores             |
-| GET          | `/autores/:id`          | Retorna autor específico por id      |
-| POST         | `/autores/cadastrar`    | Cria/cadastra um novo autor          |
-| PUT          | `/autores/:id`          | Altera informações de um autor       |
-| DELET        | `/autores/:id`          | Remove um autor específico           |
+| GET          | `/pharmacy/all`         | Retorna todos as farmácias           |
+| GET          | `/pharmacy/:id`         | Retorna farmácia específico por id      |
+| POST         | `/pharmacy/create`      | Cria/cadastra um novo farmácia          |
+| PUT          | `/pharmacy/:id`         | Altera informações de um farmácia       |
+| DELET        | `/pharmacy/:id`         | Remove um farmácia específico           |
 
 <br>
 
@@ -224,7 +206,7 @@ Para a construção do projeto, as seguintes tecnologias foram utilizadas:
 
 | Método HTTP  | Endpoint              | Descrição                                  |
 | ------------ | --------------------- | ------------------------------------------ |
-| GET          | `/medicine/all        | Retorna todos os medicamentos              |
+| GET          | `/medicine/all`       | Retorna todos os medicamentos              |
 | GET          | `/medicine/:id`       | Retorna um medicamento específico por id   |
 | POST         | `/medicine/create`    | Cria um novo medicamento                   |
 | PUT          | `/medicine/:id`       | Altera informações de um comentário        |
@@ -262,7 +244,7 @@ Para a construção do projeto, as seguintes tecnologias foram utilizadas:
 
 {
     "message": "Autor cadastrado com sucesso!",
-    "autor": {
+    "farmácia": {
         "_id": "60df0799f34e3c6ebca1dce0",
         "criadoEm": "2021-07-02T12:24:59.726Z",
         "nome": "Victor Bonini",
@@ -281,7 +263,7 @@ Para a construção do projeto, as seguintes tecnologias foram utilizadas:
 - like: opcional
 - titulo: texto e obrigatório
 - sinopse: texto e obrigatório
-- autor: referência do autor cadastrado previamente obrigatório
+- farmácia: referência do farmácia cadastrado previamente obrigatório
 - genero: texto e obrigatório
 - paginas: número e obrigatório
 - idioma: texto e obrigatório
@@ -299,7 +281,7 @@ Para a construção do projeto, as seguintes tecnologias foram utilizadas:
     "_id": "60df0a0382bb996448b380c0",
     "titulo": "O casamento",
     "sinopse": "PARA OS NOIVOS É O DIA MAIS IMPORTANTE DE SUAS VIDAS Meses pior. Agora, ele é o único capaz de encontrar respostas. O problema é que as mortes não param de acontecer...",
-    "autor": {
+    "farmácia": {
         "criadoEm": "2021-07-02T12:24:59.726Z",
         "_id": "60df0799f34e3c6ebca1dce0",
         "nome": "Victor Bonini",
@@ -347,10 +329,29 @@ Para a construção do projeto, as seguintes tecnologias foram utilizadas:
 *  Integrar com o Maps para calcular a distancia da farmácia mais proxima do beneficiário; 
 *  Implantação de código HTML e CSS para criação de uma interface capaz de possibilitar a interação do usuário com aplicação;
 
+<br>
 
 Obs.: Toda sugestão de melhoria deste projeto será muito bem-vinda!!!
 
 <br>
+
+## **Aprendizados**
+<br>
+<p> A construção deste projeto consiste em uma API RESTFull fundamentada no CRUD com a integração do banco de dados NoSQL. 
+<br>
+<br>
+
+- Definição CRUD: 
+    
+
+      CREATE (CRIAR)
+      READ (LER, CONSULTAR)
+      UPDATE (ATUALIZAR) 
+      DELETE (DESTRUIÇÃO, REMOÇÃO)
+
+<br>
+
+
 
 
 ##  **Referências**

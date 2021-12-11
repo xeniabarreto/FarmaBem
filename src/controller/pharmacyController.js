@@ -1,9 +1,9 @@
-const PharmacySchema = require ('../models/pharmacySchema');
-const mongoose = require ('mongoose');
+const PharmacySchema = require('../models/pharmacySchema');
+const mongoose = require('mongoose');
 
 
-const jwt = require ('jsonwebtoken');
-const bcrypt = require ('bcrypt');
+const jwt = require('jsonwebtoken');
+const bcrypt = require('bcrypt');
 const SECRET = process.env.SECRET;
 
 
@@ -22,7 +22,7 @@ const getAll = async (req, res) => {
 
 const createPharmacy = async (req, res) => {
   try {
-    const newPharmacy = new PharmacySchema ({
+    const newPharmacy = new PharmacySchema({
       _id: new mongoose.Types.ObjectId(),
       cnpj: req.body.cnpj,
       name: req.body.name,
@@ -38,81 +38,81 @@ const createPharmacy = async (req, res) => {
       terms_of_use: req.body.terms_of_use
     });
 
-    if(!newPharmacy.cnpj){
+    if (!newPharmacy.cnpj) {
       return res.status(406).json({
         message: "Obrigatório preenchimento do CNPJ."
       })
-    }    
+    }
 
-    if(newPharmacy.cnpj.length > 18 || newPharmacy.cnpj.length < 18){
+    if (newPharmacy.cnpj.length > 18 || newPharmacy.cnpj.length < 18) {
       return res.status(406).json({
         message: "Antenção: preencher o CNPJ corretamente com 14 dígitos.",
         for_example: "12.345.678/0001-23"
       })
     }
 
-    if(!newPharmacy.name){
+    if (!newPharmacy.name) {
       return res.status(406).json({
         message: "Obrigatório preenchimento do nome da Farmácia."
       });
     }
 
-    if(!newPharmacy.address){
+    if (!newPharmacy.address) {
       return res.status(406).json({
         message: "Obrigatório preenchimento do endereço completo."
       });
     }
 
-    if(!newPharmacy.district){
+    if (!newPharmacy.district) {
       return res.status(406).json({
         message: "Obrigatório preenchimento do bairro."
       });
     }
 
-    if(newPharmacy.city !== "São Paulo"){
+    if (newPharmacy.city !== "São Paulo") {
       return res.status(406).json({
         message: "Cadastro permitido apenas para Farmácias localizadas na cidade de São Paulo - SP."
       });
     }
 
-    if(newPharmacy.state !== "São Paulo"){
+    if (newPharmacy.state !== "São Paulo") {
       return res.status(406).json({
         message: "Cadastro permitido apenas para Farmácias localizadas no estado de São Paulo."
       });
     }
 
-    if(!newPharmacy.cep){
+    if (!newPharmacy.cep) {
       return res.status(406).json({
         message: "Obrigatório preenchimento do CEP."
       });
     }
 
-    if(newPharmacy.cep.length < 9 || newPharmacy.cep.length > 9){
+    if (newPharmacy.cep.length < 9 || newPharmacy.cep.length > 9) {
       return res.status(406).json({
         message: "Atenção: o cep deverá conter 9 digitos.",
         for_example: "12345-678"
       });
     }
 
-    if(!newPharmacy.telephone){
+    if (!newPharmacy.telephone) {
       return res.status(406).json({
-        message: "Obrigatório preenchimento do telefone ou celular." 
+        message: "Obrigatório preenchimento do telefone ou celular."
       });
     }
 
-    if(!newPharmacy.email){
+    if (!newPharmacy.email) {
       return res.status(406).json({
         message: "Obrigatório preenchimento do e-mail."
       })
     }
 
-    if(!newPharmacy.days_open){
+    if (!newPharmacy.days_open) {
       return res.status(406).json({
         message: "Obrigatório preenchimento dos dias da semana de funcionamento."
       })
     }
 
-    if(!newPharmacy.hours_of_operation){
+    if (!newPharmacy.hours_of_operation) {
       return res.status(406).json({
         message: "Obrigatório preenchimento do horário de funcionamento."
       })
@@ -123,7 +123,7 @@ const createPharmacy = async (req, res) => {
       cnpj
     });
 
-    if(findPharmacyByCnpj) {
+    if (findPharmacyByCnpj) {
       return res.status(406).json({
         message: "Este CNPJ já encontra-se cadastrado em nosso Banco de Dados.",
         pay_attention: "É permitido apenas o cadastro de uma Farmácia por CNPJ."
@@ -135,13 +135,13 @@ const createPharmacy = async (req, res) => {
       email
     });
 
-    if(findPharmacyByEmail) {
+    if (findPharmacyByEmail) {
       return res.status(406).json({
         message: "O e-mail informado ja encontra-se cadastrado, por gentileza informar outro endereço."
       })
     };
 
-    if(!newPharmacy.terms_of_use){
+    if (!newPharmacy.terms_of_use) {
       return res.status(406).json({
         message: "O cadastro da Farmácia será permitido apenas após aceitar nossos termos de uso."
       })
@@ -163,9 +163,9 @@ const createPharmacy = async (req, res) => {
 
 const findPharmacyByName = async (req, res) => {
   try {
-    const findPharmacy = await PharmacySchema.find({ name: new RegExp (req.query.name, "i")});
+    const findPharmacy = await PharmacySchema.find({ name: new RegExp(req.query.name, "i") });
 
-    if(findPharmacy.length === 0) {
+    if (findPharmacy.length === 0) {
       return res.status(404).json({
         message: "Farmácia não cadastrada."
       });
@@ -174,7 +174,7 @@ const findPharmacyByName = async (req, res) => {
     res.status(200).json(findPharmacy)
 
   } catch (error) {
-    res.status(500).json ({
+    res.status(500).json({
       message: error.message
     })
   }
@@ -184,21 +184,21 @@ const findPharmacyByName = async (req, res) => {
 const searchMuliple = async (req, res) => {
   try {
     const filter = await PharmacySchema.find(req.query)
-    
-    if(filter.length === 0) {
+
+    if (filter.length === 0) {
       return res.status(404).json({
         message: "Desculpe, não conseguimos encontrar esta pesquisa!",
         pay_attention: "Os parâmetros para este tipo de pesquisa precisam estar idêntico ao cadastrado no Banco de Dados."
       })
     }
-       
-    if(filter) {
+
+    if (filter) {
       res.status(200).json({
         message: "Farmácia encontrada: ",
         filter
       })
-    } 
-      
+    }
+
   } catch (error) {
     res.status(400).json({
       menssage: error.message
@@ -210,7 +210,7 @@ const searchMuliple = async (req, res) => {
 const findPharmacyById = async (req, res) => {
   try {
     const pharmacy = await PharmacySchema.findById(req.params.id)
-    if(pharmacy){
+    if (pharmacy) {
       res.status(200).json({
         message: "Farmácia encontrada: ",
         pharmacy
@@ -228,7 +228,7 @@ const findPharmacyById = async (req, res) => {
   }
 };
 
-
+/*
 const updatePhamarcyById = async (req, res) => {
   try {
     const findPharmacy = await PharmacySchema.findById(req.params.id)
@@ -327,19 +327,19 @@ const deletePharmacyById = async (req, res) => {
   }
 };
 
-
+*/
 
 
 
 
 module.exports = {
-  getAll,  
+  getAll,
   createPharmacy,
   findPharmacyByName,
   searchMuliple,
-  findPharmacyById,  
-  updatePhamarcyById,
-  deletePharmacyById,
+  findPharmacyById,
+  //updatePhamarcyById,
+  //deletePharmacyById,
 }
 
 

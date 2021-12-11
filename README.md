@@ -1,4 +1,4 @@
-# EDITAR TUDO QUE TA AQUI
+# FARMA BEM
 Projeto Final Reprograma  - em construção 
 
 
@@ -9,7 +9,7 @@ Projeto Final Reprograma  - em construção
     <p align="center">Projeto Final {Reprograma}<p>
 </h1>
 <p align="center">
-<img src="./imagens/img.png" width="80%" height="50%"/>
+<img src="./assets/FarmaBem_logo_animado.gif" width="80%" height="50%"/>
 </p>
 <br>
 

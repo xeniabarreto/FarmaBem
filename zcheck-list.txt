@@ -11,7 +11,8 @@ ESTRUTUA DE CODIGOS
 -Models - ok -aplicar estrutura do like no controller para somatizar os remedios de entrada
 
 -Controller - encontrar solução para erro de busca por ID - delete e search / falta function checkToken
-
+arrumar validacoes do update, codigo quebrado.
+checar todos os verbos no Postman
 
 -Adm e Autenticação ver o codigo de revisão da Jessica
 

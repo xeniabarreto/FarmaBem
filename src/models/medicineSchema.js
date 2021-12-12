@@ -51,30 +51,58 @@ const medicineSchema = new mongoose.Schema ({
     pharmacy_address: {
        type: String,
        required: true
-   },
+    },
+
+    district: {
+        type: String,
+        required: true
+    },
 
     pharmacy_city: {
        type: String,
        required: true
-   },
+    },
+
+    state: {
+    type: String,
+    required: true
+    },
+
+    cep: {
+    type: String,
+    required: true
+    },
 
     pharmacy_telephone: {
        type: String,
        required: true
-   },
+    },
 
     pharmacy_days_open: {
     type: String,
     required: true,
-  },
+    },
 
     pharmacy_hours_of_operation: {
     type: String,
     required: true,
-  }
+    },
+
+    terms_of_use: {
+    type: Boolean,
+    required: true
+    }
 
 },{timestamps: true}
 );
 
 module.exports = mongoose.model("medicine", medicineSchema);
 
+
+
+
+
+
+
+
+ 

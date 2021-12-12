@@ -1,6 +1,7 @@
 const MedicineSchema = require('../models/medicineSchema');
 const mongoose = require('mongoose');
 
+
 const getAll = async (req, res) => {
     try {
       const medicine = await MedicineSchema.find()
@@ -41,7 +42,7 @@ const createMedicine = async (req, res) => {
 
         const savedMedicine = await newMedicine.save();
         res.status(201).json({
-            message: `Produto ${newMedicine.medicine_name} foi cadastrado com sucesso!`,
+            message: `Medicamento ${newMedicine.medicine_name} foi cadastrado com sucesso!`,
             savedMedicine
           })
 
@@ -52,18 +53,97 @@ const createMedicine = async (req, res) => {
     }
 };
 
+
 const searchMultiple = async (req, res) => {
     try {
-        
+        const filter = await MedicineSchema.find(req.query)
+
+        if (filter.length === 0) {
+            return res.status(404).json({
+                message: "Desculpe não conseguimos encontrar esta pesquisa!",
+                pay_attention: "Os parâmetros para este tipo de pesquisa precisam estar idêntico ao cadastrado no Banco de Dados."
+            })
+        }
+
+        if (filter) {
+            res.status(200).json({
+                message: "Medicamento encontrado: ",
+                filter
+            })
+        }
     } catch (error) {
-        
+        res.status(400).json({
+            menssage: error.message
+        })
     }
 }
 
 
+const findMedicineById = async (req, res) => {
+    try {
+        const medicine = await MedicineSchema.findById(req.params.id)
+        if (medicine) {
+          res.status(200).json({
+            message: "Medicamento encontrado: ",
+            medicine
+          })
+        } else {
+          res.status(404).json({
+            message: "Desculpe-nos, não possuímos este medicamento!"
+          })
+        }
+    
+      } catch (error) {
+        res.status(500).json({
+          message: error.message
+        })
+      }    
+}
+
+
+const updateById = async (req, res) => {
+    try {
+        const findMedicine = await MedicineSchema.findById(req.params.id)
+
+        if(findMedicine){
+            findMedicine.available = req.body.available || findMedicine.available
+            findMedicine.medicine_name = req.body.medicine_name || findMedicine.medicine_name
+            findMedicine.composition = req.body.composition || findMedicine.composition
+            findMedicine.batch = req.body.batch || findMedicine.batch
+            findMedicine.manufacture = req.body.manufacture || findMedicine.manufacture
+            findMedicine.expiration = req.body.expiration || findMedicine.expiration
+            findMedicine.controlled_use = req.body.controlled_use || findMedicine.controlled_use
+            findMedicine.retain_revenue = req.body.retain_revenue || findMedicine.retain_revenue
+            findMedicine.pharmacy_name = req.body.pharmacy_name || findMedicine.pharmacy_name
+            findMedicine.pharmacy_address = req.body.pharmacy_address || findMedicine.pharmacy_address
+            findMedicine.district = req.body.district || findMedicine.district
+            findMedicine.pharmacy_city = req.body.pharmacy_city || findMedicine.pharmacy_city
+            findMedicine.state = req.body.state || findMedicine.state
+            findMedicine.cep = req.body.cep || findMedicine.cep
+            findMedicine.pharmacy_telephone = req.body.pharmacy_telephone || findPharmacy.pharmacy_telephone
+            findMedicine.pharmacy_days_open = req.body.pharmacy_days_open || findPharmacy.pharmacy_days_open
+            findMedicine.pharmacy_hours_of_operation = req.body.pharmacy_hours_of_operation || findPharmacy.pharmacy_hours_of_operation
+            findMedicine.terms_of_use = req.body.terms_of_use || findPharmacy.terms_of_use
+
+            const savedMedicine = await findMedicine.save();
+            res.status(200).json({
+                message:`Medicamento ${findMedicine.medicine_name} atualizado com sucesso!`,
+                savedMedicine
+            })
+        }
+    } catch (error) {
+      res.status(500).json({
+        message: error.message
+      })        
+    }
+}
+
   module.exports = {
     getAll,
     createMedicine,
+    searchMultiple,
+    findMedicineById,
+    updateById,
 
   }
 

@@ -120,10 +120,10 @@ const updateById = async (req, res) => {
             findMedicine.pharmacy_city = req.body.pharmacy_city || findMedicine.pharmacy_city
             findMedicine.state = req.body.state || findMedicine.state
             findMedicine.cep = req.body.cep || findMedicine.cep
-            findMedicine.pharmacy_telephone = req.body.pharmacy_telephone || findPharmacy.pharmacy_telephone
-            findMedicine.pharmacy_days_open = req.body.pharmacy_days_open || findPharmacy.pharmacy_days_open
-            findMedicine.pharmacy_hours_of_operation = req.body.pharmacy_hours_of_operation || findPharmacy.pharmacy_hours_of_operation
-            findMedicine.terms_of_use = req.body.terms_of_use || findPharmacy.terms_of_use
+            findMedicine.pharmacy_telephone = req.body.pharmacy_telephone || findMedicine.pharmacy_telephone
+            findMedicine.pharmacy_days_open = req.body.pharmacy_days_open || findMedicine.pharmacy_days_open
+            findMedicine.pharmacy_hours_of_operation = req.body.pharmacy_hours_of_operation || findMedicine.pharmacy_hours_of_operation
+            findMedicine.terms_of_use = req.body.terms_of_use || findMedicine.terms_of_use
 
             const savedMedicine = await findMedicine.save();
             res.status(200).json({
@@ -138,35 +138,37 @@ const updateById = async (req, res) => {
     }
 }
 
+
+const deleteMedicineById = async (req, res) => {
+    try {
+        const findMedicine = await MedicineSchema.findById(req.params.id)
+    
+        if (findMedicine) {
+          await findMedicine.delete()
+          res.status(200).json({
+            menssage: `Medicamento ${findMedicine.medicine_name} deletado com sucesso!`
+          })
+        } else {
+          res.status(404).json({
+            message: "Medicamento não encontrado!"
+          })
+        }
+    
+      } catch (error) {
+        res.status(400).json({
+          menssage: error.message
+        })
+      }    
+}
+
+
   module.exports = {
     getAll,
     createMedicine,
     searchMultiple,
     findMedicineById,
     updateById,
-
+    deleteMedicineById
   }
 
-  /*
-
-available:Boolean
-medicine_name:String
-composition:String
-batch:String
-manufacture: String
-expiration: String
-controlled_use: Boolean
-retain_revenue: Boolean
-pharmacy_name:String
-pharmacy_address:String
-district:String
-pharmacy_city: String
-state:String
-cep:String
-pharmacy_telephone:String,
-pharmacy_days_open:String,
-pharmacy_hours_of_operation:String,
-terms_of_use:Boolean
-
-    */
-
+ 

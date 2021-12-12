@@ -1,35 +1,44 @@
-A FAZER:
+********** A FAZER *************
 
 - Responder e-mail para formatura 
 - Preencher documento compartilhado no Classroom
 - Montar o Readme
+- Montar apresentação no canva
 
 
-ESTRUTUA DE CODIGOS
--Models - ok -aplicar estrutura do like no controller para somatizar os remedios de entrada
+********* ESTRUTURA DE CODIGOS ******************
 
--Controller Pharmacy
+PASTA PHARMACY
+
+-CONTROLLER:
     falta function checkToken
     arrumar validacoes do update, codigo quebrado.
-    checar todos os verbos no Postman
-
--Adm e Autenticação ver o codigo de revisão da Jessica
 
 
-FAZER GIF PRO README
-Postman Rodando
-Propaganda do remedio
+PASTA MEDICINE:
+    Models - ok -aplicar estrutura do like no controller para somatizar os remedios de entrada
+
+PASTA ADM:
+    Adm e Autenticação ver o codigo de revisão da Jessica
+
+
+**************** README *************************
 
 FAZER LOGO DA FARMACIA
-
-
-
-MELHORIAS FUTURAS
-    Permitir localizar por gps o mais proximo - como a api do aqui tem remedio
 
 ESTATISTICAS
     Trazer numeros sobre o descarte de remedios de forma incorreta no ambiente
     Numeros de economia
+
+FAZER GIF PRO README
+    Postman Rodando
+    Propaganda do remedio
+
+MELHORIAS FUTURAS
+    Permitir localizar por gps o mais proximo - como a api do aqui tem remedio
+
+
+
 
 
 

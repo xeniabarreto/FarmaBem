@@ -386,7 +386,7 @@ FALTA MAIS GENTE </p>
 
 
 
-## 👨‍💻 Autora
+## Autora
 
 <br>
 
@@ -399,16 +399,14 @@ Criado por **Xênia Barreto**.
 <br>
 <br>
 
-[![Linkedin Badge](https://img.shields.io/badge/-Xênia%20Barreto-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/xeniabarreto/)
 
-
-[![GitHub Badge](https://img.shields.io/badge/-Xênia%20Barreto-black?style=flat-square&logo=Github&logoColor=white)](https://github.com/xeniabarreto/)
-
-[![Instagram Badge](https://img.shields.io/badge/-Xênia%20Barreto-purple?style=flat-square&logo=Instagram&logoColor=white)](https://www.instagram.com/xeniabarreto/)
-
-
-
-<h1>
+  <div>
+    <a href="https://www.linkedin.com/in/xênia-barreto-020334209/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>  
+  <a href = "https://github.com/xeniabarreto/"><img src="https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
+   <a href = "mailto:xeniabarreto22@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+   <a href="https://instagram.com/xeniabarreto" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
+ </div>
+  
 
 <br>
 

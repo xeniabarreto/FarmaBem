@@ -12,5 +12,4 @@ router.put("/update/:id", controller.updatePhamarcyById);
 router.delete("/delete/:id", controller.deletePharmacyById);
 
 
-
 module.exports = router

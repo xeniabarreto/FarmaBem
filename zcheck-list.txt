@@ -39,6 +39,70 @@ MELHORIAS FUTURAS
 
 
 
+************ TESTAR CODIGO DE ENTRADA ESTOQUE E PACTH *************
+
+
+/*
+
+//DAR ENTRADA NO REMEDIO
+erro: 
+"menssage": "Performing an update on the path '_id' would modify the immutable field '_id'" }
+
+const stokMedicine = async (req, res) => {
+    try {
+        const { id } = req.params
+        medicine = await MedicineSchema.findById(id)
+
+        medicine.stokMedicine += 1
+
+        await MedicineSchema.updateOne(medicine)
+        return res.status(200).send(medicine)
+    } catch (error) {
+        return res.status(404).send({ message: message.error })
+    }
+}
+
+//DAR SAIDA NO REMEDIO
+const dislike = async (req, res) => {
+    try {
+        const { id } = req.params
+        livro = await Livros.findById(id)
+
+        livro.likes -= 1
+
+        await Livros.updateOne(livro)
+        return res.status(200).send(livro)
+    } catch (error) {
+        return res.status(404).send({ message: 'Livro não encontrado' })
+    }
+}
+
+
+//MÉTODO PATCH atualização de qualquer parte da tarefa separadamente
+/*const updateAnything = async (req, res) => {
+
+    const livro = await Livro.findById(req.params.id)
+    const body = req.body
+
+    if (livro == null) res.status(404).json({ message: 'Livro não encontrado!' })
+
+    Object.keys(body).forEach(key => {
+        livro[key] = body[key]
+    })
+
+    try {
+        const livroUpdated = await livro.save()
+        return res.status(200).json({
+            message: "Livro atualizado com sucesso!",
+            livroUpdated
+        })
+
+    } catch (err) {
+        return res.status(500).json({ message: err.message })
+    }
+}
+
+==========================================================================================
 
 
 

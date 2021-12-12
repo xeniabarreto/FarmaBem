@@ -168,7 +168,8 @@ const deleteMedicineById = async (req, res) => {
     searchMultiple,
     findMedicineById,
     updateById,
-    deleteMedicineById
+    deleteMedicineById,
+
   }
 
  

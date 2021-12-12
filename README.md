@@ -154,7 +154,6 @@ Para a construção deste projeto, as seguintes bibliotecas foram aplicadas:
    |- 📑 .env
    |- 📑 .env.example
    |- 📑 .gitignore
-   |- 📑 LICENSE <==============VERIFICAR ISSO DAQUI
    |- 📑 package-lock.json
    |- 📑 package.json
    |- 📑 Procfile

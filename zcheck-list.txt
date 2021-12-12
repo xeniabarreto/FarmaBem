@@ -1,18 +1,17 @@
 A FAZER:
 
-- Responder e-mail para formatura (como Amanda)
+- Responder e-mail para formatura 
 - Preencher documento compartilhado no Classroom
 - Montar o Readme
 
 
 ESTRUTUA DE CODIGOS
--Server - ok
--Banco de dados - conectado ok 
 -Models - ok -aplicar estrutura do like no controller para somatizar os remedios de entrada
 
--Controller - encontrar solução para erro de busca por ID - delete e search / falta function checkToken
-arrumar validacoes do update, codigo quebrado.
-checar todos os verbos no Postman
+-Controller Pharmacy
+    falta function checkToken
+    arrumar validacoes do update, codigo quebrado.
+    checar todos os verbos no Postman
 
 -Adm e Autenticação ver o codigo de revisão da Jessica
 
@@ -26,19 +25,11 @@ FAZER LOGO DA FARMACIA
 
 
 MELHORIAS FUTURAS
-Permitir localizar por gps o mais proximo - como a api do aqui tem remedio
+    Permitir localizar por gps o mais proximo - como a api do aqui tem remedio
 
 ESTATISTICAS
-Trazer numeros sobre o descarte de remedios de forma incorreta no ambiente
-Numeros de economia
-
-
-REFERENCIAS
-
-
-Aqui tem remedio
-http://aquitemremedio.prefeitura.sp.gov.br/#/
-
+    Trazer numeros sobre o descarte de remedios de forma incorreta no ambiente
+    Numeros de economia
 
 
 

@@ -315,19 +315,24 @@ const updatePhamarcyById = async (req, res) => {
 const deletePharmacyById = async (req, res) => {
   try {
     const findPharmacy = await PharmacySchema.findById(req.params.id)
-    await findPharmacy.delete()
 
-    res.status(200).json({
-      menssage: `Farmácia ${findPharmacy.name} deletada com sucesso!`
-    })
+    if (findPharmacy) {
+      await findPharmacy.delete()
+      res.status(200).json({
+        menssage: `Farmácia ${findPharmacy.name} deletada com sucesso!`
+      })
+    } else {
+      res.status(404).json({
+        message: "Farmácia não encontrada!"
+      })
+    }
+
   } catch (error) {
     res.status(400).json({
       menssage: error.message
     })
   }
 };
-
-
 
 
 
@@ -338,7 +343,7 @@ module.exports = {
   searchMuliple,
   findPharmacyById,
   updatePhamarcyById,
-  //deletePharmacyById,
+  deletePharmacyById,
 }
 
 

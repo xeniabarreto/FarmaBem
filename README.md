@@ -78,7 +78,7 @@ API foi desenvolvida como Projeto Final para a conclusão do curso de Backend [{
 
 - Cadastro das farmácias participantes;
 - Disponibilidade dos medicamentos;
-- Ajudar aos que necessecitam de apoio para aquisição de remédios para pessoas de baixa renda;
+- Ajudar aos que nececissitam de apoio para aquisição de remédios para pessoas de baixa renda;
 - Reduzir o impacto ambiental com descarte incorreto de medicamentos;
 
 <br>

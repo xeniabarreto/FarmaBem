@@ -19,8 +19,8 @@ app.use(express.json());
 
 app.use("/", index);
 app.use("/pharmacy", phamarcyRoutes);
-/*app.use("/medicine", medicineRoutes);
-//app.use("/adm", amdRoutes)*/
+app.use("/medicine", medicineRoutes);
+//app.use("/adm", amdRoutes)
 
 
 module.exports = app

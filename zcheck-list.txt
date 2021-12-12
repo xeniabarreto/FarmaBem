@@ -16,7 +16,10 @@ PASTA PHARMACY
 
 
 PASTA MEDICINE:
-    Models - ok -aplicar estrutura do like no controller para somatizar os remedios de entrada
+    Models - incluir um item para Stok
+    Controller - estrutura do like no controller para somatizar os remedios de entrada, cod abaixo
+
+    Controller - POST - Aplicar validacoes
 
 PASTA ADM:
     Adm e Autenticação ver o codigo de revisão da Jessica

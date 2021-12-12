@@ -8,12 +8,6 @@ const medicineSchema = new mongoose.Schema ({
         required: true
     },
 
-    stokMedicine: {
-        type: Number,
-        required: false,
-        default: 0
-    },
-
     medicine_name:{
         type: String,
         required: true

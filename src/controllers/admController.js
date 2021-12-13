@@ -105,7 +105,7 @@ const updateById = async (req, res) => {
 
 const deleteById = async (req, res) => {
     try {
-        const adm = await AdmSchema.findByIdAndDelete(req.usernameId);
+        const adm = await AdmSchema.findByIdAndDelete(req.params.id);
 
         if(adm){
         res.status(200).json({
@@ -122,6 +122,7 @@ const deleteById = async (req, res) => {
         })
     }
 }
+
 
 const getById = async (req, res) => {
     try {

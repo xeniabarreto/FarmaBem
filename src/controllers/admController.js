@@ -119,8 +119,18 @@ const deleteById = async (req, res) => {
 const getById = async (req, res) => {
     try {
         const findAdm = await AdmSchema.findById(req.params.id, '-password');
-        return res.status(200).json(findAdm);
-
+        
+        if(findAdm){
+            res.status(200).json({
+                message: "Administrador encontrado",
+                findAdm
+            });
+        }else{    
+            res.status(404).json({
+                message: 'Adminstrador não encontrado.'
+            })
+        }
+        
     } catch (error) {
         res.status(500).json({
             message: error.message,

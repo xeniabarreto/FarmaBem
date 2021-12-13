@@ -80,6 +80,7 @@ const loginWithCreatingToken = async (req, res) => {
     }
 }
 
+
 const updateById = async (req, res) => {
     try {
         const adm = await AdmSchema.findById(req.params.id);
@@ -115,10 +116,24 @@ const deleteById = async (req, res) => {
     }
 }
 
+const getById = async (req, res) => {
+    try {
+        const findAdm = await AdmSchema.findById(req.params.id, '-password');
+        return res.status(200).json(findAdm);
+
+    } catch (error) {
+        res.status(500).json({
+            message: error.message,
+        })        
+    }
+};
+
+
 module.exports = {
     getAll,
     register,
     loginWithCreatingToken,
     updateById,
-    deleteById
+    deleteById,
+    getById
 }

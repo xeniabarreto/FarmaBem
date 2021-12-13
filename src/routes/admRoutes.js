@@ -6,6 +6,7 @@ const { checkToken } = require("../middlewares/auth");
 const controller = require ('../controllers/admController')
 
 router.get("/all", controller.getAll);
+router.get("/id/:id", controller.getById);
 router.post("/register", controller.register);
 router.post("/login", controller.loginWithCreatingToken);
 router.put("/update/:id", controller.updateById);

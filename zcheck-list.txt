@@ -1,28 +1,28 @@
 ********** A FAZER *************
 
-- Responder e-mail para formatura 
+- Responder e-mail para formatura do Reprograma - Curriculo no site
 - Preencher documento compartilhado no Classroom
-- Montar o Readme
+- Montar o Readme - etidar e revisar inteiro
 - Montar apresentação no canva
+- Postman Atualizar as rotas do Heroku
+- Se der tempo corrigir nome das rotas de ADM / MEDICINE / PHARMACY de forma padronizada
 
 
 ********* ESTRUTURA DE CODIGOS ******************
 
 PASTA PHARMACY
-
--CONTROLLER:
-    falta function checkToken
-    arrumar validacoes do update, codigo quebrado.
-
+    Controller - Arrumar validacoes do update, codigo quebrado.
 
 PASTA MEDICINE:
     Models - incluir um item para Stok
     Controller - estrutura do like no controller para somatizar os remedios de entrada, cod abaixo
 
     Controller - POST - Aplicar validacoes
+    Controller - PUT - Aplicar validacoes
 
 PASTA ADM:
-    Adm e Autenticação ver o codigo de revisão da Jessica
+    Aplicar validação para tamanho da senha / e alfanumerica
+    Aplicar validação do Token nas rotas privadas
 
 
 **************** README *************************
@@ -39,6 +39,8 @@ FAZER GIF PRO README
 
 MELHORIAS FUTURAS
     Permitir localizar por gps o mais proximo - como a api do aqui tem remedio
+    Conciliar a busca por remedio linkando aos banco de dados de farmacias
+    
 
 
 

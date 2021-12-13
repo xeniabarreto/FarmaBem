@@ -250,7 +250,7 @@ MONGODB_URI
 TESTE 
 
 CRIAR UMA PASTA FORA SRC:
-_test_  (dois underline de cada lado)
+__test__ (dois underline de cada lado)
 add arquivo
 calculadora.test.js  // a extenção é test.js
  

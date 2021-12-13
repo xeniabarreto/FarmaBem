@@ -6,7 +6,8 @@ exports.checkToken = (req, res, next) => {
 
   if (!token){
      return res.status(401).json({
-        message: "Acesso negado"});
+            message: "Acesso negado"
+        });
     }
 
     try {

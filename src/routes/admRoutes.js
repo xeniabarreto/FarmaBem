@@ -12,15 +12,16 @@ router.post("/login", controller.loginWithCreatingToken);
 router.put("/update/:id", controller.updateById);
 router.delete("/delete/:id", controller.deleteById);
 
+
+
 /*
-LET
-router.get("/message", controllerAdm.checkToken, controllerAdm.message_one);
-router.get("/adm", controllerAdm.checkToken, controllerAdm.findAllAdm);
-router.post("/register/admin", controllerAdm.createAdm);
-router.post("/login/admin", controllerAdm.loginAdm);
-router.get("/admin/:id", controllerAdm.checkToken, controllerAdm.searchAdminById);
-router.put("/update/admin/:id", controllerAdm.checkToken, controllerAdm.updateAdmById);
-router.delete("/delete/admin/:id", controllerAdm.checkToken, controllerAdm.deleteAdmById);
+
+OPÇÕES DE ROTAS COM VALIDAÇÃO DE TOKEN E CHECAR AUTENTICAÇÃO
+router.get("/all", checkToken, controller.getAll);
+router.get("/:id", checkToken, controller.getById);
+router.post("/register", loginAuth, controller.createUser);
+router.put("/update", checkToken, loginAuth, controller.updatedUSer);
+router.delete("/delete", checkToken, controller.deleteUser);
  */
 
 module.exports = router

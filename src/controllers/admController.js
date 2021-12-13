@@ -1,10 +1,10 @@
 const AdmSchema = require("../models/admSchema");
 const mongoose = require("mongoose");
+const { hashPassword } = require('../helpers/auth');
 
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
-const { hashPassword } = require('../helpers/auth');
 
 const getAll = async (req, res) => {
     try {
@@ -80,13 +80,46 @@ const loginWithCreatingToken = async (req, res) => {
     }
 }
 
+const updateById = async (req, res) => {
+    try {
+        const adm = await AdmSchema.findById(req.params.id);
+
+        adm.username = req.body.username || adm.username
+        adm.email = req.body.email || adm.email
+        adm.password = req.body.password || adm.password
+
+        const admSaved = await adm.save()
+        res.status(200).jso({
+            message: "Administrador atualizado com sucesso.",
+            admSaved
+        })
+
+    } catch (error) {
+        res.status(500).json({
+            message: error.message
+        })
+    }
+}
 
 
+const deleteById = async (req, res) => {
+    try {
+        const adm = await AdmSchema.findByIdAndDelete(req.usernameId);
+        res.status(200).json({
+            message: "Administrador deletado com sucesso!",
+            adm
+        })
+    } catch (error) {
+        res.status(500).json({
+            message: error.message
+        })
+    }
+}
 
 module.exports = {
     getAll,
     register,
     loginWithCreatingToken,
-
-
+    updateById,
+    deleteById
 }

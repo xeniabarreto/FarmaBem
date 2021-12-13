@@ -15,7 +15,7 @@ exports.checkToken = (req, res, next) => {
         next();
     } catch (error) {
         return res.status(500).json({
-            message: "Please enter a valid token!",        
+            message: "Inserir um token valido!",        
         });
     }
 

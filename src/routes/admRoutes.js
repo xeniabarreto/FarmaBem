@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const login = require('../helpers/auth');
+const loginAuth = require('../helpers/auth');
 const { checkToken } = require("../middlewares/auth");
 
 const controller = require ('../controllers/admController')

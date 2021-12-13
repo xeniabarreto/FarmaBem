@@ -19,7 +19,32 @@ const getAll = async (req, res) => {
     }
 }
 
+const register = async (req, res) => {
+    const { username, email, password, terms_of_use } = req.body
+    
+    try {
+        const newUser = new AdmSchema ({
+            username,
+            email,
+            password,
+            terms_of_use
+        })
 
+        const passwordHashed = await hashPassword(newUser.password, res)
+        newUser.password = passwordHashed
+
+        const savedUser = await newUser.save()
+        res.status(200).json({
+            message: "Adm cadastrado com sucesso!",
+            savedUser
+        })
+
+    } catch (error) {
+        res.status(500).json({
+            message: error.message
+        })        
+    }
+}
 
 module.exports = {
     getAll,

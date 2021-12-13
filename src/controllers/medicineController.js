@@ -39,12 +39,15 @@ const createMedicine = async (req, res) => {
             terms_of_use: req.body.terms_of_use
     
         });
-
+        
+        /*
+        NAO ESTA DEIXANDO CADASTRAR FALSE, APENAS TRUE
         if (!newMedicine.available) {
           return res.status(406).json({
-            message: "Obrigatório informar se medicamento está disponivel."
+            message: "Obrigatório informar de medicamento está disponivel."
           })
         }
+        */
 
         if (!newMedicine.medicine_name) {
           return res.status(406).json({
@@ -95,17 +98,18 @@ const createMedicine = async (req, res) => {
           })
         }
 
-        if (!newMedicine.pharmacy_city !== "São Paulo") {
+        if (newMedicine.pharmacy_city !== "São Paulo") {
           return res.status(406).json({
-            message: "Farmácias localizadas na cidade de São Paulo - SP."
+            message: "Permitido apenas Farmácias localizadas na cidade de São Paulo - SP."
           })
         }
 
-        if (!newMedicine.pharmacy_state !== "São Paulo") {
+        /* NÃO SAI DESSE ERRO MESMO ESTANDO CORRETO
+        if (newMedicine.pharmacy_state !== "São Paulo") {
           return res.status(406).json({
-            message: "Farmácias localizadas apenas no Estado de São Paulo."
+            message: "Permitido apenas Farmácias localizadas no Estado de São Paulo."
           })
-        }
+        }*/
 
         if (!newMedicine.terms_of_use) {
           return res.status(406).json({

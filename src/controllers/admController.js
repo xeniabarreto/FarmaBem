@@ -3,7 +3,6 @@ const mongoose = require("mongoose");
 
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-//const secret = process.env.SECRET;
 
 const { hashPassword } = require('../helpers/auth');
 
@@ -80,6 +79,9 @@ const loginWithCreatingToken = async (req, res) => {
         })        
     }
 }
+
+
+
 
 module.exports = {
     getAll,

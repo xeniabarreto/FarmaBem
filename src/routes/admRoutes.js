@@ -5,7 +5,7 @@ const controller = require ('../controllers/admController')
 
 router.get("/all", controller.getAll);
 router.post("/register", controller.register);
-router.post("/login", controller.login);
+router.post("/login", controller.loginWithCreatingToken);
 
 
 module.exports = router

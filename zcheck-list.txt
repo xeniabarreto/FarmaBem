@@ -241,3 +241,42 @@ MONGODB_URI = aqui vai a string de conexão do MongoDB sem aspas com login e sen
 - Arquivo .env.example apenas inserir:
 
 MONGODB_URI
+
+
+=========================================================================================
+
+
+TESTE 
+
+CRIAR UMA PASTA FORA SRC:
+_test_  (dois underline de cada lado)
+add arquivo
+calculadora.test.js  // a extenção é test.js
+ 
+chamar o arquivo que tem as funções, neste caso o calculadora.js dentro da SRC
+
+
+$npm install --save-dev jest
+Alterar no script 
+
+jest  //  só aplica o teste
+ou
+jest --coverage      /// esse tras a tabela
+
+estartar
+$npm run test
+
+
+Jest mostra se seu codigo funcionando e retorna o esperado
+Coverage - tabela que demonstra o quanto aquele codigo que vc fez para teste cobre o seu codigo em porcentagens, linha por linha.
+
+Depois de startar o teste Coverage, vai abrir uma pasta automatica no seu projeto chamada:
+COVERAGE 
+dento dela outra chamada:
+Icov-report
+expande, vai na pasta calculadora.js.html  // com botao direito abre Open with Live server
+vai abrir no navegador a pasta de demonstração dos teste.
+
+
+Documentação
+https://jestjs.io/pt-BR/docs/using-matchers

@@ -106,9 +106,16 @@ const updateById = async (req, res) => {
 const deleteById = async (req, res) => {
     try {
         const adm = await AdmSchema.findByIdAndDelete(req.usernameId);
+
+        if(adm){
         res.status(200).json({
             message: `Administrador deletado com sucesso!`
+            })
+       }else{
+        res.status(404).json({
+            message: 'Adminstrador não encontrado.'
         })
+       }
     } catch (error) {
         res.status(500).json({
             message: error.message

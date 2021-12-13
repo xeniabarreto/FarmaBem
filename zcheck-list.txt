@@ -17,7 +17,7 @@ PASTA MEDICINE:
     Models - incluir um item para Stok
     Controller - estrutura do like no controller para somatizar os remedios de entrada, cod abaixo
 
-    Controller - POST - Aplicar validacoes
+    Controller - POST - Corrgir 2 validacoes
     Controller - PUT - Aplicar validacoes
 
 PASTA ADM:

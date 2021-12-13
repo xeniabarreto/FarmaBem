@@ -5,6 +5,7 @@
 - Montar o Readme - etidar e revisar inteiro
 - Montar apresentação no canva
 - Postman Atualizar as rotas do Heroku
+- Testar todas as rotas no Postman
 - Se der tempo corrigir nome das rotas de ADM / MEDICINE / PHARMACY de forma padronizada
 
 

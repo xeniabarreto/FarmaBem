@@ -40,6 +40,80 @@ const createMedicine = async (req, res) => {
     
         });
 
+        if (!newMedicine.available) {
+          return res.status(406).json({
+            message: "Obrigatório informar se medicamento está disponivel."
+          })
+        }
+
+        if (!newMedicine.medicine_name) {
+          return res.status(406).json({
+            message: "Obrigatório preenchimento nome ou composição do medicamento."
+          })
+        }
+
+        if (!newMedicine.composition) {
+          return res.status(406).json({
+            message: "Obrigatório preenchimento da composição do medicamento."
+          })
+        }
+
+        if (!newMedicine.batch) {
+          return res.status(406).json({
+            message: "Obrigatório preenchimento da Lote do medicamento."
+          })
+        }
+
+        if (!newMedicine.manufacture) {
+          return res.status(406).json({
+            message: "Obrigatório preenchimento da data de Fabricação do medicamento."
+          })
+        }
+
+        if (!newMedicine.expiration) {
+          return res.status(406).json({
+            message: "Obrigatório informar a Data de Vencimento do medicamento.",
+            example_format: "01/10/2022"
+          })
+        }
+
+        if (!newMedicine.controlled_use) {
+          return res.status(406).json({
+            message: "Obrigatório informar se o medicamento é de uso Controlado.",
+          })
+        }
+
+        if (!newMedicine.retain_revenue) {
+          return res.status(406).json({
+            message: "Obrigatório informar se retém Receituário para esta medicação.",
+          })
+        }
+
+        if (!newMedicine.pharmacy_name) {
+          return res.status(406).json({
+            message: "Obrigatório preenchimento nome da Farmácia."
+          })
+        }
+
+        if (!newMedicine.pharmacy_city !== "São Paulo") {
+          return res.status(406).json({
+            message: "Farmácias localizadas na cidade de São Paulo - SP."
+          })
+        }
+
+        if (!newMedicine.pharmacy_state !== "São Paulo") {
+          return res.status(406).json({
+            message: "Farmácias localizadas apenas no Estado de São Paulo."
+          })
+        }
+
+        if (!newMedicine.terms_of_use) {
+          return res.status(406).json({
+            message: "O cadastro do medicamento será permitido apenas, após aceitar nossos termos de uso."
+          })
+        }
+
+
         const savedMedicine = await newMedicine.save();
         res.status(201).json({
             message: `Medicamento ${newMedicine.medicine_name} foi cadastrado com sucesso!`,

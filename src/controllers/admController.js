@@ -21,8 +21,16 @@ const getAll = async (req, res) => {
 
 const register = async (req, res) => {
     const { username, email, password, terms_of_use } = req.body
-    
+       
     try {
+        const adminExist = await AdmSchema.findOne({ email: email });
+        if (adminExist) {
+          return res.status(406).json({
+            message:
+              "Administrador já cadastrado atraves deste e-mail.",
+          });
+        }
+
         const newUser = new AdmSchema ({
             username,
             email,

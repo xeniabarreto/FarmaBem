@@ -89,7 +89,7 @@ const updateById = async (req, res) => {
         adm.password = req.body.password || adm.password
 
         const admSaved = await adm.save()
-        res.status(200).jso({
+        res.status(200).json({
             message: "Administrador atualizado com sucesso.",
             admSaved
         })
@@ -106,8 +106,7 @@ const deleteById = async (req, res) => {
     try {
         const adm = await AdmSchema.findByIdAndDelete(req.usernameId);
         res.status(200).json({
-            message: "Administrador deletado com sucesso!",
-            adm
+            message: `Administrador deletado com sucesso!`
         })
     } catch (error) {
         res.status(500).json({

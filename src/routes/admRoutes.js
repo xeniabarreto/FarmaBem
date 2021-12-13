@@ -8,7 +8,8 @@ const controller = require ('../controllers/admController')
 router.get("/all", controller.getAll);
 router.post("/register", controller.register);
 router.post("/login", controller.loginWithCreatingToken);
-
+router.put("/update/:id", controller.updateById);
+router.delete("/delete/:id", controller.deleteById);
 
 /*
 LET

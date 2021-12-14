@@ -71,7 +71,7 @@ API foi desenvolvida como Projeto Final para a conclusão do curso de Backend [{
 
 ## **Link**
 
-- [Apresentação](https://www.canva.com/design/DAEjjh5kMho/o-lpglTMDauF-CRLx2e6Dw/view?utm_content=DAEjjh5kMho&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu) - (LINK DO CANVA AQUI)
+- [Apresentação](https://www.canva.com/design/DAEyeUU37YY/7r3nUZvVdhx6z_oHAsypYg/view?utm_content=DAEyeUU37YY&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu) - (LINK DO CANVA AQUI)
 
 <br>
 
@@ -325,6 +325,7 @@ Para a construção deste projeto, as seguintes bibliotecas foram aplicadas:
 
 *  Integrar com o Maps para calcular a distancia da farmácia mais proxima do beneficiário; 
 *  Implantação de código HTML e CSS para criação de uma interface capaz de possibilitar a interação do usuário com aplicação;
+Desenvolver uma interface que permita transmitir informações aos usuários sobre manipulação, conservação e descarte adequado de medicamentos.
 
 <br>
 

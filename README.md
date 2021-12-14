@@ -71,7 +71,7 @@ API foi desenvolvida como Projeto Final para a conclusão do curso de Backend [{
 
 ## **Link**
 
-- [Apresentação](https://www.canva.com/design/DAEyeUU37YY/7r3nUZvVdhx6z_oHAsypYg/view?utm_content=DAEyeUU37YY&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu) - (LINK DO CANVA AQUI)
+- [Apresentação](https://www.canva.com/design/DAEyeUU37YY/7r3nUZvVdhx6z_oHAsypYg/view?utm_content=DAEyeUU37YY&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu)
 
 <br>
 

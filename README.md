@@ -1,7 +1,7 @@
 
 
 <h1 align="center">
-  <img src="./assets/logo_animado.gif" width="600">
+  <img src="./assets/logo_animado_ofic.gif" width="600">
 <p align="center"><p>
 </h1>
 

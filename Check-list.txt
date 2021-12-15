@@ -252,6 +252,7 @@ https://jestjs.io/pt-BR/docs/using-matchers
 
 
 AUTOMATIZANDO DOCUMENTAÇÃO COM SWAGGER 
+https://www.letscode.com.br/blog/como-automatizar-documentacao-de-apis-rest-em-nodejs-com-swagger 
 
 npm i body-parser
 npm i swagger-autogen

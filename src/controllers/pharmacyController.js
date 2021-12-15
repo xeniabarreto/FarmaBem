@@ -2,10 +2,6 @@ const PharmacySchema = require('../models/pharmacySchema');
 const mongoose = require('mongoose');
 
 
-const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt');
-const SECRET = process.env.SECRET;
-
 
 const getAll = async (req, res) => {
   try {

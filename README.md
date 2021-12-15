@@ -37,8 +37,6 @@
 - [Referências](#referências)
 - [Agradecimentos](#agradecimentos)
 - [Autora](#autora)
-
-
 <br>
 
 ## **Origem**  
@@ -48,7 +46,6 @@
 <p align="justify">No processo de organização das coisas que ela havia deixado, encontrei uma quantidade significativa de medicamentos para doenças como diabetes e hipertensão, todos ainda dentro do prazo de validade. Olhei aquele montante e me indaguei sobre como poderia haver no mundo outras situações semelhantes a essa. Tão logo, procurei descobrir alguém que fizesse o uso destas mesmas medicações e fiz uma doação, mas isso que levou alguns bons dias para acontecer.
 
 <p align="justify">Passado alguns meses até aqui, lembrei-me desse momento de reflexão e decidi criar a API Farma Bem a fim de intermediar as doações de medicamentos de quem pode doar para quem necessita, de forma gratuita.
-
 <br>
 
 ## **Objetivo**

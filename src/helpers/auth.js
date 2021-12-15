@@ -8,7 +8,6 @@ exports.hashPassword = async(password, res) => {
         return hash
 
     }catch(error) {
-        console.log(error)
         res.status(500).json({
             mensagem: message.error
         })

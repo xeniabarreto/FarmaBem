@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 
 
 const getAll = async (req, res) => {
+
   try {
     const pharmacy = await PharmacySchema.find()
     res.status(200).json(pharmacy)

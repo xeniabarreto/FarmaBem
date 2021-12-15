@@ -2,11 +2,14 @@
   "swagger": "2.0",
   "info": {
     "version": "1.0.0",
-    "title": "Farma Bem",
-    "description": ""
+    "title": "API Farma Bem",
+    "description": "API criada para reaproveitamento de medicamentos na cidade de São Paulo",
+    "termsOfService": "http://localhost:8888/terms/",
+    "contact":{
+      "email": "xeniabarreto22@gmail.com"
+    }
   },
-  "host": "localhost:3000",
-  "basePath": "/",
+
   "tags": [],
   "schemes": [
     "http"

@@ -50,7 +50,11 @@
 
 ## **Objetivo**
 
-<p align="justify">Este projeto é uma API RESTFull fundamentada no CRUD, integrado com o banco de dados, sendo possível listar, cadastrar, atualizar e deletar cadastros de farmácias, medicamentos e administradores. 
+<p align="justify">A API Farma Bem permitirá o cadastro das farmácias interessadas em fazer parte desta iniciativa para receber as doações de medicamentos, realizar uma perícia quanto a qualidade e disponibilizá-los a população.
+
+<p align="justify">Além de promover o reaproveitamento de medicamentos, ajuda a quem precisa, reduz o impacto no meio ambiente e descarte irregular.
+
+é uma API RESTFull fundamentada no CRUD, integrado com o banco de dados, sendo possível listar, cadastrar, atualizar e deletar cadastros de farmácias, medicamentos e administradores. 
 
 que permite o cadastro das farmácias interessadas em fazer parte desta iniciativa para receber as doações de medicamentos, realizar uma perícia quanto a qualidade e disponibilizá-los a população.
 
@@ -78,6 +82,7 @@ FALTA COLOCAR O LINK
 - Cadastro das farmácias, medicamentos e administradores;
 - Informe da localidade e contato das farmácias;
 - Informe da disponibilidade dos medicamentos.
+
 <br>
 
 ## **Tecnologias Utilizadas**

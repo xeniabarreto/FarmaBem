@@ -3,7 +3,6 @@
 - Responder e-mail para formatura do Reprograma - Curriculo no site
 - Preencher documento compartilhado no Classroom
 - Montar o Readme - etidar e revisar inteiro
-- Montar apresentação no canva
 - Postman Atualizar as rotas do Heroku
 - Testar todas as rotas no Postman
 - Se der tempo corrigir nome das rotas de ADM / MEDICINE / PHARMACY de forma padronizada
@@ -13,25 +12,17 @@
 
 
 PASTA MEDICINE:
-    Models - incluir um item para Stok
-    Controller - estrutura do like no controller para somatizar os remedios de entrada, cod abaixo
     Controller - PUT - Aplicar validacoes
+    Controller - estrutura do like no controller para somatizar os remedios de entrada, cod abaixo
+    Models - incluir um item para Stok
 
 PASTA ADM:
-    Aplicar validação para tamanho da senha / e alfanumerica
     Aplicar validação do Token nas rotas privadas
+    Aplicar validação para tamanho da senha / e alfanumerica - FAZER DEPOIS DA ENTREGA
 
 
 **************** README *************************
 
-
-ESTATISTICAS
-    Trazer numeros sobre o descarte de remedios de forma incorreta no ambiente
-    Numeros de economia
-
-FAZER GIF PRO README
-    Postman Rodando
-    Propaganda do remedio
 
 MELHORIAS FUTURAS
     Permitir localizar por gps o mais proximo - como a api do aqui tem remedio

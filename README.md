@@ -43,32 +43,43 @@
 
 ## **Origem**  
 
-<p align="justify">(SEMPRE ABRIR ISSO DAQUI PARA UM PARAGRAFO NOVO).
+<p align="justify">Em meio a Pandemia da Covid-19, tive a infelicidade de ver a vida da minha mãe ceifada por essa doença tão avassaladora, uma experiência amarga e dolorosa. 
+
+<p align="justify">No processo de organização das coisas que ela havia deixado, encontrei uma quantidade significativa de medicamentos para doenças como diabetes e hipertensão, todos ainda dentro do prazo de validade. Olhei aquele montante e me indaguei sobre como poderia haver no mundo outras situações semelhantes a essa. Tão logo, procurei descobrir alguém que fizesse o uso destas mesmas medicações e fiz uma doação, mas isso que levou alguns bons dias para acontecer.
+
+<p align="justify">Passado alguns meses até aqui, lembrei-me desse momento de reflexão e decidi criar a API Farma Bem a fim de intermediar as doações de medicamentos de quem pode doar para quem necessita, de forma gratuita.
 
 <br>
 
 ## **Objetivo**
 
-<p align="justify">O projeto é uma API RESTFull que permite o cadastro das farmácias interessadas em fazer parte desta iniciativa, assim como permitirá aos beneficiários, realizar consulta de disponibilidade de medicamentos e unidade correspondente.
+<p align="justify">Este projeto é uma API RESTFull fundamentada no CRUD, integrado com o banco de dados, sendo possível listar, cadastrar, atualizar e deletar cadastros de farmácias, medicamentos e administradores. 
 
-<p align="justify">A interface é um CRUD completo, integrado com o banco de dados, onde é possível listar, cadastrar, atualizar e deletar cadastros de farmácias, medicamentos e administradores. 
+que permite o cadastro das farmácias interessadas em fazer parte desta iniciativa para receber as doações de medicamentos, realizar uma perícia quanto a qualidade e disponibilizá-los a população.
+
+<p align="justify">Realizar também o cadastro dos medicamentos recebidos e demonstrar sua disponibilidade em estoque na unidade correspondente, desta forma será possível uma consulta prévia pelo beneficiário antes mesmo de sair de casa. 
+
+<p align="justify">
+
+
+- Intermedio entre quem pode doar medicamentos a quem necessita;
+- Reduzir as despesas com a compra de medicamentos;
+- Reaproveitamento dos medicamentos reduzindo o impacto ambiental e com descarte irregular;
 
 API foi desenvolvida como Projeto Final para a conclusão do curso de Backend [{Reprograma}](https://reprograma.com.br/).
   
 <br>
 
 ## **Link**
-
+FALTA COLOCAR O LINK
 - [Apresentação](colocar link aqui)
 
 <br>
 
 ## **Funcionalidades**
 
-- Cadastro das farmácias participantes;
-- Disponibilidade dos medicamentos;
-- Ajudar aos que nececissitam de apoio para aquisição de remédios para pessoas de baixa renda;
-- Reduzir o impacto ambiental com descarte incorreto de medicamentos;
+- Cadastro das farmácias, medicamentos e administradores;
+- Informe da localidade e contado das farmácias e disponibilidade dos medicamentos;
 
 <br>
 
@@ -244,25 +255,23 @@ Se você deseja mais informações sobre os comandos no Git Bash, temos uma pron
 
 <br>
 
-
-
-
 ### Manipulação das Rotas dos Administradores:
 
-| Método HTTP  | Tipo         | Endpoint           | Descrição                                  |
-| ------------ | ------------ | ------------------ | -------------------------------------------|
-| GET          | Rota Pública | `/adm/all`    | Retorna todos os medicamentos              |
-| GET          | Rota Pública | `/medicine/:id`    | Retorna um medicamento específico por id   |
-| POST         | Rota Pública | `/medicine/create` | Cria um novo medicamento                   |
-| PUT          | Rota Pública | `/medicine/:id`    | Altera informações de um comentário        |
-| DELET        | Rota Pública | `/medicine/:id`    | Remove um medicamento específico           |
+| Método HTTP  | Tipo         | Endpoint          | Descrição                                                |
+| ------------ | ------------ | ----------------- | ---------------------------------------------------------|
+| GET          | Rota Privada | `/adm/all`        | Retorna todos os administradores                         |
+| GET          | Rota Pública | `/adm/id/:id`     | Retorna um administrador específico por id               |
+| POST         | Rota Pública | `/adm/register`   | Cadastra um novo administrador                           |
+| POST         | Rota Pública | `/adm/login`      | Retorna o login de um administrador                      |
+| PUT          | Rota Pública | `/adm/update/:id` | Altera informações de um administrador específico por id |
+| DELET        | Rota Pública | `/adm/delete/:id` | Remove um medicamento específico por id                  |
 
 <br>
 
 ## **Dados**
 <br>
 
-### ✅ Dados para Collection Autores
+### Dados para Collection Autores
 
 - id: autogerado e obrigatório
 - nome: texto e obrigatório

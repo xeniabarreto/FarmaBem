@@ -78,7 +78,6 @@ FALTA COLOCAR O LINK
 - Cadastro das farmácias, medicamentos e administradores;
 - Informe da localidade e contato das farmácias;
 - Informe da disponibilidade dos medicamentos.
-
 <br>
 
 ## **Tecnologias Utilizadas**

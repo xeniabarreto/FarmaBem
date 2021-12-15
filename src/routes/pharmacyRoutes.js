@@ -1,14 +1,6 @@
 const express = require("express");
 const router = express.Router();
 
-
-const bodyParser = require('body-parser');
-const swaggerUi = require('swagger-ui-express');
-
-const mainRoutes = require('./routes/main');
-
-
-
 const controller = require("../controllers/pharmacyController");
 
 router.get("/all", controller.getAll);

@@ -172,7 +172,7 @@ Arquitetura padrão da API Farma Bem:
 
 # **Instruções para Instalação**
 
-Agora siga o passo a passo conforme abaixo:
+Siga o passo a passo conforme abaixo:
 
 
 - No terminal Git Bash Here, faça o clone da API Farma Bem:
@@ -219,49 +219,49 @@ Se você deseja mais informações sobre os comandos no Git Bash, temos uma pron
 
 ### Retorna teste com apresentação 
 
-| Método HTTP  | Tipo         | Endpoint                     | Descrição                            |
-| ------------ | ------------ | ---------------------------- | ------------------------------------ |
-| GET          | Rota Pública | `http://localhost:8888/`     |  Mensagem de apresentação (Index)    |             
+| Método HTTP  | Tipo Rota | Endpoint                     | Descrição                            |
+| ------------ | --------- | ---------------------------- | ------------------------------------ |
+| GET          | Pública   | `http://localhost:8888/`     |  Mensagem de apresentação (Index)    |             
 
 <br>
 
 ### Manipulação das Rotas das Farmácias:
 
-| Método HTTP  | Tipo         | Endpoint                | Descrição                                            |
-| ------------ | ------------ | ----------------------- | -----------------------------------------------------|
-| GET          | Rota Pública | `/pharmacy/all`         | Retorna todos as farmácias                           |
-| GET          | Rota Pública | `/pharmacy/find_name`   | Retorna uma farmácia específica por nome             |
-| GET          | Rota Pública | `/pharmacy/search`      | Retorna farmácias por filtros múltiplos              |
-| GET          | Rota Pública | `/pharmacy/find/:id`    | Retorna uma farmácia específica por id               |
-| POST         | Rota Pública | `/pharmacy/create`      | Cadastra uma nova farmácia                           |
-| PUT          | Rota Pública | `/pharmacy/update/:id`  | Altera informações de uma farmácia específica por id |
-| DELET        | Rota Pública | `/pharmacy/delete/:id`  | Remove uma farmácia específica por id                |
+| Método HTTP  | Tipo Rota | Endpoint                | Descrição                                            |
+| ------------ | --------- | ----------------------- | -----------------------------------------------------|
+| GET          | Pública   | `/pharmacy/all`         | Retorna todos as farmácias                           |
+| GET          | Pública   | `/pharmacy/find_name`   | Retorna uma farmácia específica por nome             |
+| GET          | Pública   | `/pharmacy/search`      | Retorna farmácias por filtros múltiplos              |
+| GET          | Pública   | `/pharmacy/find/:id`    | Retorna uma farmácia específica por id               |
+| POST         | Pública   | `/pharmacy/create`      | Cadastra uma nova farmácia                           |
+| PUT          | Pública   | `/pharmacy/update/:id`  | Altera informações de uma farmácia específica por id |
+| DELET        | Pública   | `/pharmacy/delete/:id`  | Remove uma farmácia específica por id                |
 
 <br>
 
 ### Manipulação das Rotas dos Medicamentos:
 
-| Método HTTP  | Tipo         | Endpoint               | Descrição                                           |
-| ------------ | ------------ | ---------------------- | ----------------------------------------------------|
-| GET          | Rota Pública | `/medicine/all`        | Retorna todos os medicamentos                       |
-| GET          | Rota Pública | `/medicine/filter`     | Retorna medicamentos através de filtros múltiplos   |
-| GET          | Rota Pública | `/medicine/id/:id`     | Retorna um medicamento específico por id            |
-| POST         | Rota Pública | `/medicine/create`     | Cadastra um novo medicamento                        |
-| PUT          | Rota Pública | `/medicine/update/:id` | Altera informações um medicamento específico por id |
-| DELET        | Rota Pública | `/medicine/delete/:id` | Remove um medicamento específico por id             |
+| Método HTTP  | Tipo Rota | Endpoint               | Descrição                                           |
+| ------------ | --------- | ---------------------- | ----------------------------------------------------|
+| GET          | Pública   | `/medicine/all`        | Retorna todos os medicamentos                       |
+| GET          | Pública   | `/medicine/filter`     | Retorna medicamentos através de filtros múltiplos   |
+| GET          | Pública   | `/medicine/id/:id`     | Retorna um medicamento específico por id            |
+| POST         | Pública   | `/medicine/create`     | Cadastra um novo medicamento                        |
+| PUT          | Pública   | `/medicine/update/:id` | Altera informações um medicamento específico por id |
+| DELET        | Pública   | `/medicine/delete/:id` | Remove um medicamento específico por id             |
 
 <br>
 
 ### Manipulação das Rotas dos Administradores:
 
-| Método HTTP  | Tipo         | Endpoint          | Descrição                                                |
-| ------------ | ------------ | ----------------- | ---------------------------------------------------------|
-| GET          | Rota Privada | `/adm/all`        | Retorna todos os administradores                         |
-| GET          | Rota Pública | `/adm/id/:id`     | Retorna um administrador específico por id               |
-| POST         | Rota Pública | `/adm/register`   | Cadastra um novo administrador                           |
-| POST         | Rota Pública | `/adm/login`      | Retorna o login de um administrador                      |
-| PUT          | Rota Pública | `/adm/update/:id` | Altera informações de um administrador específico por id |
-| DELET        | Rota Pública | `/adm/delete/:id` | Remove um medicamento específico por id                  |
+| Método HTTP  | Tipo Rota | Endpoint          | Descrição                                                |
+| ------------ | --------- | ----------------- | ---------------------------------------------------------|
+| GET          | Privada   | `/adm/all`        | Retorna todos os administradores                         |
+| GET          | Pública   | `/adm/id/:id`     | Retorna um administrador específico por id               |
+| POST         | Pública   | `/adm/register`   | Cadastra um novo administrador                           |
+| POST         | Pública   | `/adm/login`      | Retorna o login de um administrador                      |
+| PUT          | Pública   | `/adm/update/:id` | Altera informações de um administrador específico por id |
+| DELET        | Pública   | `/adm/delete/:id` | Remove um medicamento específico por id                  |
 
 <br>
 

@@ -11,8 +11,6 @@
 
 ********* ESTRUTURA DE CODIGOS ******************
 
-PASTA PHARMACY
-    Controller - Arrumar validacoes do update, codigo quebrado.
 
 PASTA MEDICINE:
     Models - incluir um item para Stok

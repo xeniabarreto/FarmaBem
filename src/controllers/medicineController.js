@@ -40,14 +40,6 @@ const createMedicine = async (req, res) => {
     
         });
         
-        /*
-        NAO ESTA DEIXANDO CADASTRAR FALSE, APENAS TRUE
-        if (!newMedicine.available) {
-          return res.status(406).json({
-            message: "Obrigatório informar de medicamento está disponivel."
-          })
-        }
-        */
 
         if (!newMedicine.medicine_name) {
           return res.status(406).json({

@@ -60,17 +60,19 @@ const medicineSchema = new mongoose.Schema ({
 
     pharmacy_city: {
        type: String,
-       required: true
+       required: true,
+       uppercase: true,
     },
 
-    state: {
-    type: String,
-    required: true
+    pharmacy_state: {
+       type: String,
+       required: true,
+       uppercase: true
     },
 
     cep: {
-    type: String,
-    required: true
+      type: String,
+      required: true
     },
 
     pharmacy_telephone: {
@@ -79,18 +81,18 @@ const medicineSchema = new mongoose.Schema ({
     },
 
     pharmacy_days_open: {
-    type: String,
-    required: true,
+      type: String,
+      required: true,
     },
 
     pharmacy_hours_of_operation: {
-    type: String,
-    required: true,
+      type: String,
+      required: true,
     },
 
     terms_of_use: {
-    type: Boolean,
-    required: true
+      type: Boolean,
+      required: true
     }
 
 },{timestamps: true}

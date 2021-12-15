@@ -31,7 +31,7 @@ const createMedicine = async (req, res) => {
             pharmacy_address: req.body.pharmacy_address,
             district: req.body.district,
             pharmacy_city: req.body.pharmacy_city,
-            state: req.body.state,
+            pharmacy_state: req.body.pharmacy_state,
             cep: req.body.cep,
             pharmacy_telephone: req.body.pharmacy_telephone,
             pharmacy_days_open: req.body.pharmacy_days_open,
@@ -90,18 +90,17 @@ const createMedicine = async (req, res) => {
           })
         }
 
-        if (newMedicine.pharmacy_city !== "São Paulo") {
+        if (newMedicine.pharmacy_city !== "SÃO PAULO") {
           return res.status(406).json({
             message: "Permitido apenas Farmácias localizadas na cidade de São Paulo - SP."
           })
         }
 
-        /* NÃO SAI DESSE ERRO MESMO ESTANDO CORRETO
-        if (newMedicine.pharmacy_state !== "São Paulo") {
+        if (newMedicine.pharmacy_state !== "SÃO PAULO") {
           return res.status(406).json({
             message: "Permitido apenas Farmácias localizadas no Estado de São Paulo."
           })
-        }*/
+        }
 
         if (!newMedicine.terms_of_use) {
           return res.status(406).json({
@@ -188,7 +187,7 @@ const updateById = async (req, res) => {
             findMedicine.pharmacy_address = req.body.pharmacy_address || findMedicine.pharmacy_address
             findMedicine.district = req.body.district || findMedicine.district
             findMedicine.pharmacy_city = req.body.pharmacy_city || findMedicine.pharmacy_city
-            findMedicine.state = req.body.state || findMedicine.state
+            findMedicine.pharmacy_state = req.body.pharmacy_state || findMedicine.pharmacy_state
             findMedicine.cep = req.body.cep || findMedicine.cep
             findMedicine.pharmacy_telephone = req.body.pharmacy_telephone || findMedicine.pharmacy_telephone
             findMedicine.pharmacy_days_open = req.body.pharmacy_days_open || findMedicine.pharmacy_days_open

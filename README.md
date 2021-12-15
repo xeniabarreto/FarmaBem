@@ -6,13 +6,10 @@
 <p align="center"><p>
 </h1>
 
-<br>
 
-> Iniciativa para doações de medicamentos em São Paulo - SP
+> Iniciativa para reaproveitamento de medicamentos em São Paulo - SP
 
 > Status: **em construção** ✅
-
-
 
 <p align="justify">
   <a>
@@ -21,7 +18,6 @@
   </a>
 </p>
 <br>
-
 
 ## **Sumário**
 
@@ -32,6 +28,7 @@
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Bibliotecas Aplicadas](#bibliotecas-aplicadas)
 - [Arquiretura MVC](#arquitetura-mvc)
+- [Instruções para Instalação](instruções-para-instalação)
 - [Portas](#portas)
 - [Rotas](#rotas)
 - [Dados](#dados)
@@ -44,22 +41,13 @@
 
 <br>
 
-<br>
-
-
 ## **Origem**  
-
-<br>
-
 
 <p align="justify">(SEMPRE ABRIR ISSO DAQUI PARA UM PARAGRAFO NOVO).
 
-
-<br><br>
+<br>
 
 ## **Objetivo**
-
-<br>
 
 <p align="justify">O projeto é uma API RESTFull que permite o cadastro das farmácias interessadas em fazer parte desta iniciativa, assim como permitirá aos beneficiários, realizar consulta de disponibilidade de medicamentos e unidade correspondente.
 
@@ -73,8 +61,6 @@ API foi desenvolvida como Projeto Final para a conclusão do curso de Backend [{
 
 - [Apresentação](colocar link aqui)
 
-
-
 <br>
 
 ## **Funcionalidades**
@@ -83,9 +69,6 @@ API foi desenvolvida como Projeto Final para a conclusão do curso de Backend [{
 - Disponibilidade dos medicamentos;
 - Ajudar aos que nececissitam de apoio para aquisição de remédios para pessoas de baixa renda;
 - Reduzir o impacto ambiental com descarte incorreto de medicamentos;
-
-<br>
-
 
 <br>
 
@@ -103,7 +86,6 @@ Para a construção deste projeto, as seguintes tecnologias foram utilizadas:
 <a  href="https://dashboard.heroku.com/apps"><img  alt="Heroku"  src="https://img.shields.io/badge/Heroku-pink">
 <a  href=""><img  alt="Mit"  src="https://img.shields.io/badge/Licence MIT-pink"></a>
 
-<br>
 <br>
 
 ## **Bibliotecas Aplicadas**
@@ -124,12 +106,15 @@ Para a construção deste projeto, as seguintes bibliotecas foram aplicadas:
 <br>
 
 ## **Arquitetura MVC** 
-
+Arquitetura padrão da API Farma Bem:
 ```
  📁 FARMABEM
    |
+   |-  📁 __test__
+   |    |- 📑 pharmacy.test.js
+   |
    |-  📁 assets
-   |    |- 📑 logo_animado.gif
+   |    |- 📑 logo_animado_ofic.gif
    |
    |-  📁 src
    |    |
@@ -141,6 +126,12 @@ Para a construção deste projeto, as seguintes bibliotecas foram aplicadas:
    |    |- 📁 database
    |         |- 📑 mongoConfig.js
    |
+   |    |- 📁 helpers
+   |         |- 📑 auth.js
+   |
+   |    |- 📁 middlewares
+   |         |- 📑 auth.js
+   |
    |    |- 📁 models
    |         |- 📑 admSchema.js
    |         |- 📑 medicineSchema.js
@@ -148,11 +139,15 @@ Para a construção deste projeto, as seguintes bibliotecas foram aplicadas:
    |
    |    |- 📁 routes
    |         |- 📑 amdRoutes.js 
+   |         |- 📑 index.js
    |         |- 📑 medicineRoutes.js
    |         |- 📑 pharmacyRoutes.js
    |
    |    |- 📑 app.js
-   |
+   
+   |   |
+   |-  📁 swagger
+   |   |- 📑 swagger_output.json
    |
    |- 📑 .env
    |- 📑 .env.example
@@ -162,65 +157,105 @@ Para a construção deste projeto, as seguintes bibliotecas foram aplicadas:
    |- 📑 Procfile
    |- 📑 README.md
    |- 📑 server.js
+   |- 📑 swagger.js
 
 ```
 <br>
 
-# **Portas**
+# **Instruções para Instalação**
+
+Agora siga o passo a passo conforme abaixo:
+
+
+- No terminal Git Bash Here, faça o clone da API Farma Bem:
+
+      git clone https://github.com/xeniabarreto/FarmaBem.git
+
+- Se desejar criar modificações no código, crie uma nova branch, senão pule esta etapa:
+
+      git checkout -b nome-da-sua-branch
+
+- Entre na pasta da API Farma Bem:
+
+      cd FarmaBem
+
+- Após entrar na pasta da API FarmaBem, instale todas as dependências: 
+
+      npm install ou npm i
+
+- Finalizado este processo, você estará apto a executar nossa API Farma Bem, utilize o último comando para finalizar:
+
+      npm start
+
+Aos que fizeram implementações para esta API, por gentileza, realize o push e envie uma solicitação de pull request. 
+
+Se você deseja mais informações sobre os comandos no Git Bash, temos uma pronta referência <a href="https://gist.github.com/xeniabarreto/93e05f03d5545ebd61984b11ad079d62">aqui</a>.
+
+
+
 <br>
 
-### 🔃 Portas
+# **Portas**
+
+### Opções de Portas
 
 * Local: http://localhost:8888 - (rodando localmente)
 
 * Heroku: http://farma-bem.herokuapp.com/ - (consumir API)
 
-    * Utilize o [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) para para chamar e testar os endpoints da API localmente ou via Heroku.
+    * Utilize o [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) para chamar e testar os endpoints da API localmente ou via Heroku.
 
 <br>
 
 # **Rotas**
 
-### 🔃 Retorna teste com apresentação 
+### Retorna teste com apresentação 
 
-| Método HTTP  | Endpoint                     | Descrição                            |
-| ------------ | ---------------------------- | ------------------------------------ |
-| GET          | `http://localhost:8888/`     |  Mensagem de apresentação (Index)    |             |
-
-<br>
-
-### 🔃 Manipulação das Rotas das Farmácias:
-
-| Método HTTP  | Endpoint                | Descrição                            |
-| ------------ | ----------------------- | ------------------------------------ |
-| GET          | `/pharmacy/all`         | Retorna todos as farmácias           |
-| GET          | `/pharmacy/:id`         | Retorna farmácia específico por id      |
-| POST         | `/pharmacy/create`      | Cria/cadastra um novo farmácia          |
-| PUT          | `/pharmacy/:id`         | Altera informações de um farmácia       |
-| DELET        | `/pharmacy/:id`         | Remove um farmácia específico           |
+| Método HTTP  | Tipo         | Endpoint                     | Descrição                            |
+| ------------ | ------------ | ---------------------------- | ------------------------------------ |
+| GET          | Rota Pública | `http://localhost:8888/`     |  Mensagem de apresentação (Index)    |             
 
 <br>
 
-### 🔃 Manipulação das Rotas dos Medicamentos:
+### Manipulação das Rotas das Farmácias:
 
-| Método HTTP  | Endpoint              | Descrição                                  |
-| ------------ | --------------------- | ------------------------------------------ |
-| GET          | `/medicine/all`       | Retorna todos os medicamentos              |
-| GET          | `/medicine/:id`       | Retorna um medicamento específico por id   |
-| POST         | `/medicine/create`    | Cria um novo medicamento                   |
-| PUT          | `/medicine/:id`       | Altera informações de um comentário        |
-| DELET        | `/medicine/:id`       | Remove um medicamento específico           |
+| Método HTTP  | Tipo         | Endpoint                | Descrição                                            |
+| ------------ | ------------ | ----------------------- | -----------------------------------------------------|
+| GET          | Rota Pública | `/pharmacy/all`         | Retorna todos as farmácias                           |
+| GET          | Rota Pública | `/pharmacy/find_name`   | Retorna uma farmácia específica por nome             |
+| GET          | Rota Pública | `/pharmacy/search`      | Retorna farmácias por filtros múltiplos              |
+| GET          | Rota Pública | `/pharmacy/find/:id`    | Retorna uma farmácia específica por id               |
+| POST         | Rota Pública | `/pharmacy/create`      | Cadastra uma nova farmácia                           |
+| PUT          | Rota Pública | `/pharmacy/update/:id`  | Altera informações de uma farmácia específica por id |
+| DELET        | Rota Pública | `/pharmacy/delete/:id`  | Remove uma farmácia específica por id                |
 
 <br>
 
-### 🔃 Manipulação das Rotas de Administradores:
+### Manipulação das Rotas dos Medicamentos:
 
-| Método HTTP  | Endpoint               | Descrição                                         |
-| ------------ | ---------------------- | ------------------------------------------------- |
-| GET          | `/adm/all`             | Retorna todos os livros cadastrados               |
-| POST         | `/adm/creat`           | Cria/cadastra um novo livro                       |
-| PUT          | `/adm/:id`             | Altera informações de um livro                    |
-| DELET        | `/adm/:id`             | Remove um livro específico                        |
+| Método HTTP  | Tipo         | Endpoint               | Descrição                                           |
+| ------------ | ------------ | ---------------------- | ----------------------------------------------------|
+| GET          | Rota Pública | `/medicine/all`        | Retorna todos os medicamentos                       |
+| GET          | Rota Pública | `/medicine/filter`     | Retorna medicamentos através de filtros múltiplos   |
+| GET          | Rota Pública | `/medicine/id/:id`     | Retorna um medicamento específico por id            |
+| POST         | Rota Pública | `/medicine/create`     | Cadastra um novo medicamento                        |
+| PUT          | Rota Pública | `/medicine/update/:id` | Altera informações um medicamento específico por id |
+| DELET        | Rota Pública | `/medicine/delete/:id` | Remove um medicamento específico por id             |
+
+<br>
+
+
+
+
+### Manipulação das Rotas dos Administradores:
+
+| Método HTTP  | Tipo         | Endpoint           | Descrição                                  |
+| ------------ | ------------ | ------------------ | -------------------------------------------|
+| GET          | Rota Pública | `/adm/all`    | Retorna todos os medicamentos              |
+| GET          | Rota Pública | `/medicine/:id`    | Retorna um medicamento específico por id   |
+| POST         | Rota Pública | `/medicine/create` | Cria um novo medicamento                   |
+| PUT          | Rota Pública | `/medicine/:id`    | Altera informações de um comentário        |
+| DELET        | Rota Pública | `/medicine/:id`    | Remove um medicamento específico           |
 
 <br>
 

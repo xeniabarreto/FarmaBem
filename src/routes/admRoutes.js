@@ -13,15 +13,4 @@ router.put("/update/:id", controller.updateById);
 router.delete("/delete/:id", controller.deleteById);
 
 
-
-/*
-
-OPÇÕES DE ROTAS COM VALIDAÇÃO DE TOKEN E CHECAR AUTENTICAÇÃO
-router.get("/all", checkToken, controller.getAll);
-router.get("/:id", checkToken, controller.getById);
-router.post("/register", loginAuth, controller.createUser);
-router.put("/update", checkToken, loginAuth, controller.updatedUSer);
-router.delete("/delete", checkToken, controller.deleteUser);
- */
-
 module.exports = router

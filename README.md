@@ -76,7 +76,8 @@ FALTA COLOCAR O LINK
 ## **Funcionalidades**
 
 - Cadastro das farmácias, medicamentos e administradores;
-- Informe da localidade e contado das farmácias e disponibilidade dos medicamentos;
+- Informe da localidade e contato das farmácias;
+- Informe da disponibilidade dos medicamentos.
 
 <br>
 
@@ -93,6 +94,7 @@ Para a construção deste projeto, as seguintes tecnologias foram utilizadas:
 <a  href="https://code.visualstudio.com/"><img  alt="VsCode"  src="https://img.shields.io/badge/VSCode-pink">
 <a  href="https://dashboard.heroku.com/apps"><img  alt="Heroku"  src="https://img.shields.io/badge/Heroku-pink">
 <a  href=""><img  alt="Mit"  src="https://img.shields.io/badge/Licence MIT-pink"></a>
+
 
 <br>
 
@@ -172,7 +174,7 @@ Arquitetura padrão da API Farma Bem:
 
 ## **Instruções para Instalação**
 
-Siga o passo a passo conforme abaixo:
+Para intalação desta API, siga o passo a passo conforme abaixo:
 
 
 - No terminal Git Bash Here, faça o clone da API Farma Bem:

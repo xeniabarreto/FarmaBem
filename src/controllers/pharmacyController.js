@@ -248,27 +248,27 @@ const updatePhamarcyById = async (req, res) => {
       findPharmacy.terms_of_use = req.body.terms_of_use || findPharmacy.terms_of_use
     } 
       
-    if(newPharmacy.cnpj.length > 18 || newPharmacy.cnpj.length < 18){
+    if(findPharmacy.cnpj.length > 18 || findPharmacy.cnpj.length < 18){
       return res.status(406).json({
         message: "Antenção: preencher o CNPJ corretamente com 14 dígitos.",
         for_example: "12.345.678/0001-23"
       })
     }
 
-    if(newPharmacy.city !== "São Paulo"){
+    if(findPharmacy.city !== "São Paulo"){
       return res.status(406).json({
         message: "Cadastro permitido apenas para Farmácias localizadas na cidade de São Paulo - SP."
       });
     }
 
-    if(newPharmacy.state !== "São Paulo"){
+    if(findPharmacy.state !== "São Paulo"){
       return res.status(406).json({
         message: "Cadastro permitido apenas para Farmácias localizadas no estado de São Paulo."
       });
     }
 
 
-    if(newPharmacy.cep.length < 9 || newPharmacy.cep.length > 9){
+    if(findPharmacy.cep.length < 9 || findPharmacy.cep.length > 9){
       return res.status(406).json({
         message: "Atenção: o cep deverá conter 9 digitos.",
         for_example: "12345-678"
@@ -283,7 +283,7 @@ const updatePhamarcyById = async (req, res) => {
     if(findPharmacyByCnpj) {
       return res.status(406).json({
         message: "Este CNPJ já encontra-se cadastrado em nosso Banco de Dados.",
-        pay_attention: "É permitido apenas um CNPJ por Farmácia cadastrada."
+        pay_attention: "Se não houve mudança em seu CNPJ não é necessário preenche-lo novamente para esta atualização."
       });
     }
 
@@ -294,7 +294,8 @@ const updatePhamarcyById = async (req, res) => {
 
     if(findPharmacyByEmail) {
       return res.status(406).json({
-        message: "O e-mail informado ja encontra-se cadastrado, por gentileza informar outro endereço."
+        message: "O e-mail informado ja encontra-se cadastrado nosso Banco de Dados.",
+        pay_attention: "Se não houve mudança em seu endereço de e-mail, não é necessário preenche-lo novamente para esta atualização."
       })
     };
 

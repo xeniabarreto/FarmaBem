@@ -27,7 +27,7 @@ const register = async (req, res) => {
         if (adminExist) {
           return res.status(406).json({
             message:
-              "Administrador já cadastrado atraves deste e-mail.",
+              "Administrador já cadastrado através deste e-mail.",
           });
         }
 

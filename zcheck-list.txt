@@ -2,7 +2,7 @@
 
 - Responder e-mail para formatura do Reprograma - Curriculo no site
 - Preencher documento compartilhado no Classroom
-- Montar o Readme - etidar e revisar inteiro
+- Montar o Readme - editdar e revisar inteiro
 - Postman Atualizar as rotas do Heroku
 - Testar todas as rotas no Postman
 - Se der tempo corrigir nome das rotas de ADM / MEDICINE / PHARMACY de forma padronizada
@@ -17,7 +17,9 @@ PASTA MEDICINE:
     Models - incluir um item para Stok
 
 PASTA ADM:
+    Só tem uma rota privada que é o ALL
     Aplicar validação do Token nas rotas privadas
+    Verificar o erro adm All retorno "Inserir toKEN vALIDO.
     Aplicar validação para tamanho da senha / e alfanumerica - FAZER DEPOIS DA ENTREGA
 
 
@@ -40,10 +42,12 @@ MELHORIAS FUTURAS
 erro: 
 "menssage": "Performing an update on the path '_id' would modify the immutable field '_id'" }
 
+FAZER TESTE COM _ID 
+
 const stokMedicine = async (req, res) => {
     try {
-        const { id } = req.params
-        medicine = await MedicineSchema.findById(id)
+        const { _id } = req.params
+        medicine = await MedicineSchema.findById(_id)
 
         medicine.stokMedicine += 1
 
@@ -66,31 +70,6 @@ const dislike = async (req, res) => {
         return res.status(200).send(livro)
     } catch (error) {
         return res.status(404).send({ message: 'Livro não encontrado' })
-    }
-}
-
-
-//MÉTODO PATCH atualização de qualquer parte da tarefa separadamente
-/*const updateAnything = async (req, res) => {
-
-    const livro = await Livro.findById(req.params.id)
-    const body = req.body
-
-    if (livro == null) res.status(404).json({ message: 'Livro não encontrado!' })
-
-    Object.keys(body).forEach(key => {
-        livro[key] = body[key]
-    })
-
-    try {
-        const livroUpdated = await livro.save()
-        return res.status(200).json({
-            message: "Livro atualizado com sucesso!",
-            livroUpdated
-        })
-
-    } catch (err) {
-        return res.status(500).json({ message: err.message })
     }
 }
 

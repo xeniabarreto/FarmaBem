@@ -170,7 +170,7 @@ Arquitetura padrão da API Farma Bem:
 ```
 <br>
 
-# **Instruções para Instalação**
+## **Instruções para Instalação**
 
 Siga o passo a passo conforme abaixo:
 
@@ -203,7 +203,7 @@ Se você deseja mais informações sobre os comandos no Git Bash, temos uma pron
 
 <br>
 
-# **Portas**
+## **Portas**
 
 ### Opções de Portas
 
@@ -215,7 +215,7 @@ Se você deseja mais informações sobre os comandos no Git Bash, temos uma pron
 
 <br>
 
-# **Rotas**
+## **Rotas**
 
 ### Retorna teste com apresentação 
 

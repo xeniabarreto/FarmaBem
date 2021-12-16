@@ -277,8 +277,6 @@ Se você deseja mais informações sobre os comandos no Git Bash, temos uma pron
 
 Veja abaixo a demonstração de um CRUD completo desta API, realizada no <a href="https://www.postman.com/">Postman</a>:
 
-<br>
-
 <h1 align="center">
   <img src="./assets/crud_example.gif" width="900">
 <p align="center"><p>

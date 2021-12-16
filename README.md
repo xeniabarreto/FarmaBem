@@ -237,9 +237,9 @@ Se você deseja mais informações sobre os comandos no Git Bash, temos uma pron
 | Método HTTP  | Tipo Rota | Endpoint                | Descrição                                            |
 | ------------ | --------- | ----------------------- | -----------------------------------------------------|
 | GET          | Pública   | `/pharmacy/all`         | Retorna todas as farmácias                           |
-| GET          | Pública   | `/pharmacy/find_name`   | Retorna uma farmácia específica por nome             |
-| GET          | Pública   | `/pharmacy/search`      | Retorna farmácias por filtros múltiplos              |
-| GET          | Pública   | `/pharmacy/find/:id`    | Retorna uma farmácia específica por id               |
+| GET          | Pública   | `/pharmacy/name`        | Retorna uma farmácia específica por nome             |
+| GET          | Pública   | `/pharmacy/filter`      | Retorna farmácias por filtros múltiplos              |
+| GET          | Pública   | `/pharmacy/:id`         | Retorna uma farmácia específica por id               |
 | POST         | Pública   | `/pharmacy/create`      | Cadastra uma nova farmácia                           |
 | PUT          | Pública   | `/pharmacy/update/:id`  | Altera informações de uma farmácia específica por id |
 | DELET        | Pública   | `/pharmacy/delete/:id`  | Remove uma farmácia específica por id                |
@@ -252,7 +252,7 @@ Se você deseja mais informações sobre os comandos no Git Bash, temos uma pron
 | ------------ | --------- | ---------------------- | ----------------------------------------------------|
 | GET          | Pública   | `/medicine/all`        | Retorna todos os medicamentos                       |
 | GET          | Pública   | `/medicine/filter`     | Retorna medicamentos através de filtros múltiplos   |
-| GET          | Pública   | `/medicine/id/:id`     | Retorna um medicamento específico por id            |
+| GET          | Pública   | `/medicine/:id`        | Retorna um medicamento específico por id            |
 | POST         | Pública   | `/medicine/create`     | Cadastra um novo medicamento                        |
 | PUT          | Pública   | `/medicine/update/:id` | Altera informações um medicamento específico por id |
 | DELET        | Pública   | `/medicine/delete/:id` | Remove um medicamento específico por id             |
@@ -264,8 +264,8 @@ Se você deseja mais informações sobre os comandos no Git Bash, temos uma pron
 | Método HTTP  | Tipo Rota | Endpoint          | Descrição                                                |
 | ------------ | --------- | ----------------- | ---------------------------------------------------------|
 | GET          | Privada   | `/adm/all`        | Retorna todos os administradores                         |
-| GET          | Privada   | `/adm/id/:id`     | Retorna um administrador específico por id               |
-| POST         | Pública   | `/adm/register`   | Cadastra um novo administrador                           |
+| GET          | Privada   | `/adm/:id`        | Retorna um administrador específico por id               |
+| POST         | Pública   | `/adm/create`     | Cadastra um novo administrador                           |
 | POST         | Pública   | `/adm/login`      | Retorna o login de um administrador                      |
 | PUT          | Privada   | `/adm/update/:id` | Altera informações de um administrador específico por id |
 | DELET        | Privada   | `/adm/delete/:id` | Remove um medicamento específico por id                  |

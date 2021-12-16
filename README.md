@@ -44,7 +44,7 @@
 
 <p align="justify">No processo de organização das coisas que ela havia deixado, encontrei uma quantidade significativa de medicamentos para doenças como diabetes e hipertensão, todos dentro do prazo de validade. 
 
-<p align="justify">Olhei aquele montante e me indaguei sobre como poderia haver no mundo outras situações semelhantes a essa. Tão logo, procurei descobrir alguém que fizesse o uso destas medicações e doei, mas isso levou alguns dias para acontecer.
+<p align="justify">Olhei aquele montante e me indaguei sobre como poderia haver outras situações semelhantes a essa no mundo. Tão logo, procurei descobrir alguém que fizesse o uso destas medicações e doei, mas isso levou alguns dias para acontecer.
 
 <p align="justify">Passado alguns meses até aqui, lembrei-me desse momento de reflexão e decidi criar a API Farma Bem a fim de reaproveitar medicamentos, intermediando quem pode doar a quem necessita, de forma gratuita.
 <br>

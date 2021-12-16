@@ -31,8 +31,7 @@
 - [Instruções para Instalação](instruções-para-instalação)
 - [Portas](#portas)
 - [Rotas](#rotas)
-- [Dados](#dados)
-- [Aprendizados](#aprendizados)
+- [Collections](#collections)
 - [Melhorias Futuras](#melhorias-futuras)
 - [Referências](#referências)
 - [Agradecimentos](#agradecimentos)
@@ -43,9 +42,11 @@
 
 <p align="justify">Em meio a Pandemia da Covid-19, tive a infelicidade de ver a vida da minha mãe ceifada por essa doença tão avassaladora, uma experiência amarga e dolorosa. 
 
-<p align="justify">No processo de organização das coisas que ela havia deixado, encontrei uma quantidade significativa de medicamentos para doenças como diabetes e hipertensão, todos ainda dentro do prazo de validade. Olhei aquele montante e me indaguei sobre como poderia haver no mundo outras situações semelhantes a essa. Tão logo, procurei descobrir alguém que fizesse o uso destas mesmas medicações e fiz uma doação, mas isso que levou alguns bons dias para acontecer.
+<p align="justify">No processo de organização das coisas que ela havia deixado, encontrei uma quantidade significativa de medicamentos para doenças como diabetes e hipertensão, todos dentro do prazo de validade. 
 
-<p align="justify">Passado alguns meses até aqui, lembrei-me desse momento de reflexão e decidi criar a API Farma Bem a fim de intermediar as doações de medicamentos de quem pode doar para quem necessita, de forma gratuita.
+<p align="justify">Olhei aquele montante e me indaguei sobre como poderia haver no mundo outras situações semelhantes a essa. Tão logo, procurei descobrir alguém que fizesse o uso destas medicações e doei, mas isso levou alguns dias para acontecer.
+
+<p align="justify">Passado alguns meses até aqui, lembrei-me desse momento de reflexão e decidi criar a API Farma Bem a fim de reaproveitar medicamentos, intermediando quem pode doar a quem necessita, de forma gratuita.
 <br>
 
 ## **Objetivo**
@@ -293,7 +294,7 @@ Se você deseja mais informações sobre os comandos no Git Bash, temos uma pron
 
 <br>
 
-## **Dados**
+## **Collections**
 
 ### Dados para Collection Farmácia
 

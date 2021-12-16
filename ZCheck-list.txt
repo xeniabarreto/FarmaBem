@@ -7,18 +7,38 @@
 
 - Responder e-mail para formatura do Reprograma - Curriculo no site
 - apagar as pastas node_modules dos outros projetos
-- Documentação apiDoc - para gerar a documentação
+- Documentação Swagger ou apiDoc - para gerar a documentação
 
 ***********ROTAS***********
     - Postman Atualizar Heroku - FALTA SOMENTE ADM com erro
-    - Se der tempo renomear os CRUDs de ADM / MEDICINE / PHARMACY de forma padronizada
 
 ***********ESTRUTURA DE CODIGOS ******************
 PASTA MEDICINE:
     Controller - PUT - Aplicar validacoes
-    Controller - estrutura do like no controller para somatizar os remedios de entrada, cod abaixo
-    Models - incluir um item para Stok
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=======================================================================================================================================
 
 
 VER DEPOIS: 
@@ -29,40 +49,12 @@ VER DEPOIS:
         /pharmacy/search?"informarcep"&"insiracidade" - ROTAS COM QUERY PARMS multiplos SÓ PRA ALGUNS GETS
         atenção aos gets mulplpipos boelando colocar só true or false
 
-***********SWAGGER VER DEPOIS***********
+    MEDICINE
+    Controller - estrutura do like no controller para somatizar os remedios de entrada, cod abaixo
+    Models - incluir um item para Stok
+
 
 ***********TESTES  SEGUIR EX DARIELLY***********
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- .                                         ROTAS ADMINISTRADORES
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

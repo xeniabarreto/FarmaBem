@@ -69,6 +69,28 @@ que permite o cadastro das farmácias interessadas em fazer parte desta iniciati
 
 API foi desenvolvida como Projeto Final para a conclusão do curso de Backend [{Reprograma}](https://reprograma.com.br/).
   
+
+
+## **Aprendizados**
+<br>
+<p> A construção deste projeto consiste em uma API RESTFull fundamentada no CRUD com a integração do banco de dados NoSQL. 
+<br>
+<br>
+
+- Definição CRUD: 
+    
+
+      CREATE (CRIAR)
+      READ (LER, CONSULTAR)
+      UPDATE (ATUALIZAR) 
+      DELETE (DESTRUIÇÃO, REMOÇÃO)
+
+<br>
+
+
+
+
+
 <br>
 
 ## **Link**
@@ -273,7 +295,7 @@ Se você deseja mais informações sobre os comandos no Git Bash, temos uma pron
 
 ## **Dados**
 
-### Dados para Collection Farmácias
+### Dados para Collection Farmácia
 
 - id: autogerado e obrigatório
 - cnpj: texto e obrigatório
@@ -320,7 +342,7 @@ Se você deseja mais informações sobre os comandos no Git Bash, temos uma pron
 ```
  <br>
 
- ###  Dados para Collection Medicamentos
+ ###  Dados para Collection Medicamento
 
 - id: autogerado e obrigatório
 - available: booleano e obriatório
@@ -348,34 +370,43 @@ Se você deseja mais informações sobre os comandos no Git Bash, temos uma pron
 
 ```jsx
 {
-    "likes": 1,
-    "criadoEm": "2021-07-02T12:43:39.099Z",
-    "_id": "60df0a0382bb996448b380c0",
-    "titulo": "O casamento",
-    "sinopse": "PARA OS NOIVOS É O DIA MAIS IMPORTANTE DE SUAS VIDAS Meses pior. Agora, ele é o único capaz de encontrar respostas. O problema é que as mortes não param de acontecer...",
-    "farmácia": {
-        "criadoEm": "2021-07-02T12:24:59.726Z",
-        "_id": "60df0799f34e3c6ebca1dce0",
-        "nome": "Victor Bonini",
-        "biografia": "Victor Bonini nasceu em São Paulo, capital, e se mudou  desenvolver suas próprias histórias.",
-        "email": "victorbonini@gmail.com",
-         "__v": 0
-    },
-    "genero": "suspense",
-    "paginas": 368,
-    "idioma": "poetugues",
-    "exibicao": "download do livro",
-    "__v": 0
+    "message": "Medicamento Dorflex foi cadastrado com sucesso!",
+    "savedMedicine": {
+        "available": true,
+        "medicine_name": "Dorflex",
+        "composition": "dipirona mono-hidratada 300mg / citrato de orfenadrina 35mg",
+        "batch": "E5325AG",
+        "manufacture": "15/02/2021",
+        "expiration": "16/02/2022",
+        "controlled_use": false,
+        "retain_revenue": false,
+        "pharmacy_name": "Farma Bem",
+        "pharmacy_address": "Rua das Flores",
+        "district": "Bela Vista",
+        "pharmacy_city": "SÃO PAULO",
+        "pharmacy_state": "SÃO PAULO",
+        "cep": "02613-010",
+        "pharmacy_telephone": "11 2565-6852S",
+        "pharmacy_days_open": "Sedunda a Domingo",
+        "pharmacy_hours_of_operation": "24 horas",
+        "terms_of_use": true,
+        "_id": "61baa4c39e8ea4baba9adae7",
+        "createdAt": "2021-12-16T02:30:27.743Z",
+        "updatedAt": "2021-12-16T02:30:27.743Z",
+        "__v": 0
+    }
 }
-
 ```
 
 <br>
 
-### ✅ Dados para Collection comentário
+### Dados para Collection Administrador
 
 - id: autogerado e obrigatório
-- comentario: texto e obrigatório
+- username: texto e obrigatório
+- email: texto e obrigatório
+- password: texto e obrigatório
+- terms_of_use: booleano e obriatório
 - criadoEm: data gerada automaticamente e obrigatório
 
 <br>
@@ -383,14 +414,19 @@ Se você deseja mais informações sobre os comandos no Git Bash, temos uma pron
 ### ✅ API deverá retornar seguinte JSON:
    
 ```jsx
-
 {
-    "criadoEm": "2021-07-05T16:34:19.089Z",
-    "_id": "60df0bdcf0a295a0f4207f91",
-    "comentario": "Nunca tinha lido nada de Victor Bonini e confesso que me surpreendi e muito. História bem traçada e com final que para mim, foi inimaginável.",
-    "__v": 0
-} 
-
+    "message": "Adm cadastrado com sucesso!",
+    "savedUser": {
+        "username": "Amanda Sampaio",
+        "email": "sampaio_amanda@gmail.com",
+        "password": "$2b$10$v.WZBfL5eOAux7QtUZSDzeD5XdKpGWbhBQB.DHgTOgp8pFs8th2Ly",
+        "terms_of_use": true,
+        "_id": "61baa5cf79311652fbab3124",
+        "createdAt": "2021-12-16T02:34:55.966Z",
+        "updatedAt": "2021-12-16T02:34:55.966Z",
+        "__v": 0
+    }
+}
 ```
 <br>
 
@@ -402,60 +438,41 @@ Se você deseja mais informações sobre os comandos no Git Bash, temos uma pron
 *  Implantação de código HTML e CSS para criação de uma interface capaz de possibilitar a interação do usuário com aplicação;
 *  Desenvolver uma interface que permita transmitir informações aos usuários sobre manipulação, conservação e descarte adequado de medicamentos.
 
-<br>
 
-Obs.: Toda sugestão de melhoria deste projeto será muito bem-vinda!!!
 
-<br>
-
-## **Aprendizados**
-<br>
-<p> A construção deste projeto consiste em uma API RESTFull fundamentada no CRUD com a integração do banco de dados NoSQL. 
-<br>
-<br>
-
-- Definição CRUD: 
-    
-
-      CREATE (CRIAR)
-      READ (LER, CONSULTAR)
-      UPDATE (ATUALIZAR) 
-      DELETE (DESTRUIÇÃO, REMOÇÃO)
+Toda sugestão de melhoria deste projeto será muito bem-vinda!!!
 
 <br>
-
-
-
 
 ##  **Referências**
 
 <h3>
 
+> <a href="https://globoplay.globo.com/v/9803296/">Projeto solidário ajuda reaproveitar medicamentos no RS</p></a>
 
-
- > <a href="https://www.saude.mg.gov.br/cer/story/9819-descarte-irregular-de-medicamentos-causa-impactos-a-saude-e-ao-meio-ambiente">Dados descarte de medicamentos no meio ambiente</p></a>
+ > <a href="https://portais.univasf.edu.br/sustentabilidade/noticias-sustentaveis/descarte-de-medicamentos-vencidos-como-e-onde-descartar-corretamente">Universidade Federal do Vale do Rio São Francisco</p></a>
 
  > <a href="http://aquitemremedio.prefeitura.sp.gov.br/#/"><p align="">Aqui tem remédio</p></a>
 
- 
+ > <a href="https://github.com/letidesi/saudex"><p align="">Inspiração para criação do Readme - Letícia Desidero</p></a>
+
+ > <a href="https://github.com/elisabetealves/reprograma-estante-de-historias"><p align="">Inspiração para criação do Readme - Elisabete Alves</p></a>
+
+  > <a href="https://github.com/priscilaestevao/pretitudes-project-reprograma"><p align="">Inspiração para criação do Readme - Priscila Estevão </p></a> 
 
 </h3>
-
-
-<br>
 
 <br>
 
 ##  **Agradecimentos**
 
-<br>
-<p>
- AGRADECER AQUI </p>
+
+<p> AGRADECER AQUI </p>
 
 
 <p> linkar o insta de quem nao tem linkedin <a href="https://www.instagram.com/may_desiderio/">POR NOME AQUI</a>, desse jeito.</p>
 
-<p> Ao <a href="https://www.linkedin.com/company/reprogramabr/">{Reprograma}</a> colocar <a href="https://www.linkedin.com/in/amanda-santos-b50200165/">Amanda Leal</a> e <a href="https://www.linkedin.com/in/leticiardesiderio/">Letícia Desiderio</a> .
+<p>  <a href="https://www.linkedin.com/company/reprogramabr/">{Reprograma}</a>  a  <a href="https://www.linkedin.com/in/amanda-santos-b50200165/">Amanda Leal</a> e <a href="https://www.linkedin.com/in/leticiardesiderio/">Letícia Desiderio</a> .
 
 FALTA MAIS GENTE </p>
 

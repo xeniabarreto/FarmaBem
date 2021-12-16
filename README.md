@@ -291,9 +291,8 @@ Se você deseja mais informações sobre os comandos no Git Bash, temos uma pron
 - terms_of_use:booleano e obriatório
 - criadoEm: data gerada automaticamente e obrigatório
 
-<br>
 
-### API deve retornar seguinte JSON:
+### API deverá retornar seguinte JSON:
 
 ```jsx
 
@@ -337,7 +336,7 @@ Se você deseja mais informações sobre os comandos no Git Bash, temos uma pron
 
 <br>
 
-### ✅ API deve retornar seguinte JSON:
+### ✅ API deverá retornar seguinte JSON:
 
 ```jsx
 {
@@ -373,7 +372,7 @@ Se você deseja mais informações sobre os comandos no Git Bash, temos uma pron
 
 <br>
 
-### ✅ API deve retornar seguinte JSON:
+### ✅ API deverá retornar seguinte JSON:
    
 ```jsx
 

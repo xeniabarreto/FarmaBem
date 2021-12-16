@@ -2,9 +2,8 @@
 ***********A FAZER***********
 
 - Responder e-mail para formatura do Reprograma - Curriculo no site
-- Preencher documento compartilhado no Classroom
-- Documentação apiDoc - para gerar a documentação
 - apagar as pastas node_modules dos outros projetos
+- Documentação apiDoc - para gerar a documentação
 
 ***********APRESENTAÇÃO***********
 - colocar gif dos endpontis na apresentação

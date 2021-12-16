@@ -263,39 +263,58 @@ Se você deseja mais informações sobre os comandos no Git Bash, temos uma pron
 | Método HTTP  | Tipo Rota | Endpoint          | Descrição                                                |
 | ------------ | --------- | ----------------- | ---------------------------------------------------------|
 | GET          | Privada   | `/adm/all`        | Retorna todos os administradores                         |
-| GET          | Pública   | `/adm/id/:id`     | Retorna um administrador específico por id               |
+| GET          | Privada   | `/adm/id/:id`     | Retorna um administrador específico por id               |
 | POST         | Pública   | `/adm/register`   | Cadastra um novo administrador                           |
 | POST         | Pública   | `/adm/login`      | Retorna o login de um administrador                      |
-| PUT          | Pública   | `/adm/update/:id` | Altera informações de um administrador específico por id |
-| DELET        | Pública   | `/adm/delete/:id` | Remove um medicamento específico por id                  |
+| PUT          | Privada   | `/adm/update/:id` | Altera informações de um administrador específico por id |
+| DELET        | Privada   | `/adm/delete/:id` | Remove um medicamento específico por id                  |
 
 <br>
 
 ## **Dados**
 <br>
 
-### Dados para Collection Autores
+### Dados para Collection Farmácias
 
 - id: autogerado e obrigatório
-- nome: texto e obrigatório
-- biografia: texto e obrigatório 
-- email: texto e obrigatório 
+- cnpj: texto e obrigatório
+- name: texto e obrigatório
+- address: texto e obrigatório
+- district: texto e obrigatório
+- city: texto e obrigatório
+- state: texto e obrigatório
+- cep: texto e obrigatório
+- telephone: texto e obrigatório
+- email: texto e obrigatório
+- days_open: texto e obrigatório
+- hours_of_operation: texto e obrigatório
+- terms_of_use:booleano e obriatório
 - criadoEm: data gerada automaticamente e obrigatório
 
 <br>
 
-### ✅ API deve retornar seguinte JSON:
+### API deve retornar seguinte JSON:
 
 ```jsx
 
 {
-    "message": "Autor cadastrado com sucesso!",
-    "farmácia": {
-        "_id": "60df0799f34e3c6ebca1dce0",
-        "criadoEm": "2021-07-02T12:24:59.726Z",
-        "nome": "Victor Bonini",
-        "biografia": "Victor Bonini nasceu em São Paulo, capital, e se mudou Líbero.O primeiro passo do escritor foi ler muito, o segundo, começar a desenvolver suas próprias histórias.",
-        "email": "victorbonini@gmail.com",
+    "message": "Farmacia Farma Bem foi cadastrada com sucesso!",
+    "savedPharmacy": {
+        "cnpj": "04.683.687/0002-65",
+        "name": "Farma Bem",
+        "address": "Rua da Fé",
+        "district": "Bela Vista",
+        "city": "São Paulo",
+        "state": "São Paulo",
+        "cep": "02611-001",
+        "telephone": "(11) 2232-8882",
+        "email": "farmabem@drogariasp.com.br",
+        "days_open": "Segunda a Domingo",
+        "hours_of_operation": "Atendimento 24 horas",
+        "terms_of_use": true,
+        "_id": "61ba9fedf64d7889b8b76a44",
+        "createdAt": "2021-12-16T02:09:49.473Z",
+        "updatedAt": "2021-12-16T02:09:49.473Z",
         "__v": 0
     }
 }

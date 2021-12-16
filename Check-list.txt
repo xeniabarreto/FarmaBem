@@ -10,9 +10,15 @@
 - Documentação apiDoc - para gerar a documentação
 - apagar as pastas node_modules dos outros projetos
 - colocar gif dos endpontis na apresentação e no readme
+
 - colocar o link da apresentação no Readme
-https://www.canva.com/design/DAEyeUU37YY/7r3nUZvVdhx6z_oHAsypYg/view?utm_content=DAEyeUU37YY&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu
-- {{URL}}/pharmacy/search?"informarcep"&"insiracidade" - ROTAS COM QUERY PARMS multiplos
+  https://www.canva.com/design/DAEyeUU37YY/7r3nUZvVdhx6z_oHAsypYg/view?utm_content=DAEyeUU37YY&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu
+
+no readme ajustar rotas: 
+- /pharmacy/search?"informarcep"&"insiracidade" - ROTAS COM QUERY PARMS multiplos SÓ PRA ALGUNS GETS
+- atenção aos gets mulplpipos boelando colocar só true or false
+ 
+
 
 
 ********* ESTRUTURA DE CODIGOS ******************

@@ -38,6 +38,7 @@
 - [Autora](#autora)
 <br>
 
+
 ## **Origem**  
 
 <p align="justify">Em meio a Pandemia da Covid-19, tive a infelicidade de ver a vida da minha mãe ceifada por essa doença tão avassaladora, uma experiência amarga e dolorosa. 

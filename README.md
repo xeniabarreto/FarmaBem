@@ -448,11 +448,11 @@ Toda sugestão de melhoria deste projeto será muito bem-vinda!!!
 
  > <a href="http://aquitemremedio.prefeitura.sp.gov.br/#/"><p align="">Aqui tem remédio</p></a>
 
- > <a href="https://github.com/letidesi/saudex"><p align="">Inspiração para criação do Readme - Letícia Desidero</p></a>
+ > <a href="https://github.com/letidesi/saudex"><p align="">Inspiração Readme - Letícia Desidero</p></a>
 
- > <a href="https://github.com/elisabetealves/reprograma-estante-de-historias"><p align="">Inspiração para criação do Readme - Elisabete Alves</p></a>
+ > <a href="https://github.com/elisabetealves/reprograma-estante-de-historias"><p align="">Inspiração Readme - Elisabete Alves</p></a>
 
-  > <a href="https://github.com/priscilaestevao/pretitudes-project-reprograma"><p align="">Inspiração para criação do Readme - Priscila Estevão </p></a> 
+  > <a href="https://github.com/priscilaestevao/pretitudes-project-reprograma"><p align="">Inspiração Readme - Priscila Estevão </p></a> 
 
 </h3>
 

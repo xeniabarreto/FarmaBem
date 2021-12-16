@@ -2,7 +2,7 @@ const MedicineSchema = require('../models/medicineSchema');
 const mongoose = require('mongoose');
 
 
-const getAll = async (req, res) => {
+const getMedicineAll = async (req, res) => {
     try {
       const medicine = await MedicineSchema.find()
       res.status(200).json(medicine) 
@@ -111,7 +111,7 @@ const createMedicine = async (req, res) => {
 };
 
 
-const searchMultiple = async (req, res) => {
+const getMedicineMultipleFilter = async (req, res) => {
     try {
         const filter = await MedicineSchema.find(req.query)
 
@@ -136,7 +136,7 @@ const searchMultiple = async (req, res) => {
 }
 
 
-const findMedicineById = async (req, res) => {
+const getMedicineById = async (req, res) => {
     try {
         const medicine = await MedicineSchema.findById(req.params.id)
         if (medicine) {
@@ -158,7 +158,7 @@ const findMedicineById = async (req, res) => {
 }
 
 
-const updateById = async (req, res) => {
+const updateMedicineById = async (req, res) => {
     try {
         const findMedicine = await MedicineSchema.findById(req.params.id)
 
@@ -220,11 +220,11 @@ const deleteMedicineById = async (req, res) => {
 
 
   module.exports = {
-    getAll,
+    getMedicineAll,
     createMedicine,
-    searchMultiple,
-    findMedicineById,
-    updateById,
+    getMedicineMultipleFilter,
+    getMedicineById,
+    updateMedicineById,
     deleteMedicineById,
 
   }

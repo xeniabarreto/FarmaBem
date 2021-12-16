@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 
 
-const getAll = async (req, res) => {
+const getPharmacyAll = async (req, res) => {
 
   try {
     const pharmacy = await PharmacySchema.find()
@@ -158,7 +158,7 @@ const createPharmacy = async (req, res) => {
 };
 
 
-const findPharmacyByName = async (req, res) => {
+const getPharmacyByName = async (req, res) => {
   try {
     const findPharmacy = await PharmacySchema.find({ name: new RegExp(req.query.name, "i") });
 
@@ -178,7 +178,7 @@ const findPharmacyByName = async (req, res) => {
 };
 
 
-const searchMuliple = async (req, res) => {
+const getPharmacyMultipleFilter = async (req, res) => {
   try {
     const filter = await PharmacySchema.find(req.query)
 
@@ -204,7 +204,7 @@ const searchMuliple = async (req, res) => {
 };
 
 
-const findPharmacyById = async (req, res) => {
+const getPharmacyById = async (req, res) => {
   try {
     const pharmacy = await PharmacySchema.findById(req.params.id)
     if (pharmacy) {
@@ -335,11 +335,11 @@ const deletePharmacyById = async (req, res) => {
 
 
 module.exports = {
-  getAll,
+  getPharmacyAll,
   createPharmacy,
-  findPharmacyByName,
-  searchMuliple,
-  findPharmacyById,
+  getPharmacyByName,
+  getPharmacyMultipleFilter,
+  getPharmacyById,
   updatePhamarcyById,
   deletePharmacyById,
 }

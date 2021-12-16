@@ -3,11 +3,11 @@ const router = express.Router();
 
 const controller = require("../controllers/pharmacyController");
 
-router.get("/all", controller.getAll);
+router.get("/all", controller.getPharmacyAll);
 router.post("/create", controller.createPharmacy);
-router.get("/name", controller.findPharmacyByName);
-router.get("/filter", controller.searchMuliple);
-router.get("/:id", controller.findPharmacyById);
+router.get("/name", controller.getPharmacyByName);
+router.get("/filter", controller.getPharmacyMultipleFilter);
+router.get("/:id", controller.getPharmacyById);
 router.put("/update/:id", controller.updatePhamarcyById);
 router.delete("/delete/:id", controller.deletePharmacyById);
 

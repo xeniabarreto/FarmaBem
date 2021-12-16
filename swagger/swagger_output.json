@@ -566,7 +566,7 @@
         }
       }
     },
-    "/adm/register": {
+    "/adm/createregister": {
       "post": {
         "tags": [],
         "description": "",

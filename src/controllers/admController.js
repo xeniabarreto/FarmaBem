@@ -6,7 +6,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 
-const getAll = async (req, res) => {
+const getAdmAll = async (req, res) => {
     try {
         const adms = await AdmSchema.find()
         res.status(200).json({message: 'Lista de Adms', adms})
@@ -19,7 +19,7 @@ const getAll = async (req, res) => {
 }
 
 
-const register = async (req, res) => {
+const createAdm = async (req, res) => {
     const { username, email, password, terms_of_use } = req.body
        
     try {
@@ -55,7 +55,7 @@ const register = async (req, res) => {
 }
 
 
-const loginWithCreatingToken = async (req, res) => {
+const loginAdmAndCreateToken = async (req, res) => {
     const { email, password } = req.body;
 
     try {
@@ -89,7 +89,7 @@ const loginWithCreatingToken = async (req, res) => {
 }
 
 
-const updateById = async (req, res) => {
+const updateAdmById = async (req, res) => {
     try {
         const adm = await AdmSchema.findById(req.params.id);
 
@@ -111,7 +111,7 @@ const updateById = async (req, res) => {
 }
 
 
-const deleteById = async (req, res) => {
+const deleteAdmById = async (req, res) => {
     try {
         const adm = await AdmSchema.findByIdAndDelete(req.params.id);
 
@@ -132,7 +132,7 @@ const deleteById = async (req, res) => {
 }
 
 
-const getById = async (req, res) => {
+const getAdmById = async (req, res) => {
     try {
         const findAdm = await AdmSchema.findById(req.params.id, '-password');
         
@@ -156,10 +156,10 @@ const getById = async (req, res) => {
 
 
 module.exports = {
-    getAll,
-    register,
-    loginWithCreatingToken,
-    updateById,
-    deleteById,
-    getById
+    getAdmAll,
+    createAdm,
+    loginAdmAndCreateToken,
+    updateAdmById,
+    deleteAdmById,
+    getAdmById
 }

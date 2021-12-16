@@ -1,10 +1,3 @@
-colocar o link da apresentação no Readme
-https://www.canva.com/design/DAEyeUU37YY/7r3nUZvVdhx6z_oHAsypYg/view?utm_content=DAEyeUU37YY&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu
-
-apagar as pastas node_modules dos outros projetos
-
-***** DUVIDAS, SOBRE AUTENTICAÇÃO E O SWAGGER ****
-
 
 ********** A FAZER *************
 
@@ -15,6 +8,12 @@ apagar as pastas node_modules dos outros projetos
 - Testar todas as rotas no Postman
 - Se der tempo corrigir nome das rotas de ADM / MEDICINE / PHARMACY de forma padronizada
 - Documentação apiDoc - para gerar a documentação
+- apagar as pastas node_modules dos outros projetos
+- colocar gif dos endpontis na apresentação e no readme
+- colocar o link da apresentação no Readme
+https://www.canva.com/design/DAEyeUU37YY/7r3nUZvVdhx6z_oHAsypYg/view?utm_content=DAEyeUU37YY&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu
+
+
 
 ********* ESTRUTURA DE CODIGOS ******************
 
@@ -24,9 +23,9 @@ PASTA MEDICINE:
     Controller - estrutura do like no controller para somatizar os remedios de entrada, cod abaixo
     Models - incluir um item para Stok
 
-PASTA ADM:
+VER DEPOIS: 
     Ver com Rafa como tratar as validações no proprio banco de dados
-    Aplicar validação para tamanho da senha / e alfanumerica - FAZER DEPOIS DA ENTREGA
+    Aplicar validação para tamanho da senha / e alfanumerica dos Adms - FAZER DEPOIS DA ENTREGA
 
 
 **************** README *************************
@@ -35,6 +34,8 @@ PASTA ADM:
 
 REFERENCIAS
 http://g1.globo.com/Noticias/Brasil/0,,AA1381397-5598,00-DOS+BRASILEIROS+QUE+PRECISAM+DE+REMEDIOS+NAO+PODEM+COMPRAR.html
+
+
 
 
 ************ TESTAR CODIGO DE ENTRADA ESTOQUE E PACTH *************

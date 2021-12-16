@@ -14,5 +14,4 @@ router.delete("/delete/:id", checkToken, controller.deleteById);
 
 
 
-
 module.exports = router

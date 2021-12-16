@@ -130,6 +130,7 @@ Arquitetura padrão da API Farma Bem:
    |    |- 📑 pharmacy.test.js
    |
    |-  📁 assets
+   |    |- 📑 crud_example.gif
    |    |- 📑 logo_animado_ofic.gif
    |
    |-  📁 src

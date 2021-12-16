@@ -1,27 +1,30 @@
 
-********** A FAZER *************
+***********A FAZER***********
 
 - Responder e-mail para formatura do Reprograma - Curriculo no site
 - Preencher documento compartilhado no Classroom
-- Montar o Readme - editdar e revisar inteiro
-- Postman Atualizar as rotas do Heroku
-- Testar todas as rotas no Postman
-- Se der tempo corrigir nome das rotas de ADM / MEDICINE / PHARMACY de forma padronizada
 - Documentação apiDoc - para gerar a documentação
 - apagar as pastas node_modules dos outros projetos
-- colocar gif dos endpontis na apresentação e no readme
 
+***********APRESENTAÇÃO***********
+- colocar gif dos endpontis na apresentação
+
+
+***********README***********
 - colocar o link da apresentação no Readme
   https://www.canva.com/design/DAEyeUU37YY/7r3nUZvVdhx6z_oHAsypYg/view?utm_content=DAEyeUU37YY&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu
 
-no readme ajustar rotas: 
-- /pharmacy/search?"informarcep"&"insiracidade" - ROTAS COM QUERY PARMS multiplos SÓ PRA ALGUNS GETS
-- atenção aos gets mulplpipos boelando colocar só true or false
+
+***********ROTAS***********
+    - Postman Atualizar as rotas do Heroku
+    - Testar todas as rotas no Postman
+    - Se der tempo corrigir nome das rotas de ADM / MEDICINE / PHARMACY de forma padronizada alterar todos arquivos
+    - No readme ajustar rotas: 
+        /pharmacy/search?"informarcep"&"insiracidade" - ROTAS COM QUERY PARMS multiplos SÓ PRA ALGUNS GETS
+        atenção aos gets mulplpipos boelando colocar só true or false
  
 
-
-
-********* ESTRUTURA DE CODIGOS ******************
+***********ESTRUTURA DE CODIGOS ******************
 
 
 PASTA MEDICINE:
@@ -34,19 +37,15 @@ VER DEPOIS:
     Aplicar validação para tamanho da senha / e alfanumerica dos Adms - FAZER DEPOIS DA ENTREGA
 
 
-**************** README *************************
+***********SWAGGER VER DEPOIS***********
 
-    
-
-REFERENCIAS
-http://g1.globo.com/Noticias/Brasil/0,,AA1381397-5598,00-DOS+BRASILEIROS+QUE+PRECISAM+DE+REMEDIOS+NAO+PODEM+COMPRAR.html
+***********TESTES  SEGUIR EX DARIELLY***********
 
 
 
 
-************ TESTAR CODIGO DE ENTRADA ESTOQUE E PACTH *************
 
-
+***********TESTAR CODIGO DE ENTRADA ESTOQUE E PACTH***********
 /*
 
 //DAR ENTRADA NO REMEDIO
@@ -83,6 +82,10 @@ const dislike = async (req, res) => {
         return res.status(404).send({ message: 'Livro não encontrado' })
     }
 }
+
+
+
+
 
 ==========================================================================================
 

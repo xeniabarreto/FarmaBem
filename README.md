@@ -42,13 +42,13 @@
 
 ## **Origem**  
 
-<p align="justify">Em meio a Pandemia da Covid-19, tive a infelicidade de ver a vida da minha mãe ceifada por essa doença tão avassaladora, uma experiência amarga e dolorosa. 
+Em meio a Pandemia da Covid-19, tive a infelicidade de ver a vida da minha mãe ceifada por essa doença tão avassaladora, uma experiência amarga e dolorosa. 
 
-<p align="justify">No processo de organização das coisas que ela havia deixado, encontrei uma quantidade significativa de medicamentos para doenças como diabetes e hipertensão, todos dentro do prazo de validade. 
+No processo de organização das coisas que ela havia deixado, encontrei uma quantidade significativa de medicamentos para doenças como diabetes e hipertensão, todos dentro do prazo de validade. 
 
-<p align="justify">Olhei aquele montante e me indaguei sobre como poderia haver outras situações semelhantes a essa no mundo. Tão logo, procurei descobrir alguém que fizesse o uso dessas medicações e doei, mas isso levou alguns dias para acontecer.
+Olhei aquele montante e me indaguei sobre como poderia haver outras situações semelhantes a essa no mundo. Tão logo, procurei descobrir alguém que fizesse o uso dessas medicações e doei, mas isso levou alguns dias para acontecer.
 
-<p align="justify">Passado alguns meses até aqui, lembrei-me desse momento de reflexão e decidi criar a API Farma Bem a fim de reaproveitar medicamentos, intermediando quem pode doar à quem necessita, de forma gratuita.
+Passado alguns meses até aqui, lembrei-me desse momento de reflexão e decidi criar a API Farma Bem a fim de reaproveitar medicamentos, intermediando quem pode doar à quem necessita, de forma gratuita.
 <br>
 
 ## **Objetivo**

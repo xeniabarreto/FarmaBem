@@ -1,6 +1,7 @@
-***********README***********
+***********README e APRESENTAÇAO CANVA***********
 - FALTA colocar o link da apresentação no Readme
   https://www.canva.com/design/DAEyeUU37YY/7r3nUZvVdhx6z_oHAsypYg/view?utm_content=DAEyeUU37YY&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu
+- inserir o gif de teste no postman com fundo preto no CANVA e README
 
 ***********A FAZER***********
 
@@ -8,37 +9,58 @@
 - apagar as pastas node_modules dos outros projetos
 - Documentação apiDoc - para gerar a documentação
 
-***********APRESENTAÇÃO***********
-- colocar gif dos endpontis na apresentação
-
-
-
-
 ***********ROTAS***********
-    - Postman Atualizar as rotas do Heroku
-    - Testar todas as rotas no Postman
-    - Se der tempo corrigir nome das rotas de ADM / MEDICINE / PHARMACY de forma padronizada alterar todos arquivos
-    - No readme ajustar rotas: 
-        /pharmacy/search?"informarcep"&"insiracidade" - ROTAS COM QUERY PARMS multiplos SÓ PRA ALGUNS GETS
-        atenção aos gets mulplpipos boelando colocar só true or false
- 
+    - Postman Atualizar Heroku - FALTA SOMENTE ADM com erro
+    - Se der tempo renomear os CRUDs de ADM / MEDICINE / PHARMACY de forma padronizada
 
 ***********ESTRUTURA DE CODIGOS ******************
-
-
 PASTA MEDICINE:
     Controller - PUT - Aplicar validacoes
     Controller - estrutura do like no controller para somatizar os remedios de entrada, cod abaixo
     Models - incluir um item para Stok
 
+
+
 VER DEPOIS: 
     Ver com Rafa como tratar as validações no proprio banco de dados
     Aplicar validação para tamanho da senha / e alfanumerica dos Adms - FAZER DEPOIS DA ENTREGA
-
+    
+    - No readme ajustar rotas: 
+        /pharmacy/search?"informarcep"&"insiracidade" - ROTAS COM QUERY PARMS multiplos SÓ PRA ALGUNS GETS
+        atenção aos gets mulplpipos boelando colocar só true or false
 
 ***********SWAGGER VER DEPOIS***********
 
 ***********TESTES  SEGUIR EX DARIELLY***********
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .                                         ROTAS ADMINISTRADORES
+
+
+
+
+
+
+
+
+
+
+
 
 
 

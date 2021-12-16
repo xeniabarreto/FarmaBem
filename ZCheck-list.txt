@@ -1,7 +1,9 @@
 ***********README e APRESENTAÇAO CANVA***********
 - FALTA colocar o link da apresentação no Readme
   https://www.canva.com/design/DAEyeUU37YY/7r3nUZvVdhx6z_oHAsypYg/view?utm_content=DAEyeUU37YY&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu
-- inserir o gif de teste no postman com fundo preto no CANVA e README
+
+- inserir apresentação atualizada aqui no vs CODE
+- Alterar o logo FarmaBem
 
 ***********A FAZER***********
 

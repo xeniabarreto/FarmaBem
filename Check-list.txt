@@ -39,6 +39,8 @@ MELHORIAS FUTURAS
     Conciliar a busca por remedio linkando aos banco de dados de farmacias
     
 
+REFERENCIAS
+http://g1.globo.com/Noticias/Brasil/0,,AA1381397-5598,00-DOS+BRASILEIROS+QUE+PRECISAM+DE+REMEDIOS+NAO+PODEM+COMPRAR.html
 
 
 ************ TESTAR CODIGO DE ENTRADA ESTOQUE E PACTH *************
@@ -202,7 +204,7 @@ app.use(cors())
 app.use(express.json())
 
 
-db.connect()    <================
+db.connect()    <================ isso tem que ficar pra cima e nao aqui embaixo - Paula Allemand
 
 module.exports = app
 
@@ -256,9 +258,40 @@ Documentação
 https://jestjs.io/pt-BR/docs/using-matchers
 
 
+==============================================================================================================
+
 AUTOMATIZANDO DOCUMENTAÇÃO COM SWAGGER 
 https://www.letscode.com.br/blog/como-automatizar-documentacao-de-apis-rest-em-nodejs-com-swagger 
 
 npm i body-parser
 npm i swagger-autogen
 npm i swagger-ui-express
+
+
+
+======================================================================================================
+NOTAS SOOBRE AUTENTICAÇÃO
+
+** VS CODE:
+
+Entrar no site http://travistidwell.com/jsencrypt/demo/ e copiar a chave publica.
+Colar essa chave publica no SECRET no arquivo .env
+
+** POSTAM:
+
+Realizar um POST com o login para gerar o Token e copiar.
+Na aba da collection, criar uma variavel {{TOKEN}} e colar o token gerado.
+
+Quando for acessar uma rota privada, vc coloca a rota e depois vai no cabeçalho em Authorization
+No Authorization selecionar Bearer Token e ao lado chamar a variabel {{TOKEN}} (talvez ela ja apareça automaticamente) e send.
+
+** SOBRE AS PASTAS NO VS CODE, ESTRUTRA DO CODIGO
+
+HELPERS - é apenas uma função que será chamada no controller, no caso o de ADM no verbo POST 
+para criar registro com token - somente.
+
+MIDDLEWARES - é um codigo completo, que é chamado nos arquivos da pasta ROUTES. Vc chama ele na hora de configurar a rota
+que ele vai dentro do MIDDLEWARES conferir o token e se estiver ok, ele segue para o controller.verbo. Quanto vc chama ele vai tornar
+rota privada.
+
+

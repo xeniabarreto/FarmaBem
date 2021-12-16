@@ -45,7 +45,7 @@
 
 <p align="justify">No processo de organização das coisas que ela havia deixado, encontrei uma quantidade significativa de medicamentos para doenças como diabetes e hipertensão, todos dentro do prazo de validade. 
 
-<p align="justify">Olhei aquele montante e me indaguei sobre como poderia haver outras situações semelhantes a essa no mundo. Tão logo, procurei descobrir alguém que fizesse o uso destas medicações e doei, mas isso levou alguns dias para acontecer.
+<p align="justify">Olhei aquele montante e me indaguei sobre como poderia haver outras situações semelhantes a essa no mundo. Tão logo, procurei descobrir alguém que fizesse o uso dessas medicações e doei, mas isso levou alguns dias para acontecer.
 
 <p align="justify">Passado alguns meses até aqui, lembrei-me desse momento de reflexão e decidi criar a API Farma Bem a fim de reaproveitar medicamentos, intermediando quem pode doar a quem necessita, de forma gratuita.
 <br>
@@ -54,30 +54,11 @@
 
 <p align="justify">A API Farma Bem permitirá o cadastro das farmácias interessadas em fazer parte desta iniciativa para receber as doações de medicamentos, realizar uma perícia quanto a qualidade e disponibilizá-los a população.
 
-<p align="justify">Além de promover o reaproveitamento de medicamentos, ajuda a quem precisa, reduz o impacto no meio ambiente e descarte irregular.
+<p align="justify">Poderá casdastrar os medicamentos recebidos e informar sua disponibilidade em estoque na unidade correspondente, desta forma será possível uma consulta prévia pelo beneficiário antes mesmo de sair de casa.
 
-é uma API RESTFull fundamentada no CRUD, integrado com o banco de dados, sendo possível listar, cadastrar, atualizar e deletar cadastros de farmácias, medicamentos e administradores. 
+<p align="justify">Viabilizará o gerenciamento dos dados e informações através do cadastro de administradores.
 
-que permite o cadastro das farmácias interessadas em fazer parte desta iniciativa para receber as doações de medicamentos, realizar uma perícia quanto a qualidade e disponibilizá-los a população.
-
-<p align="justify">Realizar também o cadastro dos medicamentos recebidos e demonstrar sua disponibilidade em estoque na unidade correspondente, desta forma será possível uma consulta prévia pelo beneficiário antes mesmo de sair de casa. 
-
-<p align="justify">
-
-
-- Intermedio entre quem pode doar medicamentos a quem necessita;
-- Reduzir as despesas com a compra de medicamentos;
-- Reaproveitamento dos medicamentos reduzindo o impacto ambiental e com descarte irregular;
-
-API foi desenvolvida como Projeto Final para a conclusão do curso de Backend [{Reprograma}](https://reprograma.com.br/).
-  
-
-
-## **Aprendizados**
-<br>
-<p> A construção deste projeto consiste em uma API RESTFull fundamentada no CRUD com a integração do banco de dados NoSQL. 
-<br>
-<br>
+<p align="justify">A construção deste projeto consiste em uma API RESTFull fundamentada no CRUD, integrado com o banco de dados NoSQL, sendo possível listar, cadastrar, atualizar e deletar cadastros de farmácias, medicamentos e administradores.
 
 - Definição CRUD: 
     
@@ -86,6 +67,8 @@ API foi desenvolvida como Projeto Final para a conclusão do curso de Backend [{
       READ (LER, CONSULTAR)
       UPDATE (ATUALIZAR) 
       DELETE (DESTRUIÇÃO, REMOÇÃO)
+
+<p align="justify">Em resumo, esta iniciativa promoverá o reaproveitamento de medicamentos, redução do descarte irregular, redução do impacto ambiental, além ajudar a quem precisa, reduzindo ou até anulando seus gastos.
 
 <br>
 
@@ -475,6 +458,9 @@ Toda sugestão de melhoria deste projeto será muito bem-vinda!!!
 <p> linkar o insta de quem nao tem linkedin <a href="https://www.instagram.com/may_desiderio/">POR NOME AQUI</a>, desse jeito.</p>
 
 <p>  <a href="https://www.linkedin.com/company/reprogramabr/">{Reprograma}</a>  a  <a href="https://www.linkedin.com/in/amanda-santos-b50200165/">Amanda Leal</a> e <a href="https://www.linkedin.com/in/leticiardesiderio/">Letícia Desiderio</a> .
+
+
+API foi desenvolvida como Projeto Final para a conclusão do curso de Backend {Reprograma}.
 
 FALTA MAIS GENTE </p>
 

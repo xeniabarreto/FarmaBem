@@ -9,7 +9,7 @@
 
 > Iniciativa para reaproveitamento de medicamentos em São Paulo - SP
 
-> Status: **em construção** ✅
+> Status: **em construção**
 
 <p align="justify">
   <a>
@@ -47,14 +47,14 @@
 
 <p align="justify">Olhei aquele montante e me indaguei sobre como poderia haver outras situações semelhantes a essa no mundo. Tão logo, procurei descobrir alguém que fizesse o uso dessas medicações e doei, mas isso levou alguns dias para acontecer.
 
-<p align="justify">Passado alguns meses até aqui, lembrei-me desse momento de reflexão e decidi criar a API Farma Bem a fim de reaproveitar medicamentos, intermediando quem pode doar a quem necessita, de forma gratuita.
+<p align="justify">Passado alguns meses até aqui, lembrei-me desse momento de reflexão e decidi criar a API Farma Bem a fim de reaproveitar medicamentos, intermediando quem pode doar à quem necessita, de forma gratuita.
 <br>
 
 ## **Objetivo**
 
 <p align="justify">A API Farma Bem permitirá o cadastro das farmácias interessadas em fazer parte desta iniciativa para receber as doações de medicamentos, realizar uma perícia quanto a qualidade e disponibilizá-los a população.
 
-<p align="justify">Poderá casdastrar os medicamentos recebidos e informar sua disponibilidade em estoque na unidade correspondente, desta forma será possível uma consulta prévia pelo beneficiário antes mesmo de sair de casa.
+<p align="justify">Poderá cadastrar os medicamentos recebidos e informar sua disponibilidade em estoque, desta forma, será possível uma consulta prévia pelo beneficiário antes mesmo de sair de casa.
 
 <p align="justify">Viabilizará o gerenciamento dos dados e informações através do cadastro de administradores.
 
@@ -104,7 +104,7 @@ Para a construção deste projeto, as seguintes tecnologias foram utilizadas:
 <br>
 
 ## **Bibliotecas Aplicadas**
-Para a construção deste projeto, as seguintes bibliotecas foram aplicadas:
+As seguintes bibliotecas foram aplicadas:
 
 <p  align="justify">
 <a  href="https://expressjs.com/pt-br/"><img  alt="Express version"  src="https://img.shields.io/badge/express-4.17.1-pink">
@@ -236,7 +236,7 @@ Se você deseja mais informações sobre os comandos no Git Bash, temos uma pron
 
 | Método HTTP  | Tipo Rota | Endpoint                | Descrição                                            |
 | ------------ | --------- | ----------------------- | -----------------------------------------------------|
-| GET          | Pública   | `/pharmacy/all`         | Retorna todos as farmácias                           |
+| GET          | Pública   | `/pharmacy/all`         | Retorna todas as farmácias                           |
 | GET          | Pública   | `/pharmacy/find_name`   | Retorna uma farmácia específica por nome             |
 | GET          | Pública   | `/pharmacy/search`      | Retorna farmácias por filtros múltiplos              |
 | GET          | Pública   | `/pharmacy/find/:id`    | Retorna uma farmácia específica por id               |
@@ -413,7 +413,8 @@ Se você deseja mais informações sobre os comandos no Git Bash, temos uma pron
 
 <br>
 
-*  Integrar com o Maps para calcular a distância da farmácia mais próxima do beneficiário; 
+* Tratamento de dados sensíveis de acordo com a Lei de Proteção de Dados - LGPD.
+* Integrar com o Maps para calcular a distância da farmácia mais próxima do beneficiário; 
 *  Implantação de código HTML e CSS para criação de uma interface capaz de possibilitar a interação do usuário com aplicação;
 *  Desenvolver uma interface que permita transmitir informações aos usuários sobre manipulação, conservação e descarte adequado de medicamentos.
 
@@ -452,7 +453,7 @@ Quero agradecer a todas alunas, as professoras, a facilitadora <a href="https://
 Em especial, quero agradecer minhas colegas de turma <a href="https://www.linkedin.com/in/leticiardesiderio/">Letícia Desiderio</a> e <a href="https://www.linkedin.com/in/amanda-santos-b50200165/">Amanda Leal</a>, que estiveram presente praticamente todos os dias nessa última semana, me dando muito apoio.
 
 Agradeço ao <a href="https://www.linkedin.com/company/reprogramabr/">{Reprograma}</a>, uma iniciativa maravilhosa que muda de forma significativa a vida de todas as mulheres que por ali passam. O conhecimento vai muito além da parte técnica, nós somos todas contagiadas com espírito de equipe, amor e empatia.
-Receber tanto carinho só nos faz perpetuar essa corrente do bem e desejar que ainda mais pessoas sejam contagiadas por essa experciência incrível.
+Receber tanto carinho só nos faz perpetuar essa corrente do bem e desejar que ainda mais pessoas sejam contagiadas por essa experiência incrível.
 
 Dedico este projeto a minha maravilhosa e eterna mãe! 
 Sei que estaria muito feliz junto comigo, e onde estiver, sei estará contemplando todas minhas conquistas. 

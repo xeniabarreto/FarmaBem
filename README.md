@@ -42,13 +42,13 @@
 
 ## **Origem**  
 
-Em meio a Pandemia da Covid-19, tive a infelicidade de ver a vida da minha mãe ceifada por essa doença tão avassaladora, uma experiência amarga e dolorosa. 
+<p align="justify">Em meio a Pandemia da Covid-19, tive a infelicidade de ver a vida da minha mãe ceifada por essa doença tão avassaladora, uma experiência amarga e dolorosa. 
 
-No processo de organização das coisas que ela havia deixado, encontrei uma quantidade significativa de medicamentos para doenças como diabetes e hipertensão, todos dentro do prazo de validade. 
+<p align="justify">No processo de organização das coisas que ela havia deixado, encontrei uma quantidade significativa de medicamentos para doenças como diabetes e hipertensão, todos dentro do prazo de validade. 
 
-Olhei aquele montante e me indaguei sobre como poderia haver outras situações semelhantes a essa no mundo. Tão logo, procurei descobrir alguém que fizesse o uso dessas medicações e doei, mas isso levou alguns dias para acontecer.
+<p align="justify">Olhei aquele montante e me indaguei sobre como poderia haver outras situações semelhantes a essa no mundo. Tão logo, procurei descobrir alguém que fizesse o uso dessas medicações e doei, mas isso levou alguns dias para acontecer.
 
-Passado alguns meses até aqui, lembrei-me desse momento de reflexão e decidi criar a API Farma Bem a fim de reaproveitar medicamentos, intermediando quem pode doar à quem necessita, de forma gratuita.
+<p align="justify">Passado alguns meses até aqui, lembrei-me desse momento de reflexão e decidi criar a API Farma Bem a fim de reaproveitar medicamentos, intermediando quem pode doar à quem necessita, de forma gratuita.
 <br>
 
 ## **Objetivo**
@@ -461,15 +461,15 @@ Toda sugestão de melhoria deste projeto será muito bem-vinda!!!
 ##  **Agradecimentos**
 
 <p>
-Esta API foi desenvolvida como Projeto Final para a conclusão do curso de Backend na <a href="https://www.linkedin.com/company/reprogramabr/">{Reprograma}</a>, e pude contar com apoio de muitas pessoas durante essa jornada.
+<p align="justify">Esta API foi desenvolvida como Projeto Final para a conclusão do curso de Backend na <a href="https://www.linkedin.com/company/reprogramabr/">{Reprograma}</a>, e pude contar com apoio de muitas pessoas durante essa jornada.
 
-Quero agradecer a todas alunas, as professoras, a facilitadora <a href="https://www.linkedin.com/in/raquelbennington/">Raquel Andrade</a>, a psicóloga <a href="https://www.linkedin.com/in/juliana-souza-farias-59506bb6/">Juliana Farias</a> e a BTL <a href="https://www.linkedin.com/in/jessica-osko/">Jéssica Osko</a>, que contribuíram de forma extraordinária para meu conhecimento.
-Em especial, quero agradecer minhas colegas de turma <a href="https://www.linkedin.com/in/leticiardesiderio/">Letícia Desiderio</a> e <a href="https://www.linkedin.com/in/amanda-santos-b50200165/">Amanda Leal</a>, que estiveram presente praticamente todos os dias nessa última semana, me dando muito apoio.
+<p align="justify">Quero agradecer a todas alunas, as professoras, a facilitadora <a href="https://www.linkedin.com/in/raquelbennington/">Raquel Andrade</a>, a psicóloga <a href="https://www.linkedin.com/in/juliana-souza-farias-59506bb6/">Juliana Farias</a> e a BTL <a href="https://www.linkedin.com/in/jessica-osko/">Jéssica Osko</a>, que contribuíram de forma extraordinária para meu conhecimento.
+<p align="justify">Em especial, quero agradecer minhas colegas de turma <a href="https://www.linkedin.com/in/leticiardesiderio/">Letícia Desiderio</a> e <a href="https://www.linkedin.com/in/amanda-santos-b50200165/">Amanda Leal</a>, que estiveram presente praticamente todos os dias nessa última semana, me dando muito apoio.
 
-Agradeço ao <a href="https://www.linkedin.com/company/reprogramabr/">{Reprograma}</a>, uma iniciativa maravilhosa que muda de forma significativa a vida de todas as mulheres que por ali passam. O conhecimento vai muito além da parte técnica, nós somos todas contagiadas com espírito de equipe, amor e empatia.
+<p align="justify">Agradeço ao <a href="https://www.linkedin.com/company/reprogramabr/">{Reprograma}</a>, uma iniciativa maravilhosa que muda de forma significativa a vida de todas as mulheres que por ali passam. O conhecimento vai muito além da parte técnica, nós somos todas contagiadas com espírito de equipe, amor e empatia.
 Receber tanto carinho só nos faz perpetuar essa corrente do bem e desejar que ainda mais pessoas sejam contagiadas por essa experiência incrível.
 
-Dedico este projeto a minha maravilhosa e eterna mãe! 
+<p align="justify">Dedico este projeto a minha maravilhosa e eterna mãe! 
 Sei que estaria muito feliz junto comigo, e onde estiver, sei estará contemplando todas minhas conquistas. 
 
 Isso é só o começo...

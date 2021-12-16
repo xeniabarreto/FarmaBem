@@ -272,7 +272,6 @@ Se você deseja mais informações sobre os comandos no Git Bash, temos uma pron
 <br>
 
 ## **Dados**
-<br>
 
 ### Dados para Collection Farmácias
 
@@ -288,7 +287,7 @@ Se você deseja mais informações sobre os comandos no Git Bash, temos uma pron
 - email: texto e obrigatório
 - days_open: texto e obrigatório
 - hours_of_operation: texto e obrigatório
-- terms_of_use:booleano e obriatório
+- terms_of_use: booleano e obriatório
 - criadoEm: data gerada automaticamente e obrigatório
 
 
@@ -321,22 +320,31 @@ Se você deseja mais informações sobre os comandos no Git Bash, temos uma pron
 ```
  <br>
 
- ### ✅ Dados para Collection Livros
+ ###  Dados para Collection Medicamentos
 
 - id: autogerado e obrigatório
-- like: opcional
-- titulo: texto e obrigatório
-- sinopse: texto e obrigatório
-- farmácia: referência do farmácia cadastrado previamente obrigatório
-- genero: texto e obrigatório
-- paginas: número e obrigatório
-- idioma: texto e obrigatório
-- exibição: texto e obrigatório
+- available: booleano e obriatório
+- medicine_name: texto e obrigatório
+- composition: texto e obrigatório
+- batch: texto e obrigatório
+- manufacture: texto e obrigatório
+- expiration: texto e obrigatório
+- controlled_use: booleano e obriatório
+- retain_revenue: booleano e obriatório
+- pharmacy_name: texto e obrigatório
+- pharmacy_address: texto e obrigatório
+- district: texto e obrigatório
+- pharmacy_city: texto e obrigatório
+- pharmacy_state: texto e obrigatório
+- cep: texto e obrigatório
+- pharmacy_telephone: texto e obrigatório
+- pharmacy_days_open: texto e obrigatório
+- pharmacy_hours_of_operation: texto e obrigatório
+- terms_of_use: booleano e obriatório
 - criadoEm: data gerada automaticamente e obrigatório
 
-<br>
 
-### ✅ API deverá retornar seguinte JSON:
+### API deverá retornar seguinte JSON:
 
 ```jsx
 {

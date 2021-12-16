@@ -72,18 +72,6 @@ const createMedicine = async (req, res) => {
           })
         }
 
-        if (!newMedicine.controlled_use) {
-          return res.status(406).json({
-            message: "Obrigatório informar se o medicamento é de uso Controlado.",
-          })
-        }
-
-        if (!newMedicine.retain_revenue) {
-          return res.status(406).json({
-            message: "Obrigatório informar se retém Receituário para esta medicação.",
-          })
-        }
-
         if (!newMedicine.pharmacy_name) {
           return res.status(406).json({
             message: "Obrigatório preenchimento nome da Farmácia."

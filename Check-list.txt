@@ -1,7 +1,7 @@
 colocar o link da apresentação no Readme
 https://www.canva.com/design/DAEyeUU37YY/7r3nUZvVdhx6z_oHAsypYg/view?utm_content=DAEyeUU37YY&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu
 
-
+apagar as pastas node_modules dos outros projetos
 
 ***** DUVIDAS, SOBRE AUTENTICAÇÃO E O SWAGGER ****
 
@@ -25,18 +25,12 @@ PASTA MEDICINE:
     Models - incluir um item para Stok
 
 PASTA ADM:
-    Só tem uma rota privada que é o ALL
-    Aplicar validação do Token nas rotas privadas
-    Verificar o erro adm All retorno "Inserir toKEN vALIDO.
+    Ver com Rafa como tratar as validações no proprio banco de dados
     Aplicar validação para tamanho da senha / e alfanumerica - FAZER DEPOIS DA ENTREGA
 
 
 **************** README *************************
 
-
-MELHORIAS FUTURAS
-    Permitir localizar por gps o mais proximo - como a api do aqui tem remedio
-    Conciliar a busca por remedio linkando aos banco de dados de farmacias
     
 
 REFERENCIAS

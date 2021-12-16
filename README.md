@@ -372,9 +372,9 @@ Se você deseja mais informações sobre os comandos no Git Bash, temos uma pron
 
 <br>
 
-*  Integrar com o Maps para calcular a distancia da farmácia mais proxima do beneficiário; 
+*  Integrar com o Maps para calcular a distancia da farmácia mais próxima do beneficiário; 
 *  Implantação de código HTML e CSS para criação de uma interface capaz de possibilitar a interação do usuário com aplicação;
-Desenvolver uma interface que permita transmitir informações aos usuários sobre manipulação, conservação e descarte adequado de medicamentos.
+*  Desenvolver uma interface que permita transmitir informações aos usuários sobre manipulação, conservação e descarte adequado de medicamentos.
 
 <br>
 

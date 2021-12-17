@@ -8,11 +8,8 @@
 ***********A FAZER***********
 
 - Responder e-mail para formatura do Reprograma - Curriculo no site
-- apagar as pastas node_modules dos outros projetos
 - Documentação Swagger ou apiDoc - para gerar a documentação
 
-***********ROTAS***********
-    - Postman Atualizar Heroku - FALTA SOMENTE ADM com erro
 
 ***********ESTRUTURA DE CODIGOS ******************
 PASTA MEDICINE:

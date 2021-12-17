@@ -181,13 +181,30 @@ const updateMedicineById = async (req, res) => {
             findMedicine.pharmacy_days_open = req.body.pharmacy_days_open || findMedicine.pharmacy_days_open
             findMedicine.pharmacy_hours_of_operation = req.body.pharmacy_hours_of_operation || findMedicine.pharmacy_hours_of_operation
             findMedicine.terms_of_use = req.body.terms_of_use || findMedicine.terms_of_use
-
-            const savedMedicine = await findMedicine.save();
-            res.status(200).json({
-                message:`Medicamento ${findMedicine.medicine_name} atualizado com sucesso!`,
-                savedMedicine
-            })
         }
+           
+
+
+        if (!findMedicine.pharmacy_name) {
+          return res.status(406).json({
+            message: "Obrigatório preenchimento nome da Farmácia."
+          })
+        }
+
+       if(findMedicine.cep.length < 9 || findMedicine.cep.length > 9){
+          return res.status(406).json({
+            message: "Atenção: o cep deverá conter 9 digitos.",
+            for_example: "12345-678"
+          });
+        }
+
+      
+    const savedMedicine = await findMedicine.save();
+        res.status(200).json({
+          message:`Medicamento ${findMedicine.medicine_name} atualizado com sucesso!`,
+          savedMedicine
+        })
+
     } catch (error) {
       res.status(500).json({
         message: error.message
